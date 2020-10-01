@@ -7,12 +7,13 @@ R5
 
 
 //display s to h
-MOV mem[0X00], #0
+
 MOV mem[0X01], #0
 MOV mem[0X02], #0
 MOV mem[0X03], #0
 MOV mem[0X04], #0
 MOV mem[0X05], #0
+MOV mem[0X06], #0
 
 MOV mem[0X10], #0//switch_ajuste
 MOV mem[0X11], #0//switch_turbo
@@ -26,12 +27,21 @@ MOV R5, #0
 MOV R6, #0
 MOV RC, #0
 
-CLOCK: LOAD RC,mem[0x20]
+CLOCK: LOAD RC,0x20
 CMP RC,#16
 JE UNISEG
 JMP CLOCK
 
-UNISEG:
+UNISEG: MOV 0xFF, RC
+    STORE 0x20, RC
+
+    STORE 0x01, R1
+    STORE 0x02, R2
+    STORE 0x03, R3
+    STORE 0x04, R4
+    STORE 0x05, R5
+    STORE 0x06, R6
+
     INC R1
     CMP R1, #10
     JE DECSEG

@@ -1,15 +1,16 @@
 import keyboard
 
 memoria = [0]*10
-reg_a = 0
-reg_b = 0
+reg_a = 0 
 switch_ajuste = False
 switch_turbo = False
 clock = 1
+
 while True:
     if reg_a > 10000 and not switch_turbo:
         memoria[9] += 1
-        if memoria[9] > 9:
+        if memoria[9] > 9: CMP R0, #9
+                           JG SOMASEGUNDO
             memoria[9] = 0
             memoria[8] += 1
         if memoria[8] > 5:
