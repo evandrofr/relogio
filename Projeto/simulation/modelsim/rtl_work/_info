@@ -1,0 +1,358 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/borg/Documents/relogio/Projeto/simulation/modelsim
+Ebancoregistradoresarqregmem
+Z1 w1602809518
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 4
+R0
+Z5 8/home/borg/Documents/relogio/Projeto/Components/bancoRegistradoresArqRegMem.vhd
+Z6 F/home/borg/Documents/relogio/Projeto/Components/bancoRegistradoresArqRegMem.vhd
+l0
+L5 1
+Vz>_4Lg[Bi>8iXHkGSlbAM2
+!s100 <V=OfB_oYMWI32>^G;zTf3
+Z7 OV;C;2020.1;71
+31
+Z8 !s110 1602866946
+!i10b 1
+Z9 !s108 1602866946.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|/home/borg/Documents/relogio/Projeto/Components/bancoRegistradoresArqRegMem.vhd|
+Z11 !s107 /home/borg/Documents/relogio/Projeto/Components/bancoRegistradoresArqRegMem.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Acomportamento
+R2
+R3
+R4
+Z14 DEx4 work 27 bancoregistradoresarqregmem 0 22 z>_4Lg[Bi>8iXHkGSlbAM2
+!i122 4
+l31
+L23 18
+VlBRgAYQeh]zNKEJ^^7]0F0
+!s100 JD04Zh6=gdjmA3Jifahgi3
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ememoriarom
+Z15 w1602865275
+R2
+R3
+R4
+!i122 3
+R0
+Z16 8/home/borg/Documents/relogio/Projeto/Components/memoriaROM.vhd
+Z17 F/home/borg/Documents/relogio/Projeto/Components/memoriaROM.vhd
+l0
+L5 1
+Vo9BC=]NkYiL8Q5?[iJ@HK1
+!s100 <AM<_EfI2NYjL7<cLn20o3
+R7
+31
+R8
+!i10b 1
+Z18 !s108 1602866945.000000
+Z19 !s90 -reportprogress|300|-93|-work|work|/home/borg/Documents/relogio/Projeto/Components/memoriaROM.vhd|
+Z20 !s107 /home/borg/Documents/relogio/Projeto/Components/memoriaROM.vhd|
+!i113 1
+R12
+R13
+Aassincrona
+R2
+R3
+R4
+Z21 DEx4 work 10 memoriarom 0 22 o9BC=]NkYiL8Q5?[iJ@HK1
+!i122 3
+l37
+L16 24
+VVSLzn3JgToifIYh^>Zg9i0
+!s100 A8_fVW0QFNzYT5>i9dZOi0
+R7
+31
+R8
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R12
+R13
+Emuxgenerico2x1
+Z22 w1602808645
+R3
+R4
+!i122 2
+R0
+Z23 8/home/borg/Documents/relogio/Projeto/Components/muxGenerico2x1.vhd
+Z24 F/home/borg/Documents/relogio/Projeto/Components/muxGenerico2x1.vhd
+l0
+L4 1
+VzmmXNi7PUkaWD8S5;MEF<0
+!s100 GfzghLNBc_MnJ3TTEd4<N3
+R7
+31
+Z25 !s110 1602866945
+!i10b 1
+R18
+Z26 !s90 -reportprogress|300|-93|-work|work|/home/borg/Documents/relogio/Projeto/Components/muxGenerico2x1.vhd|
+Z27 !s107 /home/borg/Documents/relogio/Projeto/Components/muxGenerico2x1.vhd|
+!i113 1
+R12
+R13
+Acomportamento
+R3
+R4
+Z28 DEx4 work 14 muxgenerico2x1 0 22 zmmXNi7PUkaWD8S5;MEF<0
+!i122 2
+l15
+L14 4
+VDe]]`j3V>24M4>I_oN7X52
+!s100 o4>?ol65E@7T8D;XjQohT1
+R7
+31
+R25
+!i10b 1
+R18
+R26
+R27
+!i113 1
+R12
+R13
+Eprocessador
+Z29 w1602866755
+R2
+R3
+R4
+!i122 7
+R0
+Z30 8/home/borg/Documents/relogio/Projeto/processador.vhd
+Z31 F/home/borg/Documents/relogio/Projeto/processador.vhd
+l0
+L5 1
+VLUO9l3dR8ik93Bi=SZ7Kg0
+!s100 AeX8Ch9X`A7[4B73BGf>O3
+R7
+31
+R8
+!i10b 1
+R9
+Z32 !s90 -reportprogress|300|-93|-work|work|/home/borg/Documents/relogio/Projeto/processador.vhd|
+!s107 /home/borg/Documents/relogio/Projeto/processador.vhd|
+!i113 1
+R12
+R13
+Acomportamento
+Z33 DEx4 work 3 ula 0 22 Mj;<ilUACJJ4=Iz_oQlnJ1
+R14
+Z34 DEx4 work 11 unidcontrol 0 22 6jF44dc94gmOXB7g`Th2M2
+R21
+Z35 DEx4 work 13 somaconstante 0 22 L;BB3o[Ti7K7UITJMR86S2
+R28
+Z36 DEx4 work 19 registradorgenerico 0 22 VVkC2iWBUenW<];HlAL?h2
+R2
+R3
+R4
+DEx4 work 11 processador 0 22 LUO9l3dR8ik93Bi=SZ7Kg0
+!i122 7
+l57
+L28 120
+V9hz[?EVgJRPAe4GVCm3]g0
+!s100 RH_41We]<TGA:VD3QSzfJ1
+R7
+31
+R8
+!i10b 1
+R9
+R32
+Z37 !s107 /home/borg/Documents/relogio/Projeto/processador.vhd|
+!i113 1
+R12
+R13
+Eregistradorgenerico
+Z38 w1602854145
+R3
+R4
+!i122 1
+R0
+Z39 8/home/borg/Documents/relogio/Projeto/Components/registradorGenerico.vhd
+Z40 F/home/borg/Documents/relogio/Projeto/Components/registradorGenerico.vhd
+l0
+L4 1
+VVVkC2iWBUenW<];HlAL?h2
+!s100 6BG[V`T@CCYoljaLQP5FO1
+R7
+31
+R25
+!i10b 1
+R18
+Z41 !s90 -reportprogress|300|-93|-work|work|/home/borg/Documents/relogio/Projeto/Components/registradorGenerico.vhd|
+Z42 !s107 /home/borg/Documents/relogio/Projeto/Components/registradorGenerico.vhd|
+!i113 1
+R12
+R13
+Acomportamento
+R3
+R4
+R36
+!i122 1
+l16
+L15 23
+V8iGX6`4cMZL96?:Qh`2fC0
+!s100 =MA1GPaC1lAdP9h:cH3560
+R7
+31
+R25
+!i10b 1
+R18
+R41
+R42
+!i113 1
+R12
+R13
+Esomaconstante
+Z43 w1602854177
+R2
+R3
+R4
+!i122 6
+R0
+Z44 8/home/borg/Documents/relogio/Projeto/Components/somaConstante.vhd
+Z45 F/home/borg/Documents/relogio/Projeto/Components/somaConstante.vhd
+l0
+L5 1
+VL;BB3o[Ti7K7UITJMR86S2
+!s100 52mQe[_z7R>J?U4:7AXZ_1
+R7
+31
+R8
+!i10b 1
+R9
+Z46 !s90 -reportprogress|300|-93|-work|work|/home/borg/Documents/relogio/Projeto/Components/somaConstante.vhd|
+Z47 !s107 /home/borg/Documents/relogio/Projeto/Components/somaConstante.vhd|
+!i113 1
+R12
+R13
+Acomportamento
+R2
+R3
+R4
+R35
+!i122 6
+l17
+L16 4
+V:Rz=kPYJcf1INjDj^NGYd3
+!s100 ^If0>707USkQ0ZbfRTgF30
+R7
+31
+R8
+!i10b 1
+R9
+R46
+R47
+!i113 1
+R12
+R13
+Eula
+Z48 w1602865366
+R2
+R3
+R4
+!i122 0
+R0
+Z49 8/home/borg/Documents/relogio/Projeto/Components/ULA.vhd
+Z50 F/home/borg/Documents/relogio/Projeto/Components/ULA.vhd
+l0
+L5 1
+VMj;<ilUACJJ4=Iz_oQlnJ1
+!s100 C;P^<h^>S7dJDonLU;DVB3
+R7
+31
+R25
+!i10b 1
+R18
+Z51 !s90 -reportprogress|300|-93|-work|work|/home/borg/Documents/relogio/Projeto/Components/ULA.vhd|
+Z52 !s107 /home/borg/Documents/relogio/Projeto/Components/ULA.vhd|
+!i113 1
+R12
+R13
+Acomportamento
+R2
+R3
+R4
+R33
+!i122 0
+l31
+L19 35
+VgML=ndZc`ag?X^D2n[J`J2
+!s100 WgXMdLLUIY_DZQ1?PF:S@3
+R7
+31
+R25
+!i10b 1
+R18
+R51
+R52
+!i113 1
+R12
+R13
+Eunidcontrol
+Z53 w1602866896
+R2
+R3
+R4
+!i122 5
+R0
+Z54 8/home/borg/Documents/relogio/Projeto/Components/unidControl.vhd
+Z55 F/home/borg/Documents/relogio/Projeto/Components/unidControl.vhd
+l0
+L5 1
+V6jF44dc94gmOXB7g`Th2M2
+!s100 ;3[W=eDRc6P`LU]>]Dl=k3
+R7
+31
+R8
+!i10b 1
+R9
+Z56 !s90 -reportprogress|300|-93|-work|work|/home/borg/Documents/relogio/Projeto/Components/unidControl.vhd|
+Z57 !s107 /home/borg/Documents/relogio/Projeto/Components/unidControl.vhd|
+!i113 1
+R12
+R13
+Acomportamento
+R2
+R3
+R4
+R34
+!i122 5
+l35
+L16 33
+VIAN_dGNde4:3gBcTmQz]f1
+!s100 RT?V0G=ToS1Y7Z?E15FXN3
+R7
+31
+R8
+!i10b 1
+R9
+R56
+R57
+!i113 1
+R12
+R13

@@ -6,7 +6,7 @@ entity processador is
 	GENERIC (
 		ADDR_WIDTH_REG : NATURAL := 8;
 		DATA_WIDTH_ROM : NATURAL := 16;
-		ADDR_WIDTH_ROM : NATURAL := 9;
+		ADDR_WIDTH_ROM : NATURAL := 8;
 		OPCODE_WIDTH   : NATURAL := 4;
 		CONTROLE_WIDTH : NATURAL := 9;
 		NUMBER_OF_REGS : NATURAL := 4
@@ -48,9 +48,9 @@ architecture comportamento of processador is
 	ALIAS selMuxPc : STD_LOGIC IS pontosDeControleSignal(0);
 	ALIAS selMuxImeRam: STD_LOGIC IS pontosDeControleSignal(1);
 	ALIAS enableRegs: STD_LOGIC IS pontosDeContoleSignal(2);
-	ALIAS operacoes: STD_LOGIC_VECTOR IS pontosDeControleSignal(6 downto 3);
-	ALIAS enableReadRam: STD_LOGIC IS pontosDeControleSignal(7);
-	ALIAS enableWriteRam: STD_LOGIC IS pontosDeControleSignal(8);
+	ALIAS operacoes: STD_LOGIC_VECTOR(2 downto 0) IS pontosDeControleSignal(5 downto 3);
+	ALIAS enableReadRam: STD_LOGIC IS pontosDeControleSignal(6);
+	ALIAS enableWriteRam: STD_LOGIC IS pontosDeControleSignal(7);
 	
 	CONSTANT INC : NATURAL := 1;
 	
