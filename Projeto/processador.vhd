@@ -14,13 +14,16 @@ entity processador is
      port
     (
 		  -------------IN-------------
-		  dataIn: in STD_LOGIC_VECTOR(7 downto 0);
-		  clk: in STD_LOGIC;
+		  dataIn : in STD_LOGIC_VECTOR(7 downto 0);
+		  clk    : in STD_LOGIC;
 		  -------------OUT------------
-		  address: out STD_LOGIC_VECTOR(7 downto 0);
-        dataOut:  out STD_LOGIC_VECTOR(7 downto 0);
-		  writeRam: out STD_LOGIC;
-		  readRam: out STD_LOGIC
+		  address        : out STD_LOGIC_VECTOR(7 downto 0);
+        dataOut        : out STD_LOGIC_VECTOR(7 downto 0);
+		  writeRam       : out STD_LOGIC;
+		  readRam        : out STD_LOGIC;
+		  opCodeOut      : out STD_LOGIC_VECTOR(3 downto 0);
+		  imediatoOut    : out STD_LOGIC_VECTOR(7 downto 0)
+		  
 		  
     );
 end entity;
@@ -135,7 +138,7 @@ architecture comportamento of processador is
             habilitaEscrita => enableRegs,
             saida           => RegUlaBMemSignal
 				);
-				
+		
 		
     ULA : ENTITY work.ULA
         GENERIC MAP(
@@ -146,7 +149,7 @@ architecture comportamento of processador is
             entradaB  => RegUlaBMemSignal,
             saida     => UlaRegSignal,
             seletor   => operacoes,
-            flagZero => flagZeroSignalIn
+            flagZero  => flagZeroSignalIn
         );
 		  
 		flagZeroFlipFlop : ENTITY work.flipFlop
@@ -157,4 +160,8 @@ architecture comportamento of processador is
             CLK    => clk,
             RST    => '0'
         );
+		  
+		  opCodeOut   <= opCode;
+		  imediatoOut <= imediato;
+		  
 END architecture;

@@ -25,6 +25,8 @@ architecture comportamento of decoder is
 	constant JE    : std_logic_vector := "0101";
 	constant JMP   : std_logic_vector := "0110"; 
 	
+	ALIAS imediatoFirstBit : std_logic IS imediato(7);
+	
 	ALIAS unidSeg  : std_logic IS display(0);
 	ALIAS decSeg   : std_logic IS display(1);
 	ALIAS unidMin  : std_logic IS display(2);
@@ -34,12 +36,14 @@ architecture comportamento of decoder is
 	
     BEGIN
 	 
-	 unidSeg  => '1' when (opCode = STORE AND unsigned(imediato) = 0) else '0';
-	 decSeg   => '1' when (opCode = STORE AND unsigned(imediato) = 1) else '0';
-	 unidMin  => '1' when (opCode = STORE AND unsigned(imediato) = 2) else '0';
-	 decMin   => '1' when (opCode = STORE AND unsigned(imediato) = 3) else '0';
-	 unidHr   => '1' when (opCode = STORE AND unsigned(imediato) = 4) else '0';
-	 decHr    => '1' when (opCode = STORE AND unsigned(imediato) = 5) else '0';
+	 unidSeg  <= '1' when (opCode = STORE AND unsigned(imediato) = 0) else '0';
+	 decSeg   <= '1' when (opCode = STORE AND unsigned(imediato) = 1) else '0';
+	 unidMin  <= '1' when (opCode = STORE AND unsigned(imediato) = 2) else '0';
+	 decMin   <= '1' when (opCode = STORE AND unsigned(imediato) = 3) else '0';
+	 unidHr   <= '1' when (opCode = STORE AND unsigned(imediato) = 4) else '0';
+	 decHr    <= '1' when (opCode = STORE AND unsigned(imediato) = 5) else '0';
+	 
+	 enableRAM <= '1' when ((opCode = STORE OR opCode = LOAD) AND (imediatoFirstBit = '1')) else '0';
 		
 		 
 END architecture;

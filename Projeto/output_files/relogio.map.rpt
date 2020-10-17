@@ -1,5 +1,5 @@
-Analysis & Synthesis report for relogio
-Sat Oct 17 15:52:37 2020
+Analysis & Elaboration report for relogio
+Sat Oct 17 17:57:28 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -7,29 +7,10 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: Top-level Entity: |processador
- 10. Parameter Settings for User Entity Instance: registradorGenerico:PC
- 11. Parameter Settings for User Entity Instance: muxGenerico2x1:MuxPC
- 12. Parameter Settings for User Entity Instance: somaConstante:somaUm
- 13. Parameter Settings for User Entity Instance: memoriaROM:ROM
- 14. Parameter Settings for User Entity Instance: muxGenerico2x1:muxRAM_Imediato
- 15. Parameter Settings for User Entity Instance: bancoRegistradoresArqRegMem:BancoRegistradores
- 16. Parameter Settings for User Entity Instance: ULA:ULA
- 17. Parameter Settings for User Entity Instance: flipFlop:flagZeroFlipFlop
- 18. Port Connectivity Checks: "flipFlop:flagZeroFlipFlop"
- 19. Port Connectivity Checks: "unidControl:UNIDCONTROLE"
- 20. Port Connectivity Checks: "memoriaROM:ROM"
- 21. Port Connectivity Checks: "registradorGenerico:PC"
- 22. Post-Synthesis Netlist Statistics for Top Partition
- 23. Elapsed Time Per Partition
- 24. Analysis & Synthesis Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Analysis & Elaboration Settings
+  5. Analysis & Elaboration Messages
 
 
 
@@ -53,31 +34,42 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                  ;
-+---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Oct 17 15:52:37 2020       ;
-; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
-; Revision Name                   ; relogio                                     ;
-; Top-level Entity Name           ; processador                                 ;
-; Family                          ; Cyclone V                                   ;
-; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 0                                           ;
-; Total pins                      ; 27                                          ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 0                                           ;
-; Total HSSI RX PCSs              ; 0                                           ;
-; Total HSSI PMA RX Deserializers ; 0                                           ;
-; Total HSSI TX PCSs              ; 0                                           ;
-; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0                                           ;
-; Total DLLs                      ; 0                                           ;
-+---------------------------------+---------------------------------------------+
++-----------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                              ;
++-------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status ; Failed - Sat Oct 17 17:57:28 2020           ;
+; Quartus Prime Version         ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name                 ; relogio                                     ;
+; Top-level Entity Name         ; processador                                 ;
+; Family                        ; Cyclone V                                   ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
+; Total registers               ; N/A until Partition Merge                   ;
+; Total pins                    ; N/A until Partition Merge                   ;
+; Total virtual pins            ; N/A until Partition Merge                   ;
+; Total block memory bits       ; N/A until Partition Merge                   ;
+; Total PLLs                    ; N/A until Partition Merge                   ;
+; Total DLLs                    ; N/A until Partition Merge                   ;
++-------------------------------+---------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                             ;
+; Analysis & Elaboration Settings                                                                                           ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
@@ -163,259 +155,14 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                     ;
-+--------------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path           ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                    ; Library ;
-+--------------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------+---------+
-; Components/ULA.vhd                         ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/ULA.vhd                         ;         ;
-; Components/registradorGenerico.vhd         ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/registradorGenerico.vhd         ;         ;
-; Components/muxGenerico2x1.vhd              ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/muxGenerico2x1.vhd              ;         ;
-; Components/memoriaROM.vhd                  ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/memoriaROM.vhd                  ;         ;
-; Components/flipFlop.vhd                    ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/flipFlop.vhd                    ;         ;
-; Components/bancoRegistradoresArqRegMem.vhd ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/bancoRegistradoresArqRegMem.vhd ;         ;
-; Components/unidControl.vhd                 ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/unidControl.vhd                 ;         ;
-; processador.vhd                            ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/processador.vhd                            ;         ;
-; Components/somaConstante.vhd               ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/somaConstante.vhd               ;         ;
-+--------------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------+---------+
-
-
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 0         ;
-;                                             ;           ;
-; Combinational ALUT usage for logic          ; 0         ;
-;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 0         ;
-;     -- 5 input functions                    ; 0         ;
-;     -- 4 input functions                    ; 0         ;
-;     -- <=3 input functions                  ; 0         ;
-;                                             ;           ;
-; Dedicated logic registers                   ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 27        ;
-;                                             ;           ;
-; Total DSP Blocks                            ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; dataIn[0] ;
-; Maximum fan-out                             ; 1         ;
-; Total fan-out                               ; 27        ;
-; Average fan-out                             ; 0.50      ;
-+---------------------------------------------+-----------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |processador               ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 27   ; 0            ; |processador        ; processador ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+-----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |processador ;
-+----------------+-------+----------------------------------------------------+
-; Parameter Name ; Value ; Type                                               ;
-+----------------+-------+----------------------------------------------------+
-; ADDR_WIDTH_REG ; 8     ; Signed Integer                                     ;
-; DATA_WIDTH_ROM ; 16    ; Signed Integer                                     ;
-; ADDR_WIDTH_ROM ; 8     ; Signed Integer                                     ;
-; OPCODE_WIDTH   ; 4     ; Signed Integer                                     ;
-; CONTROLE_WIDTH ; 9     ; Signed Integer                                     ;
-; NUMBER_OF_REGS ; 4     ; Signed Integer                                     ;
-+----------------+-------+----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: registradorGenerico:PC ;
-+----------------+-------+--------------------------------------------+
-; Parameter Name ; Value ; Type                                       ;
-+----------------+-------+--------------------------------------------+
-; larguradados   ; 8     ; Signed Integer                             ;
-+----------------+-------+--------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: muxGenerico2x1:MuxPC ;
-+----------------+-------+------------------------------------------+
-; Parameter Name ; Value ; Type                                     ;
-+----------------+-------+------------------------------------------+
-; larguradados   ; 8     ; Signed Integer                           ;
-+----------------+-------+------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: somaConstante:somaUm ;
-+----------------+-------+------------------------------------------+
-; Parameter Name ; Value ; Type                                     ;
-+----------------+-------+------------------------------------------+
-; larguradados   ; 8     ; Signed Integer                           ;
-; constante      ; 1     ; Signed Integer                           ;
-+----------------+-------+------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: memoriaROM:ROM ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; datawidth      ; 16    ; Signed Integer                     ;
-; addrwidth      ; 8     ; Signed Integer                     ;
-+----------------+-------+------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: muxGenerico2x1:muxRAM_Imediato ;
-+----------------+-------+----------------------------------------------------+
-; Parameter Name ; Value ; Type                                               ;
-+----------------+-------+----------------------------------------------------+
-; larguradados   ; 8     ; Signed Integer                                     ;
-+----------------+-------+----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: bancoRegistradoresArqRegMem:BancoRegistradores ;
-+---------------------+-------+---------------------------------------------------------------+
-; Parameter Name      ; Value ; Type                                                          ;
-+---------------------+-------+---------------------------------------------------------------+
-; larguradados        ; 8     ; Signed Integer                                                ;
-; larguraendbancoregs ; 4     ; Signed Integer                                                ;
-+---------------------+-------+---------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ULA:ULA ;
-+----------------+-------+-----------------------------+
-; Parameter Name ; Value ; Type                        ;
-+----------------+-------+-----------------------------+
-; larguradados   ; 8     ; Signed Integer              ;
-+----------------+-------+-----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: flipFlop:flagZeroFlipFlop ;
-+----------------+-------+-----------------------------------------------+
-; Parameter Name ; Value ; Type                                          ;
-+----------------+-------+-----------------------------------------------+
-; larguradados   ; 8     ; Signed Integer                                ;
-+----------------+-------+-----------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------+
-; Port Connectivity Checks: "flipFlop:flagZeroFlipFlop" ;
-+------+-------+----------+-----------------------------+
-; Port ; Type  ; Severity ; Details                     ;
-+------+-------+----------+-----------------------------+
-; rst  ; Input ; Info     ; Stuck at GND                ;
-+------+-------+----------+-----------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "unidControl:UNIDCONTROLE"                                                                             ;
-+------------------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port                   ; Type   ; Severity ; Details                                                                             ;
-+------------------------+--------+----------+-------------------------------------------------------------------------------------+
-; pontosdecontrole[8..3] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; pontosdecontrole[1..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------------------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "memoriaROM:ROM"                                                                     ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; dado ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------+
-; Port Connectivity Checks: "registradorGenerico:PC" ;
-+--------+-------+----------+------------------------+
-; Port   ; Type  ; Severity ; Details                ;
-+--------+-------+----------+------------------------+
-; enable ; Input ; Info     ; Stuck at VCC           ;
-; rst    ; Input ; Info     ; Stuck at GND           ;
-+--------+-------+----------+------------------------+
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 1                           ;
-;     normal            ; 1                           ;
-;         0 data inputs ; 1                           ;
-; boundary_port         ; 27                          ;
-;                       ;                             ;
-; Max LUT depth         ; 0.00                        ;
-; Average LUT depth     ; 0.00                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
+Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sat Oct 17 15:52:24 2020
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off relogio -c relogio
+    Info: Processing started: Sat Oct 17 17:57:17 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off relogio -c relogio --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file Components/ULA.vhd
@@ -455,71 +202,36 @@ Info (12021): Found 2 design units, including 1 entities, in source file Compone
     Info (12022): Found design unit 1: unidControl-comportamento File: /home/borg/Documents/relogio/Projeto/Components/unidControl.vhd Line: 17
     Info (12023): Found entity 1: unidControl File: /home/borg/Documents/relogio/Projeto/Components/unidControl.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file processador.vhd
-    Info (12022): Found design unit 1: processador-comportamento File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 28
+    Info (12022): Found design unit 1: processador-comportamento File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 31
     Info (12023): Found entity 1: processador File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file Components/somaConstante.vhd
     Info (12022): Found design unit 1: somaConstante-comportamento File: /home/borg/Documents/relogio/Projeto/Components/somaConstante.vhd Line: 16
     Info (12023): Found entity 1: somaConstante File: /home/borg/Documents/relogio/Projeto/Components/somaConstante.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file relogio.vhd
-    Info (12022): Found design unit 1: relogio-comportamento File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 14
-    Info (12023): Found entity 1: relogio File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 4
+Error (10500): VHDL syntax error at relogio.vhd(14) near text "0";  expecting ")", or "," File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 14
+Error (10523): Ignored construct relogio at relogio.vhd(4) due to previous errors File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 4
+Error (10500): VHDL syntax error at relogio.vhd(24) near text "SIGNAL";  expecting "end", or "(", or an identifier ("signal" is a reserved keyword), or a concurrent statement File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 24
+Error (10500): VHDL syntax error at relogio.vhd(25) near text "SIGNAL";  expecting "end", or "(", or an identifier ("signal" is a reserved keyword), or a concurrent statement File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 25
+Error (10500): VHDL syntax error at relogio.vhd(26) near text "SIGNAL";  expecting "end", or "(", or an identifier ("signal" is a reserved keyword), or a concurrent statement File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 26
+Error (10500): VHDL syntax error at relogio.vhd(27) near text "SIGNAL";  expecting "end", or "(", or an identifier ("signal" is a reserved keyword), or a concurrent statement File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 27
+Error (10500): VHDL syntax error at relogio.vhd(28) near text "SIGNAL";  expecting "end", or "(", or an identifier ("signal" is a reserved keyword), or a concurrent statement File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 28
+Error (10500): VHDL syntax error at relogio.vhd(29) near text "SIGNAL";  expecting "end", or "(", or an identifier ("signal" is a reserved keyword), or a concurrent statement File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 29
+Error (10500): VHDL syntax error at relogio.vhd(30) near text "SIGNAL";  expecting "end", or "(", or an identifier ("signal" is a reserved keyword), or a concurrent statement File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 30
+Error (10500): VHDL syntax error at relogio.vhd(31) near text "SIGNAL";  expecting "end", or "(", or an identifier ("signal" is a reserved keyword), or a concurrent statement File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 31
+Error (10500): VHDL syntax error at relogio.vhd(41) near text "opCodeOut";  expecting ")", or "," File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 41
+Error (10500): VHDL syntax error at relogio.vhd(45) near text "ENTITY";  expecting "(", or "'", or "." File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 45
+Error (10500): VHDL syntax error at relogio.vhd(46) near text "GENERIC";  expecting "(", or "'", or "." File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 46
+Error (10500): VHDL syntax error at relogio.vhd(49) near text ";";  expecting "<=" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 49
+Error (10500): VHDL syntax error at relogio.vhd(59) near text ";";  expecting "<=" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 59
+Error (10500): VHDL syntax error at relogio.vhd(65) near text ",";  expecting "(", or an identifier, or  unary operator File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 65
+Error (10500): VHDL syntax error at relogio.vhd(73) near text ",";  expecting "(", or an identifier, or  unary operator File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 73
+Info (12021): Found 0 design units, including 0 entities, in source file relogio.vhd
 Info (12021): Found 2 design units, including 1 entities, in source file Components/decoder.vhd
     Info (12022): Found design unit 1: decoder-comportamento File: /home/borg/Documents/relogio/Projeto/Components/decoder.vhd Line: 17
     Info (12023): Found entity 1: decoder File: /home/borg/Documents/relogio/Projeto/Components/decoder.vhd Line: 5
-Info (12127): Elaborating entity "processador" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at processador.vhd(20): used implicit default value for signal "address" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 20
-Warning (10541): VHDL Signal Declaration warning at processador.vhd(21): used implicit default value for signal "dataOut" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 21
-Warning (10541): VHDL Signal Declaration warning at processador.vhd(22): used implicit default value for signal "writeRam" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 22
-Warning (10541): VHDL Signal Declaration warning at processador.vhd(23): used implicit default value for signal "readRam" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 23
-Warning (10541): VHDL Signal Declaration warning at processador.vhd(36): used implicit default value for signal "barramentoSignal" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 36
-Warning (10036): Verilog HDL or VHDL warning at processador.vhd(42): object "instrucao" assigned a value but never read File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 42
-Warning (10541): VHDL Signal Declaration warning at processador.vhd(43): used implicit default value for signal "pontosDeControleSignal" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 43
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:PC" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 63
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MuxPC" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 75
-Info (12128): Elaborating entity "somaConstante" for hierarchy "somaConstante:somaUm" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 87
-Info (12128): Elaborating entity "memoriaROM" for hierarchy "memoriaROM:ROM" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 97
-Info (12128): Elaborating entity "unidControl" for hierarchy "unidControl:UNIDCONTROLE" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 107
-Info (12128): Elaborating entity "bancoRegistradoresArqRegMem" for hierarchy "bancoRegistradoresArqRegMem:BancoRegistradores" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 126
-Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ULA" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 140
-Info (12128): Elaborating entity "flipFlop" for hierarchy "flipFlop:flagZeroFlipFlop" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 152
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "address[0]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 20
-    Warning (13410): Pin "address[1]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 20
-    Warning (13410): Pin "address[2]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 20
-    Warning (13410): Pin "address[3]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 20
-    Warning (13410): Pin "address[4]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 20
-    Warning (13410): Pin "address[5]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 20
-    Warning (13410): Pin "address[6]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 20
-    Warning (13410): Pin "address[7]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 20
-    Warning (13410): Pin "dataOut[0]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 21
-    Warning (13410): Pin "dataOut[1]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 21
-    Warning (13410): Pin "dataOut[2]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 21
-    Warning (13410): Pin "dataOut[3]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 21
-    Warning (13410): Pin "dataOut[4]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 21
-    Warning (13410): Pin "dataOut[5]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 21
-    Warning (13410): Pin "dataOut[6]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 21
-    Warning (13410): Pin "dataOut[7]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 21
-    Warning (13410): Pin "writeRam" is stuck at GND File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 22
-    Warning (13410): Pin "readRam" is stuck at GND File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 23
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 9 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "dataIn[0]" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 17
-    Warning (15610): No output dependent on input pin "dataIn[1]" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 17
-    Warning (15610): No output dependent on input pin "dataIn[2]" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 17
-    Warning (15610): No output dependent on input pin "dataIn[3]" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 17
-    Warning (15610): No output dependent on input pin "dataIn[4]" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 17
-    Warning (15610): No output dependent on input pin "dataIn[5]" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 17
-    Warning (15610): No output dependent on input pin "dataIn[6]" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 17
-    Warning (15610): No output dependent on input pin "dataIn[7]" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 17
-    Warning (15610): No output dependent on input pin "clk" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 18
-Info (21057): Implemented 27 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 9 input pins
-    Info (21059): Implemented 18 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 37 warnings
-    Info: Peak virtual memory: 508 megabytes
-    Info: Processing ended: Sat Oct 17 15:52:37 2020
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:24
+Error: Quartus Prime Analysis & Elaboration was unsuccessful. 17 errors, 1 warning
+    Error: Peak virtual memory: 814 megabytes
+    Error: Processing ended: Sat Oct 17 17:57:28 2020
+    Error: Elapsed time: 00:00:11
+    Error: Total CPU time (on all processors): 00:00:23
 
 
