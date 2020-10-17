@@ -33,9 +33,11 @@ architecture comportamento of processador is
 	SIGNAL muxImeRamUlaA    : STD_LOGIC_VECTOR(ADDR_WIDTH_REG - 1 downto 0);
 	SIGNAL UlaRegSignal     : STD_LOGIC_VECTOR(ADDR_WIDTH_REG - 1 downto 0);
 	SIGNAL RegUlaBMemSignal  : STD_LOGIC_VECTOR(ADDR_WIDTH_REG - 1 downto 0);
-	SIGNAL flagZeroSignal    : STD_LOGIC;
 	SIGNAL barramentoSignal  : STD_LOGIC_VECTOR(DATA_WIDTH_ROM - 1 downto 0);
 	SIGNAL pontosDeContoleSignal : STD_LOGIC_VECTOR(CONTROLE_WIDTH - 1 downto 0);
+	SIGNAL flagZeroSignalIn: STD_LOGIC;
+	SIGNAL flagZeroSignalOut: STD_LOGIC;
+	
 	
 	SIGNAL instrucao : STD_LOGIC_VECTOR(DATA_WIDTH_ROM -1 downto 0);
 	SIGNAL pontosDeControleSignal : STD_LOGIC_VECTOR(CONTROLE_WIDTH -1 downto 0);
@@ -51,7 +53,9 @@ architecture comportamento of processador is
 	ALIAS operacoes: STD_LOGIC_VECTOR(2 downto 0) IS pontosDeControleSignal(5 downto 3);
 	ALIAS enableReadRam: STD_LOGIC IS pontosDeControleSignal(6);
 	ALIAS enableWriteRam: STD_LOGIC IS pontosDeControleSignal(7);
+	ALIAS enableFlagZero: STD_LOGIC IS pontosDeControleSignal(8);
 	
+
 	CONSTANT INC : NATURAL := 1;
 	
     BEGIN
@@ -103,7 +107,8 @@ architecture comportamento of processador is
 	UNIDCONTROLE : ENTITY work.unidControl
 		PORT MAP(
 		opCode => opCode,
-		flagZero => flagZeroSignal,
+		flagZero => flagZeroSignalOut,
+		firstBitImediato => imediato(7),
 		pontosDeControle => pontosDeContoleSignal
 		);
 		
@@ -141,7 +146,15 @@ architecture comportamento of processador is
             entradaB  => RegUlaBMemSignal,
             saida     => UlaRegSignal,
             seletor   => operacoes,
-            flagZero => flagZeroSignal
+            flagZero => flagZeroSignalIn
         );
 		  
+		flagZeroFlipFlop : ENTITY work.flipFlop
+        PORT MAP(
+            DIN    => flagZeroSignalIn,
+            DOUT   => flagZeroSignalOut,
+            ENABLE => enableFlagZero,
+            CLK    => clk,
+            RST    => '0'
+        );
 END architecture;

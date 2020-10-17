@@ -6,7 +6,8 @@ entity unidControl is
     port
     (
         opCode   : in STD_LOGIC_VECTOR(3 downto 0);
-		  flagZero : in std_logic;
+		  flagZero : in STD_LOGIC;
+		  firstBitImediato : in STD_LOGIC;
 		  
         pontosDeControle:  out STD_LOGIC_VECTOR(8 downto 0)
 		  
@@ -23,6 +24,7 @@ architecture comportamento of unidControl is
 	ALIAS operacoes      : std_logic_vector(2 downto 0) IS pontosDeControleSignal(5 downto 3);
 	ALIAS enableReadRam  : std_logic IS pontosDeControleSignal(6);
 	ALIAS enableWriteRam : std_logic IS pontosDeControleSignal(7);
+	ALIAS enableFlagZero : std_logic IS pontosDeControleSignal(8);
 
 	constant MOV   : std_logic_vector := "0000";
 	constant CMP   : std_logic_vector := "0001";
@@ -34,10 +36,11 @@ architecture comportamento of unidControl is
 
     begin
        selMuxPc       <= '1' when opCode = JMP or (opCode = JE AND flagZero = '1') else '0';
-		 selMuxImeRam   <= '1' when opCode = CMP or opCode = INC or opCode = MOV else '0';
+		 selMuxImeRam   <= '1' when opCode = CMP or opCode = INC or opCode = MOV  else '0';
 		 enableRegs     <= '1' when opCode = MOV or opCode = INC or opCode = LOAD else '0';
-		 enableReadRam  <= '1' when opCode = LOAD else '0';
-		 enableWriteRam <= '1' when opCode = STORE else '0';
+		 enableReadRam  <= '1' when (opCode = LOAD  AND  firstBitImediato = '1') else '0';
+		 enableWriteRam <= '1' when (opCode = STORE AND  firstBitImediato = '1') else '0';
+		 enableFlagZero <= '1' when opCode = CMP else '0';
 		 
 		 operacoes <= "001" when opCode = CMP else
 			           "010" when opCode = LOAD or OpCode = MOV else

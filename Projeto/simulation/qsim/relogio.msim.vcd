@@ -1,0 +1,1000 @@
+$comment
+	File created using the following command:
+		vcd file relogio.msim.vcd -direction
+$end
+$date
+	Fri Oct 16 21:13:32 2020
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module processador_vhd_vec_tst $end
+$var wire 1 ! address [7] $end
+$var wire 1 " address [6] $end
+$var wire 1 # address [5] $end
+$var wire 1 $ address [4] $end
+$var wire 1 % address [3] $end
+$var wire 1 & address [2] $end
+$var wire 1 ' address [1] $end
+$var wire 1 ( address [0] $end
+$var wire 1 ) clk $end
+$var wire 1 * dataIn [7] $end
+$var wire 1 + dataIn [6] $end
+$var wire 1 , dataIn [5] $end
+$var wire 1 - dataIn [4] $end
+$var wire 1 . dataIn [3] $end
+$var wire 1 / dataIn [2] $end
+$var wire 1 0 dataIn [1] $end
+$var wire 1 1 dataIn [0] $end
+$var wire 1 2 dataOut [7] $end
+$var wire 1 3 dataOut [6] $end
+$var wire 1 4 dataOut [5] $end
+$var wire 1 5 dataOut [4] $end
+$var wire 1 6 dataOut [3] $end
+$var wire 1 7 dataOut [2] $end
+$var wire 1 8 dataOut [1] $end
+$var wire 1 9 dataOut [0] $end
+$var wire 1 : readRam $end
+$var wire 1 ; writeRam $end
+
+$scope module i1 $end
+$var wire 1 < gnd $end
+$var wire 1 = vcc $end
+$var wire 1 > unknown $end
+$var wire 1 ? devoe $end
+$var wire 1 @ devclrn $end
+$var wire 1 A devpor $end
+$var wire 1 B ww_devoe $end
+$var wire 1 C ww_devclrn $end
+$var wire 1 D ww_devpor $end
+$var wire 1 E ww_dataIn [7] $end
+$var wire 1 F ww_dataIn [6] $end
+$var wire 1 G ww_dataIn [5] $end
+$var wire 1 H ww_dataIn [4] $end
+$var wire 1 I ww_dataIn [3] $end
+$var wire 1 J ww_dataIn [2] $end
+$var wire 1 K ww_dataIn [1] $end
+$var wire 1 L ww_dataIn [0] $end
+$var wire 1 M ww_clk $end
+$var wire 1 N ww_address [7] $end
+$var wire 1 O ww_address [6] $end
+$var wire 1 P ww_address [5] $end
+$var wire 1 Q ww_address [4] $end
+$var wire 1 R ww_address [3] $end
+$var wire 1 S ww_address [2] $end
+$var wire 1 T ww_address [1] $end
+$var wire 1 U ww_address [0] $end
+$var wire 1 V ww_dataOut [7] $end
+$var wire 1 W ww_dataOut [6] $end
+$var wire 1 X ww_dataOut [5] $end
+$var wire 1 Y ww_dataOut [4] $end
+$var wire 1 Z ww_dataOut [3] $end
+$var wire 1 [ ww_dataOut [2] $end
+$var wire 1 \ ww_dataOut [1] $end
+$var wire 1 ] ww_dataOut [0] $end
+$var wire 1 ^ ww_writeRam $end
+$var wire 1 _ ww_readRam $end
+$var wire 1 ` \dataIn[0]~input_o\ $end
+$var wire 1 a \dataIn[1]~input_o\ $end
+$var wire 1 b \dataIn[2]~input_o\ $end
+$var wire 1 c \dataIn[3]~input_o\ $end
+$var wire 1 d \dataIn[4]~input_o\ $end
+$var wire 1 e \dataIn[5]~input_o\ $end
+$var wire 1 f \dataIn[6]~input_o\ $end
+$var wire 1 g \dataIn[7]~input_o\ $end
+$var wire 1 h \clk~input_o\ $end
+$var wire 1 i \address[0]~output_o\ $end
+$var wire 1 j \address[1]~output_o\ $end
+$var wire 1 k \address[2]~output_o\ $end
+$var wire 1 l \address[3]~output_o\ $end
+$var wire 1 m \address[4]~output_o\ $end
+$var wire 1 n \address[5]~output_o\ $end
+$var wire 1 o \address[6]~output_o\ $end
+$var wire 1 p \address[7]~output_o\ $end
+$var wire 1 q \dataOut[0]~output_o\ $end
+$var wire 1 r \dataOut[1]~output_o\ $end
+$var wire 1 s \dataOut[2]~output_o\ $end
+$var wire 1 t \dataOut[3]~output_o\ $end
+$var wire 1 u \dataOut[4]~output_o\ $end
+$var wire 1 v \dataOut[5]~output_o\ $end
+$var wire 1 w \dataOut[6]~output_o\ $end
+$var wire 1 x \dataOut[7]~output_o\ $end
+$var wire 1 y \writeRam~output_o\ $end
+$var wire 1 z \readRam~output_o\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0)
+0:
+0;
+0<
+1=
+x>
+1?
+1@
+1A
+1B
+1C
+1D
+0M
+0^
+0_
+0`
+0a
+0b
+0c
+0d
+0e
+0f
+0g
+0h
+0i
+0j
+0k
+0l
+0m
+0n
+0o
+0p
+0q
+0r
+0s
+0t
+0u
+0v
+0w
+0x
+0y
+0z
+0*
+0+
+0,
+0-
+0.
+0/
+00
+01
+0!
+0"
+0#
+0$
+0%
+0&
+0'
+0(
+02
+03
+04
+05
+06
+07
+08
+09
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0N
+0O
+0P
+0Q
+0R
+0S
+0T
+0U
+0V
+0W
+0X
+0Y
+0Z
+0[
+0\
+0]
+$end
+#5000
+1)
+1M
+1h
+#10000
+0)
+0M
+0h
+#15000
+1)
+1M
+1h
+#20000
+0)
+0M
+0h
+#25000
+1)
+1M
+1h
+#30000
+0)
+0M
+0h
+#35000
+1)
+1M
+1h
+#40000
+0)
+0M
+0h
+#45000
+1)
+1M
+1h
+#50000
+0)
+0M
+0h
+#55000
+1)
+1M
+1h
+#60000
+0)
+0M
+0h
+#65000
+1)
+1M
+1h
+#70000
+0)
+0M
+0h
+#75000
+1)
+1M
+1h
+#80000
+0)
+0M
+0h
+#85000
+1)
+1M
+1h
+#90000
+0)
+0M
+0h
+#95000
+1)
+1M
+1h
+#100000
+0)
+0M
+0h
+#105000
+1)
+1M
+1h
+#110000
+0)
+0M
+0h
+#115000
+1)
+1M
+1h
+#120000
+0)
+0M
+0h
+#125000
+1)
+1M
+1h
+#130000
+0)
+0M
+0h
+#135000
+1)
+1M
+1h
+#140000
+0)
+0M
+0h
+#145000
+1)
+1M
+1h
+#150000
+0)
+0M
+0h
+#155000
+1)
+1M
+1h
+#160000
+0)
+0M
+0h
+#165000
+1)
+1M
+1h
+#170000
+0)
+0M
+0h
+#175000
+1)
+1M
+1h
+#180000
+0)
+0M
+0h
+#185000
+1)
+1M
+1h
+#190000
+0)
+0M
+0h
+#195000
+1)
+1M
+1h
+#200000
+0)
+0M
+0h
+#205000
+1)
+1M
+1h
+#210000
+0)
+0M
+0h
+#215000
+1)
+1M
+1h
+#220000
+0)
+0M
+0h
+#225000
+1)
+1M
+1h
+#230000
+0)
+0M
+0h
+#235000
+1)
+1M
+1h
+#240000
+0)
+0M
+0h
+#245000
+1)
+1M
+1h
+#250000
+0)
+0M
+0h
+#255000
+1)
+1M
+1h
+#260000
+0)
+0M
+0h
+#265000
+1)
+1M
+1h
+#270000
+0)
+0M
+0h
+#275000
+1)
+1M
+1h
+#280000
+0)
+0M
+0h
+#285000
+1)
+1M
+1h
+#290000
+0)
+0M
+0h
+#295000
+1)
+1M
+1h
+#300000
+0)
+0M
+0h
+#305000
+1)
+1M
+1h
+#310000
+0)
+0M
+0h
+#315000
+1)
+1M
+1h
+#320000
+0)
+0M
+0h
+#325000
+1)
+1M
+1h
+#330000
+0)
+0M
+0h
+#335000
+1)
+1M
+1h
+#340000
+0)
+0M
+0h
+#345000
+1)
+1M
+1h
+#350000
+0)
+0M
+0h
+#355000
+1)
+1M
+1h
+#360000
+0)
+0M
+0h
+#365000
+1)
+1M
+1h
+#370000
+0)
+0M
+0h
+#375000
+1)
+1M
+1h
+#380000
+0)
+0M
+0h
+#385000
+1)
+1M
+1h
+#390000
+0)
+0M
+0h
+#395000
+1)
+1M
+1h
+#400000
+0)
+0M
+0h
+#405000
+1)
+1M
+1h
+#410000
+0)
+0M
+0h
+#415000
+1)
+1M
+1h
+#420000
+0)
+0M
+0h
+#425000
+1)
+1M
+1h
+#430000
+0)
+0M
+0h
+#435000
+1)
+1M
+1h
+#440000
+0)
+0M
+0h
+#445000
+1)
+1M
+1h
+#450000
+0)
+0M
+0h
+#455000
+1)
+1M
+1h
+#460000
+0)
+0M
+0h
+#465000
+1)
+1M
+1h
+#470000
+0)
+0M
+0h
+#475000
+1)
+1M
+1h
+#480000
+0)
+0M
+0h
+#485000
+1)
+1M
+1h
+#490000
+0)
+0M
+0h
+#495000
+1)
+1M
+1h
+#500000
+0)
+0M
+0h
+#505000
+1)
+1M
+1h
+#510000
+0)
+0M
+0h
+#515000
+1)
+1M
+1h
+#520000
+0)
+0M
+0h
+#525000
+1)
+1M
+1h
+#530000
+0)
+0M
+0h
+#535000
+1)
+1M
+1h
+#540000
+0)
+0M
+0h
+#545000
+1)
+1M
+1h
+#550000
+0)
+0M
+0h
+#555000
+1)
+1M
+1h
+#560000
+0)
+0M
+0h
+#565000
+1)
+1M
+1h
+#570000
+0)
+0M
+0h
+#575000
+1)
+1M
+1h
+#580000
+0)
+0M
+0h
+#585000
+1)
+1M
+1h
+#590000
+0)
+0M
+0h
+#595000
+1)
+1M
+1h
+#600000
+0)
+0M
+0h
+#605000
+1)
+1M
+1h
+#610000
+0)
+0M
+0h
+#615000
+1)
+1M
+1h
+#620000
+0)
+0M
+0h
+#625000
+1)
+1M
+1h
+#630000
+0)
+0M
+0h
+#635000
+1)
+1M
+1h
+#640000
+0)
+0M
+0h
+#645000
+1)
+1M
+1h
+#650000
+0)
+0M
+0h
+#655000
+1)
+1M
+1h
+#660000
+0)
+0M
+0h
+#665000
+1)
+1M
+1h
+#670000
+0)
+0M
+0h
+#675000
+1)
+1M
+1h
+#680000
+0)
+0M
+0h
+#685000
+1)
+1M
+1h
+#690000
+0)
+0M
+0h
+#695000
+1)
+1M
+1h
+#700000
+0)
+0M
+0h
+#705000
+1)
+1M
+1h
+#710000
+0)
+0M
+0h
+#715000
+1)
+1M
+1h
+#720000
+0)
+0M
+0h
+#725000
+1)
+1M
+1h
+#730000
+0)
+0M
+0h
+#735000
+1)
+1M
+1h
+#740000
+0)
+0M
+0h
+#745000
+1)
+1M
+1h
+#750000
+0)
+0M
+0h
+#755000
+1)
+1M
+1h
+#760000
+0)
+0M
+0h
+#765000
+1)
+1M
+1h
+#770000
+0)
+0M
+0h
+#775000
+1)
+1M
+1h
+#780000
+0)
+0M
+0h
+#785000
+1)
+1M
+1h
+#790000
+0)
+0M
+0h
+#795000
+1)
+1M
+1h
+#800000
+0)
+0M
+0h
+#805000
+1)
+1M
+1h
+#810000
+0)
+0M
+0h
+#815000
+1)
+1M
+1h
+#820000
+0)
+0M
+0h
+#825000
+1)
+1M
+1h
+#830000
+0)
+0M
+0h
+#835000
+1)
+1M
+1h
+#840000
+0)
+0M
+0h
+#845000
+1)
+1M
+1h
+#850000
+0)
+0M
+0h
+#855000
+1)
+1M
+1h
+#860000
+0)
+0M
+0h
+#865000
+1)
+1M
+1h
+#870000
+0)
+0M
+0h
+#875000
+1)
+1M
+1h
+#880000
+0)
+0M
+0h
+#885000
+1)
+1M
+1h
+#890000
+0)
+0M
+0h
+#895000
+1)
+1M
+1h
+#900000
+0)
+0M
+0h
+#905000
+1)
+1M
+1h
+#910000
+0)
+0M
+0h
+#915000
+1)
+1M
+1h
+#920000
+0)
+0M
+0h
+#925000
+1)
+1M
+1h
+#930000
+0)
+0M
+0h
+#935000
+1)
+1M
+1h
+#940000
+0)
+0M
+0h
+#945000
+1)
+1M
+1h
+#950000
+0)
+0M
+0h
+#955000
+1)
+1M
+1h
+#960000
+0)
+0M
+0h
+#965000
+1)
+1M
+1h
+#970000
+0)
+0M
+0h
+#975000
+1)
+1M
+1h
+#980000
+0)
+0M
+0h
+#985000
+1)
+1M
+1h
+#990000
+0)
+0M
+0h
+#995000
+1)
+1M
+1h
+#1000000

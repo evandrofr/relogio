@@ -1,5 +1,5 @@
 Analysis & Synthesis report for relogio
-Fri Oct 16 13:50:00 2020
+Sat Oct 17 15:52:37 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -22,12 +22,14 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  14. Parameter Settings for User Entity Instance: muxGenerico2x1:muxRAM_Imediato
  15. Parameter Settings for User Entity Instance: bancoRegistradoresArqRegMem:BancoRegistradores
  16. Parameter Settings for User Entity Instance: ULA:ULA
- 17. Port Connectivity Checks: "unidControl:UNIDCONTROLE"
- 18. Port Connectivity Checks: "memoriaROM:ROM"
- 19. Port Connectivity Checks: "registradorGenerico:PC"
- 20. Post-Synthesis Netlist Statistics for Top Partition
- 21. Elapsed Time Per Partition
- 22. Analysis & Synthesis Messages
+ 17. Parameter Settings for User Entity Instance: flipFlop:flagZeroFlipFlop
+ 18. Port Connectivity Checks: "flipFlop:flagZeroFlipFlop"
+ 19. Port Connectivity Checks: "unidControl:UNIDCONTROLE"
+ 20. Port Connectivity Checks: "memoriaROM:ROM"
+ 21. Port Connectivity Checks: "registradorGenerico:PC"
+ 22. Post-Synthesis Netlist Statistics for Top Partition
+ 23. Elapsed Time Per Partition
+ 24. Analysis & Synthesis Messages
 
 
 
@@ -54,7 +56,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Oct 16 13:50:00 2020       ;
+; Analysis & Synthesis Status     ; Successful - Sat Oct 17 15:52:37 2020       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; relogio                                     ;
 ; Top-level Entity Name           ; processador                                 ;
@@ -186,6 +188,7 @@ https://fpgasoftware.intel.com/eula.
 ; Components/registradorGenerico.vhd         ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/registradorGenerico.vhd         ;         ;
 ; Components/muxGenerico2x1.vhd              ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/muxGenerico2x1.vhd              ;         ;
 ; Components/memoriaROM.vhd                  ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/memoriaROM.vhd                  ;         ;
+; Components/flipFlop.vhd                    ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/flipFlop.vhd                    ;         ;
 ; Components/bancoRegistradoresArqRegMem.vhd ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/bancoRegistradoresArqRegMem.vhd ;         ;
 ; Components/unidControl.vhd                 ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/unidControl.vhd                 ;         ;
 ; processador.vhd                            ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/processador.vhd                            ;         ;
@@ -333,6 +336,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: flipFlop:flagZeroFlipFlop ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "flipFlop:flagZeroFlipFlop" ;
++------+-------+----------+-----------------------------+
+; Port ; Type  ; Severity ; Details                     ;
++------+-------+----------+-----------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                ;
++------+-------+----------+-----------------------------+
+
+
 +----------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "unidControl:UNIDCONTROLE"                                                                             ;
 +------------------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -392,7 +414,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Fri Oct 16 13:49:48 2020
+    Info: Processing started: Sat Oct 17 15:52:24 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off relogio -c relogio
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -430,7 +452,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file Compone
     Info (12022): Found design unit 1: bancoRegistradoresArqRegMem-comportamento File: /home/borg/Documents/relogio/Projeto/Components/bancoRegistradoresArqRegMem.vhd Line: 23
     Info (12023): Found entity 1: bancoRegistradoresArqRegMem File: /home/borg/Documents/relogio/Projeto/Components/bancoRegistradoresArqRegMem.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file Components/unidControl.vhd
-    Info (12022): Found design unit 1: unidControl-comportamento File: /home/borg/Documents/relogio/Projeto/Components/unidControl.vhd Line: 16
+    Info (12022): Found design unit 1: unidControl-comportamento File: /home/borg/Documents/relogio/Projeto/Components/unidControl.vhd Line: 17
     Info (12023): Found entity 1: unidControl File: /home/borg/Documents/relogio/Projeto/Components/unidControl.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file processador.vhd
     Info (12022): Found design unit 1: processador-comportamento File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 28
@@ -438,24 +460,28 @@ Info (12021): Found 2 design units, including 1 entities, in source file process
 Info (12021): Found 2 design units, including 1 entities, in source file Components/somaConstante.vhd
     Info (12022): Found design unit 1: somaConstante-comportamento File: /home/borg/Documents/relogio/Projeto/Components/somaConstante.vhd Line: 16
     Info (12023): Found entity 1: somaConstante File: /home/borg/Documents/relogio/Projeto/Components/somaConstante.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file relogio.vhd
+    Info (12022): Found design unit 1: relogio-comportamento File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 14
+    Info (12023): Found entity 1: relogio File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file Components/decoder.vhd
+    Info (12022): Found design unit 1: decoder-comportamento File: /home/borg/Documents/relogio/Projeto/Components/decoder.vhd Line: 17
+    Info (12023): Found entity 1: decoder File: /home/borg/Documents/relogio/Projeto/Components/decoder.vhd Line: 5
 Info (12127): Elaborating entity "processador" for the top level hierarchy
 Warning (10541): VHDL Signal Declaration warning at processador.vhd(20): used implicit default value for signal "address" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 20
 Warning (10541): VHDL Signal Declaration warning at processador.vhd(21): used implicit default value for signal "dataOut" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 21
 Warning (10541): VHDL Signal Declaration warning at processador.vhd(22): used implicit default value for signal "writeRam" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 22
 Warning (10541): VHDL Signal Declaration warning at processador.vhd(23): used implicit default value for signal "readRam" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 23
-Warning (10541): VHDL Signal Declaration warning at processador.vhd(37): used implicit default value for signal "barramentoSignal" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 37
-Warning (10036): Verilog HDL or VHDL warning at processador.vhd(40): object "instrucao" assigned a value but never read File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 40
-Warning (10541): VHDL Signal Declaration warning at processador.vhd(41): used implicit default value for signal "pontosDeControleSignal" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 41
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:PC" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 59
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MuxPC" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 71
-Info (12128): Elaborating entity "somaConstante" for hierarchy "somaConstante:somaUm" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 83
-Info (12128): Elaborating entity "memoriaROM" for hierarchy "memoriaROM:ROM" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 93
-Info (12128): Elaborating entity "unidControl" for hierarchy "unidControl:UNIDCONTROLE" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 103
-Warning (10873): Using initial value X (don't care) for net "pontosDeControleSignal[8]" at unidControl.vhd(18) File: /home/borg/Documents/relogio/Projeto/Components/unidControl.vhd Line: 18
-Info (12128): Elaborating entity "bancoRegistradoresArqRegMem" for hierarchy "bancoRegistradoresArqRegMem:BancoRegistradores" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 121
-Warning (10541): VHDL Signal Declaration warning at bancoRegistradoresArqRegMem.vhd(19): used implicit default value for signal "saida" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/borg/Documents/relogio/Projeto/Components/bancoRegistradoresArqRegMem.vhd Line: 19
-Warning (10036): Verilog HDL or VHDL warning at bancoRegistradoresArqRegMem.vhd(29): object "registrador" assigned a value but never read File: /home/borg/Documents/relogio/Projeto/Components/bancoRegistradoresArqRegMem.vhd Line: 29
-Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ULA" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 135
+Warning (10541): VHDL Signal Declaration warning at processador.vhd(36): used implicit default value for signal "barramentoSignal" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 36
+Warning (10036): Verilog HDL or VHDL warning at processador.vhd(42): object "instrucao" assigned a value but never read File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 42
+Warning (10541): VHDL Signal Declaration warning at processador.vhd(43): used implicit default value for signal "pontosDeControleSignal" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 43
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:PC" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 63
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MuxPC" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 75
+Info (12128): Elaborating entity "somaConstante" for hierarchy "somaConstante:somaUm" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 87
+Info (12128): Elaborating entity "memoriaROM" for hierarchy "memoriaROM:ROM" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 97
+Info (12128): Elaborating entity "unidControl" for hierarchy "unidControl:UNIDCONTROLE" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 107
+Info (12128): Elaborating entity "bancoRegistradoresArqRegMem" for hierarchy "bancoRegistradoresArqRegMem:BancoRegistradores" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 126
+Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ULA" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 140
+Info (12128): Elaborating entity "flipFlop" for hierarchy "flipFlop:flagZeroFlipFlop" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 152
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "address[0]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 20
     Warning (13410): Pin "address[1]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 20
@@ -490,10 +516,10 @@ Warning (21074): Design contains 9 input pin(s) that do not drive logic
 Info (21057): Implemented 27 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 9 input pins
     Info (21059): Implemented 18 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 40 warnings
-    Info: Peak virtual memory: 509 megabytes
-    Info: Processing ended: Fri Oct 16 13:50:00 2020
-    Info: Elapsed time: 00:00:12
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 37 warnings
+    Info: Peak virtual memory: 508 megabytes
+    Info: Processing ended: Sat Oct 17 15:52:37 2020
+    Info: Elapsed time: 00:00:13
     Info: Total CPU time (on all processors): 00:00:24
 
 

@@ -11,7 +11,7 @@
 # 
 # vcom -93 -work work {/home/borg/Documents/relogio/Projeto/Components/ULA.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:49:05 on Oct 16,2020
+# Start time: 20:34:20 on Oct 16,2020
 # vcom -reportprogress 300 -93 -work work /home/borg/Documents/relogio/Projeto/Components/ULA.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -19,33 +19,33 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ULA
 # -- Compiling architecture comportamento of ULA
-# End time: 13:49:05 on Oct 16,2020, Elapsed time: 0:00:00
+# End time: 20:34:21 on Oct 16,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/borg/Documents/relogio/Projeto/Components/registradorGenerico.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:49:05 on Oct 16,2020
+# Start time: 20:34:21 on Oct 16,2020
 # vcom -reportprogress 300 -93 -work work /home/borg/Documents/relogio/Projeto/Components/registradorGenerico.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity registradorGenerico
 # -- Compiling architecture comportamento of registradorGenerico
-# End time: 13:49:05 on Oct 16,2020, Elapsed time: 0:00:00
+# End time: 20:34:21 on Oct 16,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/borg/Documents/relogio/Projeto/Components/muxGenerico2x1.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:49:05 on Oct 16,2020
+# Start time: 20:34:21 on Oct 16,2020
 # vcom -reportprogress 300 -93 -work work /home/borg/Documents/relogio/Projeto/Components/muxGenerico2x1.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity muxGenerico2x1
 # -- Compiling architecture comportamento of muxGenerico2x1
-# End time: 13:49:05 on Oct 16,2020, Elapsed time: 0:00:00
+# End time: 20:34:21 on Oct 16,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/borg/Documents/relogio/Projeto/Components/memoriaROM.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:49:05 on Oct 16,2020
+# Start time: 20:34:21 on Oct 16,2020
 # vcom -reportprogress 300 -93 -work work /home/borg/Documents/relogio/Projeto/Components/memoriaROM.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -53,11 +53,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity memoriaROM
 # -- Compiling architecture assincrona of memoriaROM
-# End time: 13:49:06 on Oct 16,2020, Elapsed time: 0:00:01
+# End time: 20:34:21 on Oct 16,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/borg/Documents/relogio/Projeto/Components/bancoRegistradoresArqRegMem.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:49:06 on Oct 16,2020
+# Start time: 20:34:21 on Oct 16,2020
 # vcom -reportprogress 300 -93 -work work /home/borg/Documents/relogio/Projeto/Components/bancoRegistradoresArqRegMem.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -65,11 +65,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity bancoRegistradoresArqRegMem
 # -- Compiling architecture comportamento of bancoRegistradoresArqRegMem
-# End time: 13:49:06 on Oct 16,2020, Elapsed time: 0:00:00
+# End time: 20:34:21 on Oct 16,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/borg/Documents/relogio/Projeto/Components/unidControl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:49:06 on Oct 16,2020
+# Start time: 20:34:21 on Oct 16,2020
 # vcom -reportprogress 300 -93 -work work /home/borg/Documents/relogio/Projeto/Components/unidControl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -77,11 +77,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity unidControl
 # -- Compiling architecture comportamento of unidControl
-# End time: 13:49:06 on Oct 16,2020, Elapsed time: 0:00:00
+# End time: 20:34:21 on Oct 16,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/borg/Documents/relogio/Projeto/Components/somaConstante.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:49:06 on Oct 16,2020
+# Start time: 20:34:21 on Oct 16,2020
 # vcom -reportprogress 300 -93 -work work /home/borg/Documents/relogio/Projeto/Components/somaConstante.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -89,11 +89,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity somaConstante
 # -- Compiling architecture comportamento of somaConstante
-# End time: 13:49:06 on Oct 16,2020, Elapsed time: 0:00:00
+# End time: 20:34:21 on Oct 16,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/borg/Documents/relogio/Projeto/processador.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:49:06 on Oct 16,2020
+# Start time: 20:34:21 on Oct 16,2020
 # vcom -reportprogress 300 -93 -work work /home/borg/Documents/relogio/Projeto/processador.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -108,7 +108,7 @@
 # -- Loading entity unidControl
 # -- Loading entity bancoRegistradoresArqRegMem
 # -- Loading entity ULA
-# End time: 13:49:06 on Oct 16,2020, Elapsed time: 0:00:00
+# End time: 20:34:21 on Oct 16,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # 

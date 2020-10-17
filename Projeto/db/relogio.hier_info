@@ -9,24 +9,25 @@ dataIn[6] => muxgenerico2x1:muxRAM_Imediato.entradaA_MUX[6]
 dataIn[7] => muxgenerico2x1:muxRAM_Imediato.entradaA_MUX[7]
 clk => registradorgenerico:PC.CLK
 clk => bancoregistradoresarqregmem:BancoRegistradores.clk
-address[0] << address[0].DB_MAX_OUTPUT_PORT_TYPE
-address[1] << address[1].DB_MAX_OUTPUT_PORT_TYPE
-address[2] << address[2].DB_MAX_OUTPUT_PORT_TYPE
-address[3] << address[3].DB_MAX_OUTPUT_PORT_TYPE
-address[4] << address[4].DB_MAX_OUTPUT_PORT_TYPE
-address[5] << address[5].DB_MAX_OUTPUT_PORT_TYPE
-address[6] << address[6].DB_MAX_OUTPUT_PORT_TYPE
-address[7] << address[7].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[0] << dataOut[0].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[1] << dataOut[1].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[2] << dataOut[2].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[3] << dataOut[3].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[4] << dataOut[4].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[5] << dataOut[5].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[6] << dataOut[6].DB_MAX_OUTPUT_PORT_TYPE
-dataOut[7] << dataOut[7].DB_MAX_OUTPUT_PORT_TYPE
-writeRam << writeRam.DB_MAX_OUTPUT_PORT_TYPE
-readRam << comb.DB_MAX_OUTPUT_PORT_TYPE
+clk => flipflop:flagZeroFlipFlop.CLK
+address[0] <= address[0].DB_MAX_OUTPUT_PORT_TYPE
+address[1] <= address[1].DB_MAX_OUTPUT_PORT_TYPE
+address[2] <= address[2].DB_MAX_OUTPUT_PORT_TYPE
+address[3] <= address[3].DB_MAX_OUTPUT_PORT_TYPE
+address[4] <= address[4].DB_MAX_OUTPUT_PORT_TYPE
+address[5] <= address[5].DB_MAX_OUTPUT_PORT_TYPE
+address[6] <= address[6].DB_MAX_OUTPUT_PORT_TYPE
+address[7] <= address[7].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[0] <= dataOut[0].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[1] <= dataOut[1].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[2] <= dataOut[2].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[3] <= dataOut[3].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[4] <= dataOut[4].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[5] <= dataOut[5].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[6] <= dataOut[6].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[7] <= dataOut[7].DB_MAX_OUTPUT_PORT_TYPE
+writeRam <= writeRam.DB_MAX_OUTPUT_PORT_TYPE
+readRam <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |processador|registradorGenerico:PC
@@ -159,39 +160,45 @@ opCode[0] => Equal1.IN1
 opCode[0] => Equal2.IN3
 opCode[0] => Equal3.IN1
 opCode[0] => Equal4.IN3
-opCode[0] => Equal5.IN3
-opCode[0] => Equal6.IN0
+opCode[0] => Equal5.IN0
+opCode[0] => Equal6.IN3
+opCode[0] => Equal7.IN0
 opCode[1] => Equal0.IN1
 opCode[1] => Equal1.IN3
 opCode[1] => Equal2.IN0
 opCode[1] => Equal3.IN0
 opCode[1] => Equal4.IN2
-opCode[1] => Equal5.IN2
-opCode[1] => Equal6.IN3
+opCode[1] => Equal5.IN3
+opCode[1] => Equal6.IN2
+opCode[1] => Equal7.IN3
 opCode[2] => Equal0.IN0
 opCode[2] => Equal1.IN0
 opCode[2] => Equal2.IN2
 opCode[2] => Equal3.IN3
 opCode[2] => Equal4.IN0
-opCode[2] => Equal5.IN1
-opCode[2] => Equal6.IN2
+opCode[2] => Equal5.IN2
+opCode[2] => Equal6.IN1
+opCode[2] => Equal7.IN2
 opCode[3] => Equal0.IN2
 opCode[3] => Equal1.IN2
 opCode[3] => Equal2.IN1
 opCode[3] => Equal3.IN2
 opCode[3] => Equal4.IN1
-opCode[3] => Equal5.IN0
-opCode[3] => Equal6.IN1
+opCode[3] => Equal5.IN1
+opCode[3] => Equal6.IN0
+opCode[3] => Equal7.IN1
 flagZero => selMuxPc.IN1
+firstBitImediato => enableReadRam.IN1
+firstBitImediato => enableWriteRam.IN1
 pontosDeControle[0] <= selMuxPc.DB_MAX_OUTPUT_PORT_TYPE
 pontosDeControle[1] <= selMuxImeRam.DB_MAX_OUTPUT_PORT_TYPE
 pontosDeControle[2] <= enableRegs.DB_MAX_OUTPUT_PORT_TYPE
-pontosDeControle[3] <= Equal6.DB_MAX_OUTPUT_PORT_TYPE
+pontosDeControle[3] <= Equal7.DB_MAX_OUTPUT_PORT_TYPE
 pontosDeControle[4] <= operacoes.DB_MAX_OUTPUT_PORT_TYPE
 pontosDeControle[5] <= <GND>
-pontosDeControle[6] <= Equal3.DB_MAX_OUTPUT_PORT_TYPE
-pontosDeControle[7] <= Equal4.DB_MAX_OUTPUT_PORT_TYPE
-pontosDeControle[8] <= <GND>
+pontosDeControle[6] <= enableReadRam.DB_MAX_OUTPUT_PORT_TYPE
+pontosDeControle[7] <= enableWriteRam.DB_MAX_OUTPUT_PORT_TYPE
+pontosDeControle[8] <= Equal5.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |processador|muxGenerico2x1:muxRAM_Imediato
@@ -230,28 +237,58 @@ saida_MUX[7] <= saida_MUX.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |processador|bancoRegistradoresArqRegMem:BancoRegistradores
-clk => ~NO_FANOUT~
-endereco[0] => ~NO_FANOUT~
-endereco[1] => ~NO_FANOUT~
-endereco[2] => ~NO_FANOUT~
-endereco[3] => ~NO_FANOUT~
-dadoEscrita[0] => ~NO_FANOUT~
-dadoEscrita[1] => ~NO_FANOUT~
-dadoEscrita[2] => ~NO_FANOUT~
-dadoEscrita[3] => ~NO_FANOUT~
-dadoEscrita[4] => ~NO_FANOUT~
-dadoEscrita[5] => ~NO_FANOUT~
-dadoEscrita[6] => ~NO_FANOUT~
-dadoEscrita[7] => ~NO_FANOUT~
-habilitaEscrita => ~NO_FANOUT~
-saida[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
-saida[1] <= saida[1].DB_MAX_OUTPUT_PORT_TYPE
-saida[2] <= saida[2].DB_MAX_OUTPUT_PORT_TYPE
-saida[3] <= saida[3].DB_MAX_OUTPUT_PORT_TYPE
-saida[4] <= saida[4].DB_MAX_OUTPUT_PORT_TYPE
-saida[5] <= saida[5].DB_MAX_OUTPUT_PORT_TYPE
-saida[6] <= saida[6].DB_MAX_OUTPUT_PORT_TYPE
-saida[7] <= saida[7].DB_MAX_OUTPUT_PORT_TYPE
+clk => registrador~12.CLK
+clk => registrador~0.CLK
+clk => registrador~1.CLK
+clk => registrador~2.CLK
+clk => registrador~3.CLK
+clk => registrador~4.CLK
+clk => registrador~5.CLK
+clk => registrador~6.CLK
+clk => registrador~7.CLK
+clk => registrador~8.CLK
+clk => registrador~9.CLK
+clk => registrador~10.CLK
+clk => registrador~11.CLK
+clk => registrador.CLK0
+endereco[0] => registrador~3.DATAIN
+endereco[0] => registrador.WADDR
+endereco[0] => registrador.RADDR
+endereco[1] => registrador~2.DATAIN
+endereco[1] => registrador.WADDR1
+endereco[1] => registrador.RADDR1
+endereco[2] => registrador~1.DATAIN
+endereco[2] => registrador.WADDR2
+endereco[2] => registrador.RADDR2
+endereco[3] => registrador~0.DATAIN
+endereco[3] => registrador.WADDR3
+endereco[3] => registrador.RADDR3
+dadoEscrita[0] => registrador~11.DATAIN
+dadoEscrita[0] => registrador.DATAIN
+dadoEscrita[1] => registrador~10.DATAIN
+dadoEscrita[1] => registrador.DATAIN1
+dadoEscrita[2] => registrador~9.DATAIN
+dadoEscrita[2] => registrador.DATAIN2
+dadoEscrita[3] => registrador~8.DATAIN
+dadoEscrita[3] => registrador.DATAIN3
+dadoEscrita[4] => registrador~7.DATAIN
+dadoEscrita[4] => registrador.DATAIN4
+dadoEscrita[5] => registrador~6.DATAIN
+dadoEscrita[5] => registrador.DATAIN5
+dadoEscrita[6] => registrador~5.DATAIN
+dadoEscrita[6] => registrador.DATAIN6
+dadoEscrita[7] => registrador~4.DATAIN
+dadoEscrita[7] => registrador.DATAIN7
+habilitaEscrita => registrador~12.DATAIN
+habilitaEscrita => registrador.WE
+saida[0] <= registrador.DATAOUT
+saida[1] <= registrador.DATAOUT1
+saida[2] <= registrador.DATAOUT2
+saida[3] <= registrador.DATAOUT3
+saida[4] <= registrador.DATAOUT4
+saida[5] <= registrador.DATAOUT5
+saida[6] <= registrador.DATAOUT6
+saida[7] <= registrador.DATAOUT7
 
 
 |processador|ULA:ULA
@@ -400,5 +437,13 @@ saida[5] <= saidaSignal.DB_MAX_OUTPUT_PORT_TYPE
 saida[6] <= saidaSignal.DB_MAX_OUTPUT_PORT_TYPE
 saida[7] <= saidaSignal.DB_MAX_OUTPUT_PORT_TYPE
 flagZero <= Equal8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|processador|flipFlop:flagZeroFlipFlop
+DIN => DOUT~reg0.DATAIN
+DOUT <= DOUT~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ENABLE => DOUT~reg0.ENA
+CLK => DOUT~reg0.CLK
+RST => DOUT~reg0.ACLR
 
 
