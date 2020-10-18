@@ -9,8 +9,9 @@ entity decoder is
 		  imediato  : in STD_LOGIC_VECTOR(7 downto 0);
 		  
         display   :  out STD_LOGIC_VECTOR(5 downto 0);
-		  enableRAM :  out STD_LOGIC
-		  
+		  enableRAM :  out STD_LOGIC;
+		  enableBaseTempo : out STD_LOGIC;
+		  clearBaseTempo:   out STD_LOGIC
     );
 end entity;
 
@@ -45,5 +46,7 @@ architecture comportamento of decoder is
 	 
 	 enableRAM <= '1' when ((opCode = STORE OR opCode = LOAD) AND (imediatoFirstBit = '1')) else '0';
 		
-		 
+	 enableBaseTempo <= '1' when (opCode = LOAD  AND unsigned(imediato) = 6) AND (imediatoFirstBit = '0') else '0';
+	 clearBaseTempo  <= '1' when (opCode = STORE AND unsigned(imediato) = 6) AND (imediatoFirstBit = '0') else '0';
+	
 END architecture;
