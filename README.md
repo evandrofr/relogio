@@ -3,12 +3,14 @@
 <br />
 
 <p align="center">
-  <img src="rlt.png" width="1000" title="RTL">
+  <img src="diagrama.png" width="1000" title="diagrama">
 </p>
 
 <p align="center">
-  <img src="diagrama.png" width="1000" title="diagrama">
+  <img src="rlt.png" width="1000" title="RTL">
 </p>
+
+
 
 Esse projeto é de um relógio que conta, e mostra, os segundos, minutos e horas no formato "HH:MM:SS", 24h.
 Ele permite o ajuste de segundos e minutos com a contagem de tempo parada.
