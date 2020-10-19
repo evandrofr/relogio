@@ -31,6 +31,8 @@ architecture comportamento of relogio is
   SIGNAL dataInProc    : STD_LOGIC_VECTOR(larguraDados-1 downto 0);
   SIGNAL opCodeSignal  : STD_LOGIC_VECTOR(tamanhoOpCode-1 downto 0);
   SIGNAL imediatoSignal: STD_LOGIC_VECTOR(larguraDados-1 downto 0);
+  SIGNAL enableSwitches : STD_LOGIC_VECTOR(1 DOWNTO 0);
+  SIGNAL enableButtons  : STD_LOGIC_VECTOR(1 DOWNTO 0);
   
   SIGNAL enableDisplaySignal : STD_LOGIC_VECTOR(5 downto 0);
   SIGNAL displaySignal0, displaySignal1, displaySignal2, displaySignal3, displaySignal4, displaySignal5 : STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -158,6 +160,18 @@ architecture comportamento of relogio is
 		  leituraUmSegundo => dataOutProc,
 		  seletor          => SW(0)
     );
+	 
+	 SWITCHES: ENTITY work.switches port map(
+		input => enableSwitches,
+		switches => SW,
+		output => dataInProc
+	);
+	
+	BUTTONS: ENTITY work.buttons port map(
+		input => enableButtons,
+		buttons => KEY,
+		output => dataInProc
+	);
 	 
 	 
 	 
