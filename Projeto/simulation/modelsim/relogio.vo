@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition"
 
-// DATE "10/18/2020 22:00:10"
+// DATE "10/18/2020 22:51:52"
 
 // 
 // Device: Altera 5CEBA4F23C7 Package FBGA484
@@ -50,53 +50,53 @@ output 	[6:0] HEX4;
 output 	[6:0] HEX5;
 
 // Design Ports Information
-// SW[1]	=>  Location: PIN_H16,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// KEY[0]	=>  Location: PIN_B6,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// KEY[1]	=>  Location: PIN_E16,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX0[0]	=>  Location: PIN_L18,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX0[1]	=>  Location: PIN_Y14,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX0[2]	=>  Location: PIN_G11,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX0[3]	=>  Location: PIN_W2,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX0[4]	=>  Location: PIN_J17,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX0[5]	=>  Location: PIN_U8,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX0[6]	=>  Location: PIN_U7,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX1[0]	=>  Location: PIN_B13,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX1[1]	=>  Location: PIN_AA17,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX1[2]	=>  Location: PIN_W19,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX1[3]	=>  Location: PIN_R12,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX1[4]	=>  Location: PIN_U17,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX1[5]	=>  Location: PIN_M21,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX1[6]	=>  Location: PIN_R6,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX2[0]	=>  Location: PIN_P6,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX2[1]	=>  Location: PIN_AA19,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX2[2]	=>  Location: PIN_L22,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX2[3]	=>  Location: PIN_Y3,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX2[4]	=>  Location: PIN_AB11,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX2[5]	=>  Location: PIN_AB17,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX2[6]	=>  Location: PIN_E7,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX3[0]	=>  Location: PIN_E15,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX3[1]	=>  Location: PIN_R5,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX3[2]	=>  Location: PIN_K16,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX3[3]	=>  Location: PIN_E9,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX3[4]	=>  Location: PIN_AB10,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX3[5]	=>  Location: PIN_K20,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX3[6]	=>  Location: PIN_U20,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX4[0]	=>  Location: PIN_G15,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX4[1]	=>  Location: PIN_AB18,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX4[2]	=>  Location: PIN_J7,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX4[3]	=>  Location: PIN_U21,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX4[4]	=>  Location: PIN_Y16,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX4[5]	=>  Location: PIN_C2,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX4[6]	=>  Location: PIN_R7,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX5[0]	=>  Location: PIN_V18,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX5[1]	=>  Location: PIN_G6,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX5[2]	=>  Location: PIN_T10,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX5[3]	=>  Location: PIN_E10,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX5[4]	=>  Location: PIN_M8,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX5[5]	=>  Location: PIN_H14,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// HEX5[6]	=>  Location: PIN_A14,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// CLOCK_50	=>  Location: PIN_U6,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// SW[0]	=>  Location: PIN_F13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// HEX0[0]	=>  Location: PIN_U21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX0[1]	=>  Location: PIN_V21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX0[2]	=>  Location: PIN_W22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX0[3]	=>  Location: PIN_W21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX0[4]	=>  Location: PIN_Y22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX0[5]	=>  Location: PIN_Y21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX0[6]	=>  Location: PIN_AA22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX1[0]	=>  Location: PIN_AA20,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX1[1]	=>  Location: PIN_AB20,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX1[2]	=>  Location: PIN_AA19,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX1[3]	=>  Location: PIN_AA18,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX1[4]	=>  Location: PIN_AB18,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX1[5]	=>  Location: PIN_AA17,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX1[6]	=>  Location: PIN_U22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX2[0]	=>  Location: PIN_Y19,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX2[1]	=>  Location: PIN_AB17,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX2[2]	=>  Location: PIN_AA10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX2[3]	=>  Location: PIN_Y14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX2[4]	=>  Location: PIN_V14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX2[5]	=>  Location: PIN_AB22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX2[6]	=>  Location: PIN_AB21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX3[0]	=>  Location: PIN_Y16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX3[1]	=>  Location: PIN_W16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX3[2]	=>  Location: PIN_Y17,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX3[3]	=>  Location: PIN_V16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX3[4]	=>  Location: PIN_U17,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX3[5]	=>  Location: PIN_V18,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX3[6]	=>  Location: PIN_V19,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX4[0]	=>  Location: PIN_U20,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX4[1]	=>  Location: PIN_Y20,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX4[2]	=>  Location: PIN_V20,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX4[3]	=>  Location: PIN_U16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX4[4]	=>  Location: PIN_U15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX4[5]	=>  Location: PIN_Y15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX4[6]	=>  Location: PIN_P9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX5[0]	=>  Location: PIN_N9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX5[1]	=>  Location: PIN_M8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX5[2]	=>  Location: PIN_T14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX5[3]	=>  Location: PIN_P14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX5[4]	=>  Location: PIN_C1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX5[5]	=>  Location: PIN_C2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// HEX5[6]	=>  Location: PIN_W19,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// CLOCK_50	=>  Location: PIN_M9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// SW[1]	=>  Location: PIN_V13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// SW[0]	=>  Location: PIN_U13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// KEY[0]	=>  Location: PIN_U7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// KEY[1]	=>  Location: PIN_W9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 
 
 wire gnd;
@@ -110,15 +110,15 @@ assign unknown = 1'bx;
 tri1 devclrn;
 tri1 devpor;
 tri1 devoe;
+wire \CLOCK_50~input_o ;
 wire \SW[1]~input_o ;
+wire \SW[0]~input_o ;
 wire \KEY[0]~input_o ;
 wire \KEY[1]~input_o ;
-wire \CLOCK_50~input_o ;
-wire \SW[0]~input_o ;
 wire \~QUARTUS_CREATED_GND~I_combout ;
 
 
-// Location: IOOBUF_X54_Y21_N22
+// Location: IOOBUF_X52_Y0_N53
 cyclonev_io_obuf \HEX0[0]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -134,7 +134,7 @@ defparam \HEX0[0]~output .open_drain_output = "false";
 defparam \HEX0[0]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X36_Y0_N19
+// Location: IOOBUF_X51_Y0_N36
 cyclonev_io_obuf \HEX0[1]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -150,7 +150,7 @@ defparam \HEX0[1]~output .open_drain_output = "false";
 defparam \HEX0[1]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X38_Y45_N36
+// Location: IOOBUF_X48_Y0_N76
 cyclonev_io_obuf \HEX0[2]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -166,7 +166,7 @@ defparam \HEX0[2]~output .open_drain_output = "false";
 defparam \HEX0[2]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X0_Y18_N62
+// Location: IOOBUF_X50_Y0_N36
 cyclonev_io_obuf \HEX0[3]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -182,7 +182,7 @@ defparam \HEX0[3]~output .open_drain_output = "false";
 defparam \HEX0[3]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X44_Y45_N36
+// Location: IOOBUF_X48_Y0_N93
 cyclonev_io_obuf \HEX0[4]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -198,7 +198,7 @@ defparam \HEX0[4]~output .open_drain_output = "false";
 defparam \HEX0[4]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X10_Y0_N76
+// Location: IOOBUF_X50_Y0_N53
 cyclonev_io_obuf \HEX0[5]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -214,7 +214,7 @@ defparam \HEX0[5]~output .open_drain_output = "false";
 defparam \HEX0[5]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X10_Y0_N93
+// Location: IOOBUF_X46_Y0_N36
 cyclonev_io_obuf \HEX0[6]~output (
 	.i(vcc),
 	.oe(vcc),
@@ -230,7 +230,7 @@ defparam \HEX0[6]~output .open_drain_output = "false";
 defparam \HEX0[6]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X42_Y45_N36
+// Location: IOOBUF_X44_Y0_N36
 cyclonev_io_obuf \HEX1[0]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -246,7 +246,7 @@ defparam \HEX1[0]~output .open_drain_output = "false";
 defparam \HEX1[0]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X43_Y0_N53
+// Location: IOOBUF_X40_Y0_N93
 cyclonev_io_obuf \HEX1[1]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -262,7 +262,7 @@ defparam \HEX1[1]~output .open_drain_output = "false";
 defparam \HEX1[1]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X44_Y0_N2
+// Location: IOOBUF_X44_Y0_N53
 cyclonev_io_obuf \HEX1[2]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -278,7 +278,7 @@ defparam \HEX1[2]~output .open_drain_output = "false";
 defparam \HEX1[2]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X24_Y0_N53
+// Location: IOOBUF_X43_Y0_N36
 cyclonev_io_obuf \HEX1[3]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -294,7 +294,7 @@ defparam \HEX1[3]~output .open_drain_output = "false";
 defparam \HEX1[3]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X52_Y0_N2
+// Location: IOOBUF_X38_Y0_N36
 cyclonev_io_obuf \HEX1[4]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -310,7 +310,7 @@ defparam \HEX1[4]~output .open_drain_output = "false";
 defparam \HEX1[4]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X54_Y20_N56
+// Location: IOOBUF_X43_Y0_N53
 cyclonev_io_obuf \HEX1[5]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -326,7 +326,7 @@ defparam \HEX1[5]~output .open_drain_output = "false";
 defparam \HEX1[5]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X10_Y0_N59
+// Location: IOOBUF_X51_Y0_N53
 cyclonev_io_obuf \HEX1[6]~output (
 	.i(vcc),
 	.oe(vcc),
@@ -342,7 +342,7 @@ defparam \HEX1[6]~output .open_drain_output = "false";
 defparam \HEX1[6]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X11_Y0_N19
+// Location: IOOBUF_X48_Y0_N42
 cyclonev_io_obuf \HEX2[0]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -358,7 +358,7 @@ defparam \HEX2[0]~output .open_drain_output = "false";
 defparam \HEX2[0]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X44_Y0_N53
+// Location: IOOBUF_X38_Y0_N53
 cyclonev_io_obuf \HEX2[1]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -374,7 +374,7 @@ defparam \HEX2[1]~output .open_drain_output = "false";
 defparam \HEX2[1]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X54_Y19_N56
+// Location: IOOBUF_X22_Y0_N53
 cyclonev_io_obuf \HEX2[2]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -390,7 +390,7 @@ defparam \HEX2[2]~output .open_drain_output = "false";
 defparam \HEX2[2]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X0_Y18_N45
+// Location: IOOBUF_X36_Y0_N19
 cyclonev_io_obuf \HEX2[3]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -406,7 +406,7 @@ defparam \HEX2[3]~output .open_drain_output = "false";
 defparam \HEX2[3]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X25_Y0_N36
+// Location: IOOBUF_X38_Y0_N19
 cyclonev_io_obuf \HEX2[4]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -422,7 +422,7 @@ defparam \HEX2[4]~output .open_drain_output = "false";
 defparam \HEX2[4]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X38_Y0_N53
+// Location: IOOBUF_X46_Y0_N53
 cyclonev_io_obuf \HEX2[5]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -438,7 +438,7 @@ defparam \HEX2[5]~output .open_drain_output = "false";
 defparam \HEX2[5]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X8_Y45_N93
+// Location: IOOBUF_X40_Y0_N76
 cyclonev_io_obuf \HEX2[6]~output (
 	.i(vcc),
 	.oe(vcc),
@@ -454,7 +454,7 @@ defparam \HEX2[6]~output .open_drain_output = "false";
 defparam \HEX2[6]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X46_Y45_N42
+// Location: IOOBUF_X40_Y0_N59
 cyclonev_io_obuf \HEX3[0]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -470,7 +470,7 @@ defparam \HEX3[0]~output .open_drain_output = "false";
 defparam \HEX3[0]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X10_Y0_N42
+// Location: IOOBUF_X46_Y0_N2
 cyclonev_io_obuf \HEX3[1]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -486,7 +486,7 @@ defparam \HEX3[1]~output .open_drain_output = "false";
 defparam \HEX3[1]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X44_Y45_N53
+// Location: IOOBUF_X40_Y0_N42
 cyclonev_io_obuf \HEX3[2]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -502,7 +502,7 @@ defparam \HEX3[2]~output .open_drain_output = "false";
 defparam \HEX3[2]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X10_Y45_N2
+// Location: IOOBUF_X46_Y0_N19
 cyclonev_io_obuf \HEX3[3]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -518,7 +518,7 @@ defparam \HEX3[3]~output .open_drain_output = "false";
 defparam \HEX3[3]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X25_Y0_N53
+// Location: IOOBUF_X52_Y0_N2
 cyclonev_io_obuf \HEX3[4]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -534,7 +534,7 @@ defparam \HEX3[4]~output .open_drain_output = "false";
 defparam \HEX3[4]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X52_Y45_N2
+// Location: IOOBUF_X51_Y0_N2
 cyclonev_io_obuf \HEX3[5]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -550,7 +550,7 @@ defparam \HEX3[5]~output .open_drain_output = "false";
 defparam \HEX3[5]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X52_Y0_N36
+// Location: IOOBUF_X51_Y0_N19
 cyclonev_io_obuf \HEX3[6]~output (
 	.i(vcc),
 	.oe(vcc),
@@ -566,7 +566,7 @@ defparam \HEX3[6]~output .open_drain_output = "false";
 defparam \HEX3[6]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X43_Y45_N36
+// Location: IOOBUF_X52_Y0_N36
 cyclonev_io_obuf \HEX4[0]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -582,7 +582,7 @@ defparam \HEX4[0]~output .open_drain_output = "false";
 defparam \HEX4[0]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X38_Y0_N36
+// Location: IOOBUF_X48_Y0_N59
 cyclonev_io_obuf \HEX4[1]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -598,7 +598,7 @@ defparam \HEX4[1]~output .open_drain_output = "false";
 defparam \HEX4[1]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X20_Y45_N2
+// Location: IOOBUF_X44_Y0_N19
 cyclonev_io_obuf \HEX4[2]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -614,7 +614,7 @@ defparam \HEX4[2]~output .open_drain_output = "false";
 defparam \HEX4[2]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X52_Y0_N53
+// Location: IOOBUF_X52_Y0_N19
 cyclonev_io_obuf \HEX4[3]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -630,7 +630,7 @@ defparam \HEX4[3]~output .open_drain_output = "false";
 defparam \HEX4[3]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X40_Y0_N59
+// Location: IOOBUF_X43_Y0_N2
 cyclonev_io_obuf \HEX4[4]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -646,7 +646,7 @@ defparam \HEX4[4]~output .open_drain_output = "false";
 defparam \HEX4[4]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X0_Y21_N39
+// Location: IOOBUF_X36_Y0_N2
 cyclonev_io_obuf \HEX4[5]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -662,7 +662,7 @@ defparam \HEX4[5]~output .open_drain_output = "false";
 defparam \HEX4[5]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X14_Y0_N53
+// Location: IOOBUF_X29_Y0_N19
 cyclonev_io_obuf \HEX4[6]~output (
 	.i(vcc),
 	.oe(vcc),
@@ -678,7 +678,7 @@ defparam \HEX4[6]~output .open_drain_output = "false";
 defparam \HEX4[6]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X51_Y0_N2
+// Location: IOOBUF_X29_Y0_N2
 cyclonev_io_obuf \HEX5[0]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -694,7 +694,7 @@ defparam \HEX5[0]~output .open_drain_output = "false";
 defparam \HEX5[0]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X8_Y45_N42
+// Location: IOOBUF_X22_Y0_N19
 cyclonev_io_obuf \HEX5[1]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -710,7 +710,7 @@ defparam \HEX5[1]~output .open_drain_output = "false";
 defparam \HEX5[1]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X23_Y0_N59
+// Location: IOOBUF_X43_Y0_N19
 cyclonev_io_obuf \HEX5[2]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -726,7 +726,7 @@ defparam \HEX5[2]~output .open_drain_output = "false";
 defparam \HEX5[2]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X14_Y45_N2
+// Location: IOOBUF_X50_Y0_N19
 cyclonev_io_obuf \HEX5[3]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -742,7 +742,7 @@ defparam \HEX5[3]~output .open_drain_output = "false";
 defparam \HEX5[3]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X22_Y0_N19
+// Location: IOOBUF_X0_Y21_N56
 cyclonev_io_obuf \HEX5[4]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -758,7 +758,7 @@ defparam \HEX5[4]~output .open_drain_output = "false";
 defparam \HEX5[4]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X42_Y45_N2
+// Location: IOOBUF_X0_Y21_N39
 cyclonev_io_obuf \HEX5[5]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -774,7 +774,7 @@ defparam \HEX5[5]~output .open_drain_output = "false";
 defparam \HEX5[5]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X46_Y45_N93
+// Location: IOOBUF_X44_Y0_N2
 cyclonev_io_obuf \HEX5[6]~output (
 	.i(vcc),
 	.oe(vcc),
@@ -790,40 +790,7 @@ defparam \HEX5[6]~output .open_drain_output = "false";
 defparam \HEX5[6]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOIBUF_X44_Y45_N1
-cyclonev_io_ibuf \SW[1]~input (
-	.i(SW[1]),
-	.ibar(gnd),
-	.dynamicterminationcontrol(gnd),
-	.o(\SW[1]~input_o ));
-// synopsys translate_off
-defparam \SW[1]~input .bus_hold = "false";
-defparam \SW[1]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-// Location: IOIBUF_X14_Y45_N35
-cyclonev_io_ibuf \KEY[0]~input (
-	.i(KEY[0]),
-	.ibar(gnd),
-	.dynamicterminationcontrol(gnd),
-	.o(\KEY[0]~input_o ));
-// synopsys translate_off
-defparam \KEY[0]~input .bus_hold = "false";
-defparam \KEY[0]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-// Location: IOIBUF_X50_Y45_N18
-cyclonev_io_ibuf \KEY[1]~input (
-	.i(KEY[1]),
-	.ibar(gnd),
-	.dynamicterminationcontrol(gnd),
-	.o(\KEY[1]~input_o ));
-// synopsys translate_off
-defparam \KEY[1]~input .bus_hold = "false";
-defparam \KEY[1]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-// Location: IOIBUF_X12_Y0_N52
+// Location: IOIBUF_X22_Y0_N1
 cyclonev_io_ibuf \CLOCK_50~input (
 	.i(CLOCK_50),
 	.ibar(gnd),
@@ -834,7 +801,18 @@ defparam \CLOCK_50~input .bus_hold = "false";
 defparam \CLOCK_50~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X40_Y45_N58
+// Location: IOIBUF_X33_Y0_N58
+cyclonev_io_ibuf \SW[1]~input (
+	.i(SW[1]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\SW[1]~input_o ));
+// synopsys translate_off
+defparam \SW[1]~input .bus_hold = "false";
+defparam \SW[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X33_Y0_N41
 cyclonev_io_ibuf \SW[0]~input (
 	.i(SW[0]),
 	.ibar(gnd),
@@ -845,7 +823,29 @@ defparam \SW[0]~input .bus_hold = "false";
 defparam \SW[0]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: LABCELL_X44_Y41_N3
+// Location: IOIBUF_X10_Y0_N92
+cyclonev_io_ibuf \KEY[0]~input (
+	.i(KEY[0]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\KEY[0]~input_o ));
+// synopsys translate_off
+defparam \KEY[0]~input .bus_hold = "false";
+defparam \KEY[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X11_Y0_N35
+cyclonev_io_ibuf \KEY[1]~input (
+	.i(KEY[1]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\KEY[1]~input_o ));
+// synopsys translate_off
+defparam \KEY[1]~input .bus_hold = "false";
+defparam \KEY[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LABCELL_X12_Y3_N0
 cyclonev_lcell_comb \~QUARTUS_CREATED_GND~I (
 // Equation(s):
 
