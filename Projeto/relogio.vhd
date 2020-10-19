@@ -58,7 +58,7 @@ architecture comportamento of relogio is
     )
     PORT MAP
     (
-        addr     => addressProcRAM,
+        addr     => addressProcRAM(6 downto 0),
         we       => enableWriteRAM,
 		  re       => enableReadRAM,
         habilita => enableRAM, -- vem do decoder

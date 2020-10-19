@@ -13,7 +13,7 @@ end entity;
 
 architecture interface of divisorGenerico_e_Interface is
   signal sinalUmSegundo : std_logic;
-  signal saidaclk_reg1seg, saidaclk_regRap : std_logic;
+  signal saidaclk_reg1seg, saida1seg, saidaRap : std_logic;
 begin
 
 	baseTempo: entity work.divisorGenerico
@@ -22,15 +22,15 @@ begin
 				  )   -- 1s
 				  port map (
 				  clk => clk,
-				  saida_clk => saidaclk_reg1seg);
+				  saida_clk => saida1seg);
 				  
 	baseTempoRapido: entity work.divisorGenerico
 				  generic map (
-				  divisor => 250000
+				  divisor => 25000
 				  )   -- Rapido
 				  port map (
 				  clk => clk,
-				  saida_clk => saidaclk_regRap);
+				  saida_clk => saidaRap);
 
 	registraUmSegundo: entity work.flipflop
 		port map (DIN => '1',
@@ -39,8 +39,8 @@ begin
 					 CLK => saidaclk_reg1seg,
 					 RST => limpaLeitura);
 					 
-	saidaclk_reg1seg <= saidaclk_regRap WHEN seletor = '1' ELSE
-      saidaclk_reg1seg;
+	saidaclk_reg1seg <= saidaRap WHEN seletor = '1' ELSE
+      saida1seg;
 			
 
 
