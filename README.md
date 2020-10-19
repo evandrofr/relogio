@@ -25,5 +25,5 @@ Além disso, para verificar seu bom funcionamento, o relógio conta com uma fun�
 <br />
 
 <p align="center">
-  <img src="rlt.png" width="1000" title="RTL">
+  <img src="rtl.png" width="1000" title="RTL">
 </p>
