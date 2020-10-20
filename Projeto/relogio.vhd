@@ -11,7 +11,7 @@ entity relogio is
   PORT (
     ---------------------- IN --------------------------
 	 CLOCK_50   :  IN STD_LOGIC;
-    SW         :  IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+    SW         :  IN STD_LOGIC_VECTOR(9 DOWNTO 0);
 	 KEY        :  IN STD_LOGIC_VECTOR(1 DOWNTO 0);
 	 ---------------------- OUT --------------------------
 	 
@@ -33,7 +33,7 @@ architecture comportamento of relogio is
   SIGNAL dataInProc     : STD_LOGIC_VECTOR(larguraDados-1 DOWNTO 0);
   SIGNAL opCodeSignal   : STD_LOGIC_VECTOR(tamanhoOpCode-1 DOWNTO 0);
   SIGNAL imediatoSignal : STD_LOGIC_VECTOR(larguraDados-1 DOWNTO 0);
-  SIGNAL enableSwitches : STD_LOGIC_VECTOR(1 DOWNTO 0);
+  SIGNAL enableSwitches : STD_LOGIC;
   SIGNAL enableButtons  : STD_LOGIC_VECTOR(1 DOWNTO 0);
   
   SIGNAL enableDisplaySignal : STD_LOGIC_VECTOR(5 DOWNTO 0);
@@ -87,7 +87,8 @@ architecture comportamento of relogio is
         display   => enableDisplaySignal,
 		  enableRAM => enableRAM,
 		  enableBaseTempo => enableBaseTempo,
-		  clearBaseTempo  => clearBaseTempo
+		  clearBaseTempo  => clearBaseTempo,
+		  enableSwitches  => enableSwitches
 		  
     );
 	 
@@ -174,15 +175,17 @@ architecture comportamento of relogio is
         clk              => CLOCK_50,
 		  habilitaLeitura  => enableBaseTempo,
         limpaLeitura     => clearBaseTempo,
-		  leituraUmSegundo => dataInProc
+		  leituraUmSegundo => dataInProc,
+		  SW               => SW(9)
     );
 	 
---	 SWITCHES: ENTITY work.switches port map(
---		input => enableSwitches,
---		switches => SW,
---		output => dataInProc
---	);
---	
+	 SWITCHES: ENTITY work.switches port map(
+		enable   => enableSwitches,
+		rd       => enableReadRAM,
+		switches => SW(7 DOWNTO 0),
+		output   => dataInProc
+	);
+	
 --	BUTTONS: ENTITY work.buttons port map(
 --		input => enableButtons,
 --		buttons => KEY,
@@ -191,7 +194,6 @@ architecture comportamento of relogio is
 	 
 	 
 	 
-  -- HEX OUTPUT
   DISPLAY0 : ENTITY work.conversorHex7Seg PORT MAP(dadoHex => displaySignal0, saida7seg => HEX0);
   DISPLAY1 : ENTITY work.conversorHex7Seg PORT MAP(dadoHex => displaySignal1, saida7seg => HEX1);
   DISPLAY2 : ENTITY work.conversorHex7Seg PORT MAP(dadoHex => displaySignal2, saida7seg => HEX2);

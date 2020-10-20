@@ -7,12 +7,12 @@ entity decoder is
     (		
 		  imediato  : in STD_LOGIC_VECTOR(7 downto 0);
 		  
-        display   :  out STD_LOGIC_VECTOR(5 downto 0);
-		  enableRAM :  out STD_LOGIC;
+        display         : out STD_LOGIC_VECTOR(5 downto 0);
+		  enableRAM       : out STD_LOGIC;
 		  enableBaseTempo : out STD_LOGIC;
-		  clearBaseTempo:   out STD_LOGIC;
-		  enableSwitches : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
-		  enableButtons  : OUT STD_LOGIC_VECTOR(1 DOWNTO 0)
+		  clearBaseTempo  : out STD_LOGIC;
+		  enableSwitches  : OUT STD_LOGIC
+		  --enableButtons   : OUT STD_LOGIC_VECTOR(1 DOWNTO 0)
     );
 end entity;
 
@@ -50,12 +50,10 @@ architecture comportamento of decoder is
 	 enableBaseTempo <= '1' when imediato = "00000110" else '0';
 	 clearBaseTempo  <= '1' when unsigned(imediato) = 7 else '0';
 	 
-	 enableSwitches <= "01" when (unsigned(imediato) = 8) else
-							 "10" when (unsigned(imediato) = 9) else
-							 "00";
+	 enableSwitches <= '1' when (unsigned(imediato) = 8) else '0';
 							 
-	 enableButtons  <= "01" when (unsigned(imediato) = 10) else
-							 "10" when (unsigned(imediato) = 11) else
-							 "00";
+--	 enableButtons  <= "01" when (unsigned(imediato) = 10) else
+--							 "10" when (unsigned(imediato) = 11) else
+--							 "00";
 	
 END architecture;
