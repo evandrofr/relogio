@@ -35,6 +35,7 @@ architecture comportamento of relogio is
   SIGNAL imediatoSignal : STD_LOGIC_VECTOR(larguraDados-1 DOWNTO 0);
   SIGNAL enableSwitches : STD_LOGIC;
   SIGNAL enableButtons  : STD_LOGIC;
+  SIGNAL buttonsSignal  : STD_LOGIC_VECTOR(3 DOWNTO 0);
   
   SIGNAL enableDisplaySignal : STD_LOGIC_VECTOR(5 DOWNTO 0);
   SIGNAL displaySignal0, displaySignal1, displaySignal2, displaySignal3, displaySignal4, displaySignal5 : STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -88,7 +89,8 @@ architecture comportamento of relogio is
 		  enableRAM => enableRAM,
 		  enableBaseTempo => enableBaseTempo,
 		  clearBaseTempo  => clearBaseTempo,
-		  enableSwitches  => enableSwitches
+		  enableSwitches  => enableSwitches,
+		  enableButtons   => enableButtons
 		  
     );
 	 
@@ -186,12 +188,17 @@ architecture comportamento of relogio is
 		output   => dataInProc
 	);
 	
---	BUTTONS: ENTITY work.buttons port map(
---		enable => enableButtons,
---		rd    => enableReadRAM,
---		buttons => KEY,
---		output => dataInProc
---	);
+--	detectorSub0: work.edgeDetector port map (clk => CLOCK_50, entrada =>  KEY(0), saida => buttonsSignal(0));
+--	detectorSub1: work.edgeDetector port map (clk => CLOCK_50, entrada =>  KEY(1), saida => buttonsSignal(1));
+--	detectorSub2: work.edgeDetector port map (clk => CLOCK_50, entrada =>  KEY(2), saida => buttonsSignal(2));
+--	detectorSub3: work.edgeDetector port map (clk => CLOCK_50, entrada => KEY(3), saida => buttonsSignal(3));
+	
+	BUTTONS: ENTITY work.buttons port map(
+		buttons => not KEY, --buttonsSignal,
+		enable => enableButtons,
+		rd    => enableReadRAM,
+		output => dataInProc
+	);
 	 
 	 
 	 
