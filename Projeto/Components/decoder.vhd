@@ -11,8 +11,8 @@ entity decoder is
 		  enableRAM       : out STD_LOGIC;
 		  enableBaseTempo : out STD_LOGIC;
 		  clearBaseTempo  : out STD_LOGIC;
-		  enableSwitches  : OUT STD_LOGIC
-		  --enableButtons   : OUT STD_LOGIC_VECTOR(1 DOWNTO 0)
+		  enableSwitches  : OUT STD_LOGIC;
+		  enableButtons   : OUT STD_LOGIC
     );
 end entity;
 
@@ -52,8 +52,6 @@ architecture comportamento of decoder is
 	 
 	 enableSwitches <= '1' when (unsigned(imediato) = 8) else '0';
 							 
---	 enableButtons  <= "01" when (unsigned(imediato) = 10) else
---							 "10" when (unsigned(imediato) = 11) else
---							 "00";
+	 enableButtons  <= '1' when (unsigned(imediato) = 9) else '0';
 	
 END architecture;

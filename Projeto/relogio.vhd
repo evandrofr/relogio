@@ -12,7 +12,7 @@ entity relogio is
     ---------------------- IN --------------------------
 	 CLOCK_50   :  IN STD_LOGIC;
     SW         :  IN STD_LOGIC_VECTOR(9 DOWNTO 0);
-	 KEY        :  IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+	 KEY        :  IN STD_LOGIC_VECTOR(3 DOWNTO 0);
 	 ---------------------- OUT --------------------------
 	 
     HEX0, HEX1, HEX2, HEX3, HEX4, HEX5 : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
@@ -34,7 +34,7 @@ architecture comportamento of relogio is
   SIGNAL opCodeSignal   : STD_LOGIC_VECTOR(tamanhoOpCode-1 DOWNTO 0);
   SIGNAL imediatoSignal : STD_LOGIC_VECTOR(larguraDados-1 DOWNTO 0);
   SIGNAL enableSwitches : STD_LOGIC;
-  SIGNAL enableButtons  : STD_LOGIC_VECTOR(1 DOWNTO 0);
+  SIGNAL enableButtons  : STD_LOGIC;
   
   SIGNAL enableDisplaySignal : STD_LOGIC_VECTOR(5 DOWNTO 0);
   SIGNAL displaySignal0, displaySignal1, displaySignal2, displaySignal3, displaySignal4, displaySignal5 : STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -187,7 +187,8 @@ architecture comportamento of relogio is
 	);
 	
 --	BUTTONS: ENTITY work.buttons port map(
---		input => enableButtons,
+--		enable => enableButtons,
+--		rd    => enableReadRAM,
 --		buttons => KEY,
 --		output => dataInProc
 --	);
