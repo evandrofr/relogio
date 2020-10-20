@@ -47,7 +47,7 @@ architecture comportamento of decoder is
 	 
 	 enableRAM <= '1' when (imediatoFirstBit = '1') else '0';
 		
-	 enableBaseTempo <= '1' when imediato = "00000110" else '0';
+	 enableBaseTempo <= '1' when unsigned(imediato) = 6 else '0';
 	 clearBaseTempo  <= '1' when unsigned(imediato) = 7 else '0';
 	 
 	 enableSwitches <= '1' when (unsigned(imediato) = 8) else '0';

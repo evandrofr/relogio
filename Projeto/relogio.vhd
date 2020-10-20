@@ -16,7 +16,6 @@ entity relogio is
 	 ---------------------- OUT --------------------------
 	 
     HEX0, HEX1, HEX2, HEX3, HEX4, HEX5 : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
-	 PCOut      :  OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
 	 LEDR       :  OUT STD_LOGIC_VECTOR(9 DOWNTO 0)
   );
 END entity;
@@ -39,8 +38,6 @@ architecture comportamento of relogio is
   
   SIGNAL enableDisplaySignal : STD_LOGIC_VECTOR(5 DOWNTO 0);
   SIGNAL displaySignal0, displaySignal1, displaySignal2, displaySignal3, displaySignal4, displaySignal5 : STD_LOGIC_VECTOR(3 DOWNTO 0);
-
-  SIGNAL PCOutSignal, testeSignal: STD_LOGIC_VECTOR(7 downto 0);
   
   SIGNAL clkSignal: STD_LOGIC;
   
@@ -61,9 +58,8 @@ architecture comportamento of relogio is
 		address        => addressProcRAM,
       writeRam       => enableWriteRAM,
       readRam        => enableReadRAM,
-		imediatoOut    => imediatoSignal,
-		PCOut          => PCOutSignal,
-		testeOut       => testeSignal
+		imediatoOut    => imediatoSignal
+
     );
 	 
 --	RAM : ENTITY work.memoriaRAM
@@ -209,7 +205,5 @@ architecture comportamento of relogio is
   DISPLAY4 : ENTITY work.conversorHex7Seg PORT MAP(dadoHex => displaySignal4, saida7seg => HEX4);
   DISPLAY5 : ENTITY work.conversorHex7Seg PORT MAP(dadoHex => displaySignal5, saida7seg => HEX5);
   
-  PCOut <= PCOutSignal;
-  LEDR  <= '1' & clkSignal &  PCOutSignal;
     
 END architecture;

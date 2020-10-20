@@ -21,9 +21,7 @@ entity processador is
         dataOut        : out STD_LOGIC_VECTOR(7 downto 0);
 		  writeRam       : out STD_LOGIC;
 		  readRam        : out STD_LOGIC;
-		  imediatoOut    : out STD_LOGIC_VECTOR(7 downto 0);
-		  PCout          : out STD_LOGIC_VECTOR(7 downto 0);
-		  testeOut       : out STD_LOGIC_VECTOR(7 downto 0)
+		  imediatoOut    : out STD_LOGIC_VECTOR(7 downto 0)
 		  
     );
 end entity;
@@ -152,8 +150,6 @@ architecture comportamento of processador is
 		  
 		  imediatoOut <= imediato;
 		  dataOut <= RegUlaBMemSignal;
-		  PCOut <= PCROMSignal;
-		  testeOut <= somadorMuxSignal;
 		  readRam <= enableReadRam;
 		  writeRam <= enableWriteRam;
 		  
