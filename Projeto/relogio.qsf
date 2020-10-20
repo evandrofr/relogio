@@ -73,9 +73,6 @@ set_global_assignment -name VHDL_FILE Components/somaConstante.vhd
 set_global_assignment -name VHDL_FILE relogio.vhd
 set_global_assignment -name VHDL_FILE Components/decoder.vhd
 set_global_assignment -name BOARD "DE0-CV Development Board"
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VHDL_FILE Components/switches.vhd
 set_global_assignment -name VHDL_FILE Components/buttons.vhd
 
@@ -286,4 +283,12 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[9]
 # Fim da configuraÃ§Ã£o dos pinos utilizados em Design de Computadores.
 #====================================================================
 
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/Waveform.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/Waveform1.vwf
+set_global_assignment -name VHDL_FILE Components/scale_clock.vhd
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -4,7 +4,7 @@ USE ieee.numeric_std.ALL; --Soma (esta biblioteca =ieee)
 
 ENTITY somaConstante IS
     GENERIC (
-        larguraDados : NATURAL := 8;
+        larguraDados : NATURAL := 32;
         constante    : NATURAL := 1
     );
     PORT (

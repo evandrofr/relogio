@@ -1,0 +1,32 @@
+Quartus Prime Archive log --	/home/borg/Documents/relogio/Projeto/relogio.qarlog
+
+Archive:	/home/borg/Documents/relogio/Projeto/relogio.qar
+Date:		Sun Oct 18 23:50:29 2020
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+/home/borg/Documents/relogio/Projeto/Components/ULA.vhd
+/home/borg/Documents/relogio/Projeto/Components/bancoRegistradoresArqRegMem.vhd
+/home/borg/Documents/relogio/Projeto/Components/buttons.vhd
+/home/borg/Documents/relogio/Projeto/Components/conversorHex7Seg.vhd
+/home/borg/Documents/relogio/Projeto/Components/decoder.vhd
+/home/borg/Documents/relogio/Projeto/Components/divisorGenerico.vhd
+/home/borg/Documents/relogio/Projeto/Components/divisorGenerico_e_Interface.vhd
+/home/borg/Documents/relogio/Projeto/Components/flipFlop.vhd
+/home/borg/Documents/relogio/Projeto/Components/memoriaRAM.vhd
+/home/borg/Documents/relogio/Projeto/Components/memoriaROM.vhd
+/home/borg/Documents/relogio/Projeto/Components/muxGenerico2x1.vhd
+/home/borg/Documents/relogio/Projeto/Components/registradorGenerico.vhd
+/home/borg/Documents/relogio/Projeto/Components/somaConstante.vhd
+/home/borg/Documents/relogio/Projeto/Components/somadorGenerico.vhd
+/home/borg/Documents/relogio/Projeto/Components/switches.vhd
+/home/borg/Documents/relogio/Projeto/Components/unidControl.vhd
+/home/borg/Documents/relogio/Projeto/processador.vhd
+/home/borg/Documents/relogio/Projeto/relogio.qpf
+/home/borg/Documents/relogio/Projeto/relogio.qsf
+/home/borg/Documents/relogio/Projeto/relogio.vhd
+/home/borg/intelFPGA_lite/20.1/quartus/linux64/assignment_defaults.qdf
+	======= Total: 21 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

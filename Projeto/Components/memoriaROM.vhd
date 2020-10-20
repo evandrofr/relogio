@@ -4,8 +4,8 @@ use ieee.numeric_std.all;
 
 entity memoriaROM is
    generic (
-          dataWidth: natural := 8;
-          addrWidth: natural := 3
+          dataWidth: natural := 16;
+          addrWidth: natural := 8
     );
    port (
           Endereco : in std_logic_vector (addrWidth-1 DOWNTO 0);
@@ -97,7 +97,7 @@ architecture assincrona of memoriaROM is
 		tmp(72) := "0000010000000000";
 		tmp(73) := "0000010100000000";
 		tmp(74) := "0110000000001010";
-        return tmp;
+      return tmp;
     end initMemory;
 
     signal memROM : blocoMemoria := initMemory;

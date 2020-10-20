@@ -11,46 +11,59 @@ entity relogio is
   PORT (
     ---------------------- IN --------------------------
 	 CLOCK_50   :  IN STD_LOGIC;
-    SW         :  IN STD_LOGIC_VECTOR(1 downto 0);
+    SW         :  IN STD_LOGIC_VECTOR(1 DOWNTO 0);
 	 KEY        :  IN STD_LOGIC_VECTOR(1 DOWNTO 0);
 	 ---------------------- OUT --------------------------
 	 
-    HEX0, HEX1, HEX2, HEX3, HEX4, HEX5 : OUT STD_LOGIC_VECTOR(6 DOWNTO 0)
+    HEX0, HEX1, HEX2, HEX3, HEX4, HEX5 : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
+	 PCOut: OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+	 LEDR       :  OUT STD_LOGIC_VECTOR(9 DOWNTO 0)
   );
 END entity;
 
 architecture comportamento of relogio is
 
-  SIGNAL addressProcRAM: STD_LOGIC_VECTOR(larguraDados-1 downto 0);
+  SIGNAL addressProcRAM: STD_LOGIC_VECTOR(larguraDados-1 DOWNTO 0);
   SIGNAL enableWriteRAM: STD_LOGIC;
   SIGNAL enableReadRAM : STD_LOGIC;
   SIGNAL enableRAM     : STD_LOGIC;
   SIGNAL enableBaseTempo: STD_LOGIC;
   SIGNAL clearBaseTempo : STD_LOGIC;
-  SIGNAL dataOutProc   : STD_LOGIC_VECTOR(larguraDados-1 downto 0);
-  SIGNAL dataInProc    : STD_LOGIC_VECTOR(larguraDados-1 downto 0);
-  SIGNAL opCodeSignal  : STD_LOGIC_VECTOR(tamanhoOpCode-1 downto 0);
-  SIGNAL imediatoSignal: STD_LOGIC_VECTOR(larguraDados-1 downto 0);
+  SIGNAL dataOutProc   : STD_LOGIC_VECTOR(larguraDados-1 DOWNTO 0);
+  SIGNAL dataInProc    : STD_LOGIC_VECTOR(larguraDados-1 DOWNTO 0);
+  SIGNAL opCodeSignal  : STD_LOGIC_VECTOR(tamanhoOpCode-1 DOWNTO 0);
+  SIGNAL imediatoSignal: STD_LOGIC_VECTOR(larguraDados-1 DOWNTO 0);
   SIGNAL enableSwitches : STD_LOGIC_VECTOR(1 DOWNTO 0);
   SIGNAL enableButtons  : STD_LOGIC_VECTOR(1 DOWNTO 0);
   
-  SIGNAL enableDisplaySignal : STD_LOGIC_VECTOR(5 downto 0);
+  SIGNAL enableDisplaySignal : STD_LOGIC_VECTOR(5 DOWNTO 0);
   SIGNAL displaySignal0, displaySignal1, displaySignal2, displaySignal3, displaySignal4, displaySignal5 : STD_LOGIC_VECTOR(3 DOWNTO 0);
 
-  BEGIN
+  SIGNAL PCOutSignal, testeSignal: STD_LOGIC_VECTOR(7 downto 0);
   
+  SIGNAL clkSignal: STD_LOGIC;
+  
+  BEGIN
+	CLOCK : ENTITY work.scale_clock
+	PORT MAP(
+		 clk_50Mhz  => CLOCK_50,
+		 rst        => '0',
+		 clk_2Hz   => clkSignal
+	);
 
   
     Processador : ENTITY work.processador
     PORT MAP(
-      clk            => CLOCK_50,
+      clk            => clkSignal,
       dataIn         => dataInProc,
       dataOut        => dataOutProc, --MANDAR PARA O DISPLAY ESSE AQUI
 		address        => addressProcRAM,
       writeRam       => enableWriteRAM,
       readRam        => enableReadRAM,
 		opCodeOut      => opCodeSignal,
-		imediatoOut    => imediatoSignal
+		imediatoOut    => imediatoSignal,
+		PCOut          => PCOutSignal,
+		testeOut       => testeSignal
     );
 	 
 	RAM : ENTITY work.memoriaRAM
@@ -64,7 +77,7 @@ architecture comportamento of relogio is
         we       => enableWriteRAM,
 		  re       => enableReadRAM,
         habilita => enableRAM, -- vem do decoder
-        clk      => CLOCK_50,
+        clk      => clkSignal,
         dado_in  => dataInProc,
         dado_out => dataOutProc
     );
@@ -90,7 +103,7 @@ architecture comportamento of relogio is
       DIN => dataOutProc(3 DOWNTO 0),
       DOUT => displaySignal0,
       ENABLE => enableDisplaySignal(0),
-      CLK => CLOCK_50,
+      CLK => clkSignal,
       RST => '0'
     );
 	 
@@ -101,7 +114,7 @@ architecture comportamento of relogio is
       DIN => dataOutProc(3 DOWNTO 0),
       DOUT => displaySignal1,
       ENABLE => enableDisplaySignal(1),
-      CLK => CLOCK_50,
+      CLK => clkSignal,
       RST => '0'
     );
 
@@ -113,7 +126,7 @@ architecture comportamento of relogio is
       DIN => dataOutProc(3 DOWNTO 0),
       DOUT => displaySignal2,
       ENABLE => enableDisplaySignal(2),
-      CLK => CLOCK_50,
+      CLK => clkSignal,
       RST => '0'
     );
 
@@ -124,7 +137,7 @@ architecture comportamento of relogio is
       DIN => dataOutProc(3 DOWNTO 0),
       DOUT => displaySignal3,
       ENABLE => enableDisplaySignal(3),
-      CLK => CLOCK_50,
+      CLK => clkSignal,
       RST => '0'
     );
 
@@ -136,7 +149,7 @@ architecture comportamento of relogio is
       DIN => dataOutProc(3 DOWNTO 0),
       DOUT => displaySignal4,
 		ENABLE => enableDisplaySignal(4),
-      CLK => CLOCK_50,
+      CLK => clkSignal,
       RST => '0'
     );
 
@@ -147,14 +160,14 @@ architecture comportamento of relogio is
       DIN => dataOutProc(3 DOWNTO 0),
       DOUT => displaySignal5,
       ENABLE => enableDisplaySignal(5),
-      CLK => CLOCK_50,
+      CLK => clkSignal,
       RST => '0'
     );
 
 	 
 	BaseTempo : ENTITY work.divisorGenerico_e_Interface
     PORT MAP(
-        clk              => CLOCK_50,
+        clk              => clkSignal,
 		  habilitaLeitura  => enableBaseTempo,
         limpaLeitura     => clearBaseTempo,
 		  leituraUmSegundo => dataOutProc,
@@ -176,11 +189,14 @@ architecture comportamento of relogio is
 	 
 	 
   -- HEX OUTPUT
-  DISPLAY0 : ENTITY work.conversorHex7Seg PORT MAP(dadoHex => displaySignal0, saida7seg => HEX0);
-  DISPLAY1 : ENTITY work.conversorHex7Seg PORT MAP(dadoHex => displaySignal1, saida7seg => HEX1);
+  DISPLAY0 : ENTITY work.conversorHex7Seg PORT MAP(dadoHex => PCOutSignal(3 downto 0), saida7seg => HEX0);
+  DISPLAY1 : ENTITY work.conversorHex7Seg PORT MAP(dadoHex => "0101", saida7seg => HEX1);
   DISPLAY2 : ENTITY work.conversorHex7Seg PORT MAP(dadoHex => displaySignal2, saida7seg => HEX2);
   DISPLAY3 : ENTITY work.conversorHex7Seg PORT MAP(dadoHex => displaySignal3, saida7seg => HEX3);
   DISPLAY4 : ENTITY work.conversorHex7Seg PORT MAP(dadoHex => displaySignal4, saida7seg => HEX4);
   DISPLAY5 : ENTITY work.conversorHex7Seg PORT MAP(dadoHex => displaySignal5, saida7seg => HEX5);
+  
+  PCOut <= PCOutSignal;
+  LEDR  <= '1' & clkSignal & testeSignal(3 downto 0) & PCOutSignal(3 downto 0);
     
 END architecture;

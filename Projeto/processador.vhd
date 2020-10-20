@@ -22,8 +22,9 @@ entity processador is
 		  writeRam       : out STD_LOGIC;
 		  readRam        : out STD_LOGIC;
 		  opCodeOut      : out STD_LOGIC_VECTOR(3 downto 0);
-		  imediatoOut    : out STD_LOGIC_VECTOR(7 downto 0)
-		  
+		  imediatoOut    : out STD_LOGIC_VECTOR(7 downto 0);
+		  PCout          : out STD_LOGIC_VECTOR(7 downto 0);
+		  testeOut       : out STD_LOGIC_VECTOR(7 downto 0)
 		  
     );
 end entity;
@@ -80,28 +81,20 @@ architecture comportamento of processador is
             larguraDados => ADDR_WIDTH_REG
         )
         PORT MAP(
-            entradaA_MUX => addrROM, 
-            entradaB_MUX => somadorMuxSignal, 
+            entradaA_MUX => somadorMuxSignal, 
+            entradaB_MUX => addrROM, 
             seletor_MUX  => selMuxPc,
             saida_MUX    => muxPCSignal
         );
 		  
 		  
     somaUm : ENTITY work.somaConstante
-        GENERIC MAP(
-            larguraDados => ADDR_WIDTH_REG,
-            constante    => INC
-        )
         PORT MAP(
             entrada => PCROMSignal,
             saida   => somadorMuxSignal
         );
 
 	 ROM : ENTITY work.memoriaROM
-        GENERIC MAP(
-            dataWidth => DATA_WIDTH_ROM,
-            addrWidth => ADDR_WIDTH_ROM
-        )
         PORT MAP(
             Endereco => PCROMSignal,
             Dado     => instrucao
@@ -163,5 +156,8 @@ architecture comportamento of processador is
 		  
 		  opCodeOut   <= opCode;
 		  imediatoOut <= imediato;
+		  
+		  PCOut <= PCROMSignal;
+		  testeOut <= somadorMuxSignal;
 		  
 END architecture;
