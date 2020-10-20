@@ -4,8 +4,7 @@ use ieee.numeric_std.all;          -- Biblioteca IEEE para funções aritmética
 
 entity decoder is
     port
-    (
-        opCode    : in STD_LOGIC_VECTOR(3 downto 0);
+    (		
 		  imediato  : in STD_LOGIC_VECTOR(7 downto 0);
 		  
         display   :  out STD_LOGIC_VECTOR(5 downto 0);
@@ -38,24 +37,25 @@ architecture comportamento of decoder is
 	ALIAS decHr    : std_logic IS display(5);
 	
     BEGIN
+
+	 unidSeg  <= '1' when unsigned(imediato) = 0 else '0';
+	 decSeg   <= '1' when unsigned(imediato) = 1 else '0';
+	 unidMin  <= '1' when unsigned(imediato) = 2 else '0';
+	 decMin   <= '1' when unsigned(imediato) = 3 else '0';
+	 unidHr   <= '1' when unsigned(imediato) = 4 else '0';
+	 decHr    <= '1' when unsigned(imediato) = 5 else '0';
 	 
-	 unidSeg  <= '1' when (opCode = STORE AND unsigned(imediato) = 0) else '0';
-	 decSeg   <= '1' when (opCode = STORE AND unsigned(imediato) = 1) else '0';
-	 unidMin  <= '1' when (opCode = STORE AND unsigned(imediato) = 2) else '0';
-	 decMin   <= '1' when (opCode = STORE AND unsigned(imediato) = 3) else '0';
-	 unidHr   <= '1' when (opCode = STORE AND unsigned(imediato) = 4) else '0';
-	 decHr    <= '1' when (opCode = STORE AND unsigned(imediato) = 5) else '0';
-	 
-	 enableRAM <= '1' when ((opCode = STORE OR opCode = LOAD) AND (imediatoFirstBit = '1')) else '0';
+	 enableRAM <= '1' when (imediatoFirstBit = '1') else '0';
 		
-	 enableBaseTempo <= '1' when (opCode = LOAD  AND unsigned(imediato) = 6) AND (imediatoFirstBit = '0') else '0';
-	 clearBaseTempo  <= '1' when (opCode = STORE AND unsigned(imediato) = 6) AND (imediatoFirstBit = '0') else '0';
+	 enableBaseTempo <= '1' when imediato = "00000110" else '0';
+	 clearBaseTempo  <= '1' when unsigned(imediato) = 7 else '0';
 	 
-	 enableSwitches <= "01" when (unsigned(imediato) = 7) else
-							 "10" when (unsigned(imediato) = 8) else
+	 enableSwitches <= "01" when (unsigned(imediato) = 8) else
+							 "10" when (unsigned(imediato) = 9) else
 							 "00";
-	 enableButtons  <= "01" when (unsigned(imediato) =  9) else
-							 "10" when (unsigned(imediato) = 10) else
+							 
+	 enableButtons  <= "01" when (unsigned(imediato) = 10) else
+							 "10" when (unsigned(imediato) = 11) else
 							 "00";
 	
 END architecture;

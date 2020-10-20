@@ -1,5 +1,5 @@
 Analysis & Synthesis report for relogio
-Tue Oct 20 10:29:45 2020
+Tue Oct 20 16:25:24 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -27,41 +27,35 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  19. Parameter Settings for User Entity Instance: processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores
  20. Parameter Settings for User Entity Instance: processador:Processador|ULA:ULA
  21. Parameter Settings for User Entity Instance: processador:Processador|flipFlop:flagZeroFlipFlop
- 22. Parameter Settings for User Entity Instance: memoriaRAM:RAM
- 23. Parameter Settings for User Entity Instance: registradorGenerico:REG_SECOND_UNIT
- 24. Parameter Settings for User Entity Instance: registradorGenerico:REG_SECOND_TEN
- 25. Parameter Settings for User Entity Instance: registradorGenerico:REG_MINUTE_UNIT
- 26. Parameter Settings for User Entity Instance: registradorGenerico:REG_MINUTE_TEN
- 27. Parameter Settings for User Entity Instance: registradorGenerico:REG_HOUR_UNIT
- 28. Parameter Settings for User Entity Instance: registradorGenerico:REG_HOUR_TEN
- 29. Parameter Settings for User Entity Instance: divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo
- 30. Parameter Settings for User Entity Instance: divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempoRapido
- 31. Parameter Settings for User Entity Instance: divisorGenerico_e_Interface:BaseTempo|flipFlop:registraUmSegundo
- 32. Port Connectivity Checks: "conversorHex7Seg:DISPLAY5"
- 33. Port Connectivity Checks: "conversorHex7Seg:DISPLAY4"
- 34. Port Connectivity Checks: "conversorHex7Seg:DISPLAY3"
- 35. Port Connectivity Checks: "conversorHex7Seg:DISPLAY2"
- 36. Port Connectivity Checks: "conversorHex7Seg:DISPLAY1"
- 37. Port Connectivity Checks: "conversorHex7Seg:DISPLAY0"
- 38. Port Connectivity Checks: "divisorGenerico_e_Interface:BaseTempo|flipFlop:registraUmSegundo"
- 39. Port Connectivity Checks: "divisorGenerico_e_Interface:BaseTempo"
- 40. Port Connectivity Checks: "registradorGenerico:REG_HOUR_TEN"
- 41. Port Connectivity Checks: "registradorGenerico:REG_HOUR_UNIT"
- 42. Port Connectivity Checks: "registradorGenerico:REG_MINUTE_TEN"
- 43. Port Connectivity Checks: "registradorGenerico:REG_MINUTE_UNIT"
- 44. Port Connectivity Checks: "registradorGenerico:REG_SECOND_TEN"
- 45. Port Connectivity Checks: "registradorGenerico:REG_SECOND_UNIT"
- 46. Port Connectivity Checks: "decoder:Decoder"
- 47. Port Connectivity Checks: "memoriaRAM:RAM"
- 48. Port Connectivity Checks: "processador:Processador|flipFlop:flagZeroFlipFlop"
- 49. Port Connectivity Checks: "processador:Processador|unidControl:UNIDCONTROLE"
- 50. Port Connectivity Checks: "processador:Processador|memoriaROM:ROM"
- 51. Port Connectivity Checks: "processador:Processador|registradorGenerico:PC"
- 52. Port Connectivity Checks: "processador:Processador"
- 53. Port Connectivity Checks: "scale_clock:CLOCK"
- 54. Post-Synthesis Netlist Statistics for Top Partition
- 55. Elapsed Time Per Partition
- 56. Analysis & Synthesis Messages
+ 22. Parameter Settings for User Entity Instance: registradorGenericoWR:REG_SECOND_UNIT
+ 23. Parameter Settings for User Entity Instance: registradorGenericoWR:REG_SECOND_TEN
+ 24. Parameter Settings for User Entity Instance: registradorGenericoWR:REG_MINUTE_UNIT
+ 25. Parameter Settings for User Entity Instance: registradorGenericoWR:REG_MINUTE_TEN
+ 26. Parameter Settings for User Entity Instance: registradorGenericoWR:REG_HOUR_UNIT
+ 27. Parameter Settings for User Entity Instance: registradorGenericoWR:REG_HOUR_TEN
+ 28. Parameter Settings for User Entity Instance: divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo
+ 29. Parameter Settings for User Entity Instance: divisorGenerico_e_Interface:BaseTempo|flipFlop:registraUmSegundo
+ 30. Port Connectivity Checks: "conversorHex7Seg:DISPLAY5"
+ 31. Port Connectivity Checks: "conversorHex7Seg:DISPLAY4"
+ 32. Port Connectivity Checks: "conversorHex7Seg:DISPLAY3"
+ 33. Port Connectivity Checks: "conversorHex7Seg:DISPLAY2"
+ 34. Port Connectivity Checks: "conversorHex7Seg:DISPLAY1"
+ 35. Port Connectivity Checks: "conversorHex7Seg:DISPLAY0"
+ 36. Port Connectivity Checks: "divisorGenerico_e_Interface:BaseTempo|flipFlop:registraUmSegundo"
+ 37. Port Connectivity Checks: "registradorGenericoWR:REG_HOUR_TEN"
+ 38. Port Connectivity Checks: "registradorGenericoWR:REG_HOUR_UNIT"
+ 39. Port Connectivity Checks: "registradorGenericoWR:REG_MINUTE_TEN"
+ 40. Port Connectivity Checks: "registradorGenericoWR:REG_MINUTE_UNIT"
+ 41. Port Connectivity Checks: "registradorGenericoWR:REG_SECOND_TEN"
+ 42. Port Connectivity Checks: "registradorGenericoWR:REG_SECOND_UNIT"
+ 43. Port Connectivity Checks: "decoder:Decoder"
+ 44. Port Connectivity Checks: "processador:Processador|flipFlop:flagZeroFlipFlop"
+ 45. Port Connectivity Checks: "processador:Processador|registradorGenerico:PC"
+ 46. Port Connectivity Checks: "processador:Processador"
+ 47. Port Connectivity Checks: "scale_clock:CLOCK"
+ 48. Post-Synthesis Netlist Statistics for Top Partition
+ 49. Elapsed Time Per Partition
+ 50. Analysis & Synthesis Messages
 
 
 
@@ -88,13 +82,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Oct 20 10:29:45 2020       ;
+; Analysis & Synthesis Status     ; Successful - Tue Oct 20 16:25:24 2020       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; relogio                                     ;
 ; Top-level Entity Name           ; relogio                                     ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 25                                          ;
+; Total registers                 ; 85                                          ;
 ; Total pins                      ; 65                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -116,6 +110,8 @@ https://fpgasoftware.intel.com/eula.
 ; Device                                                                          ; 5CEBA4F23C7        ;                    ;
 ; Top-level entity name                                                           ; relogio            ; relogio            ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; VHDL Show LMF Mapping Messages                                                  ; Off                ;                    ;
+; VHDL Version                                                                    ; VHDL_2008          ; VHDL_1993          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
 ; Enable compact report table                                                     ; Off                ; Off                ;
@@ -125,7 +121,6 @@ https://fpgasoftware.intel.com/eula.
 ; Preserve fewer node names                                                       ; On                 ; On                 ;
 ; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
 ; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
-; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
 ; State Machine Processing                                                        ; Auto               ; Auto               ;
 ; Safe State Machine                                                              ; Off                ; Off                ;
 ; Extract Verilog State Machines                                                  ; On                 ; On                 ;
@@ -221,7 +216,6 @@ https://fpgasoftware.intel.com/eula.
 ; Components/registradorGenerico.vhd         ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/registradorGenerico.vhd         ;         ;
 ; Components/muxGenerico2x1.vhd              ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/muxGenerico2x1.vhd              ;         ;
 ; Components/memoriaROM.vhd                  ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/memoriaROM.vhd                  ;         ;
-; Components/memoriaRAM.vhd                  ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/memoriaRAM.vhd                  ;         ;
 ; Components/flipFlop.vhd                    ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/flipFlop.vhd                    ;         ;
 ; Components/divisorGenerico_e_Interface.vhd ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/divisorGenerico_e_Interface.vhd ;         ;
 ; Components/divisorGenerico.vhd             ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/divisorGenerico.vhd             ;         ;
@@ -232,9 +226,8 @@ https://fpgasoftware.intel.com/eula.
 ; Components/somaConstante.vhd               ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/somaConstante.vhd               ;         ;
 ; relogio.vhd                                ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/relogio.vhd                                ;         ;
 ; Components/decoder.vhd                     ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/decoder.vhd                     ;         ;
-; Components/switches.vhd                    ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/switches.vhd                    ;         ;
-; Components/buttons.vhd                     ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/buttons.vhd                     ;         ;
 ; Components/scale_clock.vhd                 ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/scale_clock.vhd                 ;         ;
+; Components/registradorGenericoWR.vhd       ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/registradorGenericoWR.vhd       ;         ;
 +--------------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------+---------+
 
 
@@ -243,36 +236,53 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 17             ;
+; Estimate of Logic utilization (ALMs needed) ; 81             ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 30             ;
+; Combinational ALUT usage for logic          ; 146            ;
 ;     -- 7 input functions                    ; 0              ;
-;     -- 6 input functions                    ; 4              ;
-;     -- 5 input functions                    ; 2              ;
-;     -- 4 input functions                    ; 0              ;
-;     -- <=3 input functions                  ; 24             ;
+;     -- 6 input functions                    ; 13             ;
+;     -- 5 input functions                    ; 10             ;
+;     -- 4 input functions                    ; 38             ;
+;     -- <=3 input functions                  ; 85             ;
 ;                                             ;                ;
-; Dedicated logic registers                   ; 25             ;
+; Dedicated logic registers                   ; 85             ;
 ;                                             ;                ;
 ; I/O pins                                    ; 65             ;
 ;                                             ;                ;
 ; Total DSP Blocks                            ; 0              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 25             ;
-; Total fan-out                               ; 221            ;
-; Average fan-out                             ; 1.19           ;
+; Maximum fan-out                             ; 84             ;
+; Total fan-out                               ; 817            ;
+; Average fan-out                             ; 2.26           ;
 +---------------------------------------------+----------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                           ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name        ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------+-------------+--------------+
-; |relogio                   ; 30 (0)              ; 25 (0)                    ; 0                 ; 0          ; 65   ; 0            ; |relogio                   ; relogio     ; work         ;
-;    |scale_clock:CLOCK|     ; 30 (30)             ; 25 (25)                   ; 0                 ; 0          ; 0    ; 0            ; |relogio|scale_clock:CLOCK ; scale_clock ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------+-------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                            ;
++--------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------+-----------------------------+--------------+
+; Compilation Hierarchy Node                             ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                             ; Entity Name                 ; Library Name ;
++--------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------+-----------------------------+--------------+
+; |relogio                                               ; 146 (1)             ; 85 (0)                    ; 0                 ; 0          ; 65   ; 0            ; |relogio                                                                        ; relogio                     ; work         ;
+;    |conversorHex7Seg:DISPLAY2|                         ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|conversorHex7Seg:DISPLAY2                                              ; conversorHex7Seg            ; work         ;
+;    |conversorHex7Seg:DISPLAY3|                         ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|conversorHex7Seg:DISPLAY3                                              ; conversorHex7Seg            ; work         ;
+;    |decoder:Decoder|                                   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|decoder:Decoder                                                        ; decoder                     ; work         ;
+;    |divisorGenerico_e_Interface:BaseTempo|             ; 31 (0)              ; 27 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |relogio|divisorGenerico_e_Interface:BaseTempo                                  ; divisorGenerico_e_Interface ; work         ;
+;       |divisorGenerico:baseTempo|                      ; 31 (31)             ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |relogio|divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo        ; divisorGenerico             ; work         ;
+;       |flipFlop:registraUmSegundo|                     ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|divisorGenerico_e_Interface:BaseTempo|flipFlop:registraUmSegundo       ; flipFlop                    ; work         ;
+;    |processador:Processador|                           ; 67 (0)              ; 25 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador                                                ; processador                 ; work         ;
+;       |ULA:ULA|                                        ; 19 (19)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador|ULA:ULA                                        ; ULA                         ; work         ;
+;       |bancoRegistradoresArqRegMem:BancoRegistradores| ; 10 (10)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores ; bancoRegistradoresArqRegMem ; work         ;
+;       |flipFlop:flagZeroFlipFlop|                      ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador|flipFlop:flagZeroFlipFlop                      ; flipFlop                    ; work         ;
+;       |memoriaROM:ROM|                                 ; 19 (19)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador|memoriaROM:ROM                                 ; memoriaROM                  ; work         ;
+;       |muxGenerico2x1:muxRAM_Imediato|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador|muxGenerico2x1:muxRAM_Imediato                 ; muxGenerico2x1              ; work         ;
+;       |registradorGenerico:PC|                         ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador|registradorGenerico:PC                         ; registradorGenerico         ; work         ;
+;       |somaConstante:somaUm|                           ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador|somaConstante:somaUm                           ; somaConstante               ; work         ;
+;       |unidControl:UNIDCONTROLE|                       ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador|unidControl:UNIDCONTROLE                       ; unidControl                 ; work         ;
+;    |registradorGenericoWR:REG_MINUTE_TEN|              ; 1 (1)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|registradorGenericoWR:REG_MINUTE_TEN                                   ; registradorGenericoWR       ; work         ;
+;    |registradorGenericoWR:REG_MINUTE_UNIT|             ; 1 (1)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|registradorGenericoWR:REG_MINUTE_UNIT                                  ; registradorGenericoWR       ; work         ;
+;    |scale_clock:CLOCK|                                 ; 30 (30)             ; 25 (25)                   ; 0                 ; 0          ; 0    ; 0            ; |relogio|scale_clock:CLOCK                                                      ; scale_clock                 ; work         ;
++--------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------+-----------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -281,69 +291,52 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------------------+---------------------------------------------+
 ; Register name                                                                         ; Reason for Removal                          ;
 +---------------------------------------------------------------------------------------+---------------------------------------------+
-; registradorGenerico:REG_MINUTE_UNIT|DOUT[0..3]                                        ; Stuck at GND due to stuck port clock_enable ;
-; registradorGenerico:REG_MINUTE_TEN|DOUT[0..3]                                         ; Stuck at GND due to stuck port clock_enable ;
-; registradorGenerico:REG_HOUR_UNIT|DOUT[0..3]                                          ; Stuck at GND due to stuck port clock_enable ;
-; registradorGenerico:REG_HOUR_TEN|DOUT[0..3]                                           ; Stuck at GND due to stuck port clock_enable ;
-; divisorGenerico_e_Interface:BaseTempo|flipFlop:registraUmSegundo|DOUT                 ; Lost fanout                                 ;
-; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo|tick                  ; Lost fanout                                 ;
-; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempoRapido|tick            ; Lost fanout                                 ;
-; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo|contador[0..24]       ; Lost fanout                                 ;
-; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempoRapido|contador[0..14] ; Lost fanout                                 ;
-; processador:Processador|registradorGenerico:PC|DOUT[0..7]                             ; Stuck at GND due to stuck port data_in      ;
-; Total Number of Removed Registers = 67                                                ;                                             ;
+; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~22 ; Stuck at GND due to stuck port data_in      ;
+; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~30 ; Stuck at GND due to stuck port data_in      ;
+; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~23 ; Stuck at GND due to stuck port data_in      ;
+; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~31 ; Stuck at GND due to stuck port data_in      ;
+; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~24 ; Stuck at GND due to stuck port data_in      ;
+; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~32 ; Stuck at GND due to stuck port data_in      ;
+; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~21 ; Stuck at GND due to stuck port data_in      ;
+; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~29 ; Stuck at GND due to stuck port data_in      ;
+; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~25 ; Stuck at GND due to stuck port data_in      ;
+; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~33 ; Stuck at GND due to stuck port data_in      ;
+; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~26 ; Stuck at GND due to stuck port data_in      ;
+; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~34 ; Stuck at GND due to stuck port data_in      ;
+; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~27 ; Stuck at GND due to stuck port data_in      ;
+; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~35 ; Stuck at GND due to stuck port data_in      ;
+; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~28 ; Stuck at GND due to stuck port data_in      ;
+; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~36 ; Stuck at GND due to stuck port data_in      ;
+; registradorGenericoWR:REG_SECOND_UNIT|DOUT[0..3]                                      ; Stuck at GND due to stuck port clock_enable ;
+; registradorGenericoWR:REG_SECOND_TEN|DOUT[0..3]                                       ; Stuck at GND due to stuck port clock_enable ;
+; registradorGenericoWR:REG_HOUR_UNIT|DOUT[0..3]                                        ; Stuck at GND due to stuck port clock_enable ;
+; registradorGenericoWR:REG_HOUR_TEN|DOUT[0..3]                                         ; Stuck at GND due to stuck port clock_enable ;
+; Total Number of Removed Registers = 32                                                ;                                             ;
 +---------------------------------------------------------------------------------------+---------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Removed Registers Triggering Further Register Optimizations                                                                                                        ;
-+---------------------------------------------+--------------------------------+-------------------------------------------------------------------------------------+
-; Register name                               ; Reason for Removal             ; Registers Removed due to This Register                                              ;
-+---------------------------------------------+--------------------------------+-------------------------------------------------------------------------------------+
-; registradorGenerico:REG_MINUTE_UNIT|DOUT[0] ; Stuck at GND                   ; divisorGenerico_e_Interface:BaseTempo|flipFlop:registraUmSegundo|DOUT,              ;
-;                                             ; due to stuck port clock_enable ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo|tick,               ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempoRapido|tick,         ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo|contador[7],        ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo|contador[12],       ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo|contador[24],       ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo|contador[23],       ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo|contador[22],       ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo|contador[21],       ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo|contador[20],       ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo|contador[19],       ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo|contador[18],       ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo|contador[17],       ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo|contador[16],       ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo|contador[15],       ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo|contador[14],       ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo|contador[13],       ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo|contador[11],       ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo|contador[10],       ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo|contador[9],        ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo|contador[8],        ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo|contador[0],        ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo|contador[1],        ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo|contador[2],        ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo|contador[3],        ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo|contador[4],        ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo|contador[5],        ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo|contador[6],        ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempoRapido|contador[5],  ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempoRapido|contador[4],  ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempoRapido|contador[7],  ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempoRapido|contador[6],  ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempoRapido|contador[8],  ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempoRapido|contador[3],  ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempoRapido|contador[2],  ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempoRapido|contador[0],  ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempoRapido|contador[1],  ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempoRapido|contador[9],  ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempoRapido|contador[11], ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempoRapido|contador[10], ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempoRapido|contador[14], ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempoRapido|contador[13], ;
-;                                             ;                                ; divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempoRapido|contador[12]  ;
-+---------------------------------------------+--------------------------------+-------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------+---------------------------+------------------------------------------------+
+; Register name                                                                         ; Reason for Removal        ; Registers Removed due to This Register         ;
++---------------------------------------------------------------------------------------+---------------------------+------------------------------------------------+
+; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~22 ; Stuck at GND              ; registradorGenericoWR:REG_SECOND_UNIT|DOUT[1], ;
+;                                                                                       ; due to stuck port data_in ; registradorGenericoWR:REG_SECOND_TEN|DOUT[1],  ;
+;                                                                                       ;                           ; registradorGenericoWR:REG_HOUR_UNIT|DOUT[1],   ;
+;                                                                                       ;                           ; registradorGenericoWR:REG_HOUR_TEN|DOUT[1]     ;
+; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~23 ; Stuck at GND              ; registradorGenericoWR:REG_SECOND_UNIT|DOUT[2], ;
+;                                                                                       ; due to stuck port data_in ; registradorGenericoWR:REG_SECOND_TEN|DOUT[2],  ;
+;                                                                                       ;                           ; registradorGenericoWR:REG_HOUR_UNIT|DOUT[2],   ;
+;                                                                                       ;                           ; registradorGenericoWR:REG_HOUR_TEN|DOUT[2]     ;
+; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~24 ; Stuck at GND              ; registradorGenericoWR:REG_SECOND_UNIT|DOUT[3], ;
+;                                                                                       ; due to stuck port data_in ; registradorGenericoWR:REG_SECOND_TEN|DOUT[3],  ;
+;                                                                                       ;                           ; registradorGenericoWR:REG_HOUR_UNIT|DOUT[3],   ;
+;                                                                                       ;                           ; registradorGenericoWR:REG_HOUR_TEN|DOUT[3]     ;
+; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~21 ; Stuck at GND              ; registradorGenericoWR:REG_SECOND_UNIT|DOUT[0], ;
+;                                                                                       ; due to stuck port data_in ; registradorGenericoWR:REG_SECOND_TEN|DOUT[0],  ;
+;                                                                                       ;                           ; registradorGenericoWR:REG_HOUR_UNIT|DOUT[0],   ;
+;                                                                                       ;                           ; registradorGenericoWR:REG_HOUR_TEN|DOUT[0]     ;
++---------------------------------------------------------------------------------------+---------------------------+------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -351,23 +344,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 25    ;
-; Number of registers using Synchronous Clear  ; 24    ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Total registers                              ; 85    ;
+; Number of registers using Synchronous Clear  ; 49    ;
+; Number of registers using Synchronous Load   ; 8     ;
+; Number of registers using Asynchronous Clear ; 1     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 24    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
-; 1:1                ; 8 bits    ; 0 LEs         ; 0 LEs                ; 0 LEs                  ; Yes        ; |relogio|processador:Processador|registradorGenerico:PC|DOUT[1] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |relogio|processador:Processador|ULA:ULA|saida[7] ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |relogio|processador:Processador|ULA:ULA|saida[0] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
 
 
 +-------------------------------------------------------------------------+
@@ -480,19 +474,48 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: memoriaRAM:RAM ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; datawidth      ; 8     ; Signed Integer                     ;
-; addrwidth      ; 7     ; Signed Integer                     ;
-+----------------+-------+------------------------------------+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registradorGenericoWR:REG_SECOND_UNIT ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; larguradados   ; 4     ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registradorGenericoWR:REG_SECOND_TEN ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; larguradados   ; 4     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registradorGenericoWR:REG_MINUTE_UNIT ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; larguradados   ; 4     ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registradorGenericoWR:REG_MINUTE_TEN ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; larguradados   ; 4     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: registradorGenerico:REG_SECOND_UNIT ;
+; Parameter Settings for User Entity Instance: registradorGenericoWR:REG_HOUR_UNIT ;
 +----------------+-------+---------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                    ;
 +----------------+-------+---------------------------------------------------------+
@@ -502,52 +525,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: registradorGenerico:REG_SECOND_TEN ;
+; Parameter Settings for User Entity Instance: registradorGenericoWR:REG_HOUR_TEN ;
 +----------------+-------+--------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                   ;
 +----------------+-------+--------------------------------------------------------+
 ; larguradados   ; 4     ; Signed Integer                                         ;
 +----------------+-------+--------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: registradorGenerico:REG_MINUTE_UNIT ;
-+----------------+-------+---------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                    ;
-+----------------+-------+---------------------------------------------------------+
-; larguradados   ; 4     ; Signed Integer                                          ;
-+----------------+-------+---------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: registradorGenerico:REG_MINUTE_TEN ;
-+----------------+-------+--------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                   ;
-+----------------+-------+--------------------------------------------------------+
-; larguradados   ; 4     ; Signed Integer                                         ;
-+----------------+-------+--------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: registradorGenerico:REG_HOUR_UNIT ;
-+----------------+-------+-------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                  ;
-+----------------+-------+-------------------------------------------------------+
-; larguradados   ; 4     ; Signed Integer                                        ;
-+----------------+-------+-------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: registradorGenerico:REG_HOUR_TEN ;
-+----------------+-------+------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                 ;
-+----------------+-------+------------------------------------------------------+
-; larguradados   ; 4     ; Signed Integer                                       ;
-+----------------+-------+------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -558,16 +541,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+----------+----------------------------------------------------------------------------------+
 ; divisor        ; 25000000 ; Signed Integer                                                                   ;
 +----------------+----------+----------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempoRapido ;
-+----------------+-------+-------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                      ;
-+----------------+-------+-------------------------------------------------------------------------------------------+
-; divisor        ; 25000 ; Signed Integer                                                                            ;
-+----------------+-------+-------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -627,17 +600,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +-------------------------------------------------------+
 ; Port Connectivity Checks: "conversorHex7Seg:DISPLAY1" ;
-+------------+-------+----------+-----------------------+
-; Port       ; Type  ; Severity ; Details               ;
-+------------+-------+----------+-----------------------+
-; dadohex[3] ; Input ; Info     ; Stuck at GND          ;
-; dadohex[2] ; Input ; Info     ; Stuck at VCC          ;
-; dadohex[1] ; Input ; Info     ; Stuck at GND          ;
-; dadohex[0] ; Input ; Info     ; Stuck at VCC          ;
-; apaga      ; Input ; Info     ; Stuck at GND          ;
-; negativo   ; Input ; Info     ; Stuck at GND          ;
-; overflow   ; Input ; Info     ; Stuck at GND          ;
-+------------+-------+----------+-----------------------+
++----------+-------+----------+-------------------------+
+; Port     ; Type  ; Severity ; Details                 ;
++----------+-------+----------+-------------------------+
+; apaga    ; Input ; Info     ; Stuck at GND            ;
+; negativo ; Input ; Info     ; Stuck at GND            ;
+; overflow ; Input ; Info     ; Stuck at GND            ;
++----------+-------+----------+-------------------------+
 
 
 +-------------------------------------------------------+
@@ -661,35 +630,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------+-------+----------+------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "divisorGenerico_e_Interface:BaseTempo"                                                                ;
-+------------------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port                   ; Type   ; Severity ; Details                                                                             ;
-+------------------------+--------+----------+-------------------------------------------------------------------------------------+
-; leituraumsegundo[7..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------------------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+--------------------------------------------------------------+
-; Port Connectivity Checks: "registradorGenerico:REG_HOUR_TEN" ;
-+------+-------+----------+------------------------------------+
-; Port ; Type  ; Severity ; Details                            ;
-+------+-------+----------+------------------------------------+
-; rst  ; Input ; Info     ; Stuck at GND                       ;
-+------+-------+----------+------------------------------------+
-
-
-+---------------------------------------------------------------+
-; Port Connectivity Checks: "registradorGenerico:REG_HOUR_UNIT" ;
-+------+-------+----------+-------------------------------------+
-; Port ; Type  ; Severity ; Details                             ;
-+------+-------+----------+-------------------------------------+
-; rst  ; Input ; Info     ; Stuck at GND                        ;
-+------+-------+----------+-------------------------------------+
-
-
 +----------------------------------------------------------------+
-; Port Connectivity Checks: "registradorGenerico:REG_MINUTE_TEN" ;
+; Port Connectivity Checks: "registradorGenericoWR:REG_HOUR_TEN" ;
 +------+-------+----------+--------------------------------------+
 ; Port ; Type  ; Severity ; Details                              ;
 +------+-------+----------+--------------------------------------+
@@ -698,7 +640,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------+
-; Port Connectivity Checks: "registradorGenerico:REG_MINUTE_UNIT" ;
+; Port Connectivity Checks: "registradorGenericoWR:REG_HOUR_UNIT" ;
 +------+-------+----------+---------------------------------------+
 ; Port ; Type  ; Severity ; Details                               ;
 +------+-------+----------+---------------------------------------+
@@ -706,24 +648,40 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+---------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "registradorGenerico:REG_SECOND_TEN"                                                 ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; dout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; rst  ; Input  ; Info     ; Stuck at GND                                                                        ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
++------------------------------------------------------------------+
+; Port Connectivity Checks: "registradorGenericoWR:REG_MINUTE_TEN" ;
++------+-------+----------+----------------------------------------+
+; Port ; Type  ; Severity ; Details                                ;
++------+-------+----------+----------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                           ;
++------+-------+----------+----------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "registradorGenerico:REG_SECOND_UNIT"                                                ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; dout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; rst  ; Input  ; Info     ; Stuck at GND                                                                        ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "registradorGenericoWR:REG_MINUTE_UNIT" ;
++------+-------+----------+-----------------------------------------+
+; Port ; Type  ; Severity ; Details                                 ;
++------+-------+----------+-----------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                            ;
++------+-------+----------+-----------------------------------------+
+
+
++------------------------------------------------------------------+
+; Port Connectivity Checks: "registradorGenericoWR:REG_SECOND_TEN" ;
++------+-------+----------+----------------------------------------+
+; Port ; Type  ; Severity ; Details                                ;
++------+-------+----------+----------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                           ;
++------+-------+----------+----------------------------------------+
+
+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "registradorGenericoWR:REG_SECOND_UNIT" ;
++------+-------+----------+-----------------------------------------+
+; Port ; Type  ; Severity ; Details                                 ;
++------+-------+----------+-----------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                            ;
++------+-------+----------+-----------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -731,17 +689,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port           ; Type   ; Severity ; Details                                                                             ;
 +----------------+--------+----------+-------------------------------------------------------------------------------------+
+; enableram      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; enableswitches ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; enablebuttons  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "memoriaRAM:RAM"                                                                               ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port           ; Type   ; Severity ; Details                                                                             ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-; dado_out[7..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +----------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
@@ -754,25 +704,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+-----------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "processador:Processador|unidControl:UNIDCONTROLE"                                                     ;
-+------------------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port                   ; Type   ; Severity ; Details                                                                             ;
-+------------------------+--------+----------+-------------------------------------------------------------------------------------+
-; pontosdecontrole[8..3] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; pontosdecontrole[1..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------------------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "processador:Processador|memoriaROM:ROM"                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; dado ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +----------------------------------------------------------------------------+
 ; Port Connectivity Checks: "processador:Processador|registradorGenerico:PC" ;
 +--------+-------+----------+------------------------------------------------+
@@ -783,15 +714,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------+-------+----------+------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "processador:Processador"                                                                      ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port           ; Type   ; Severity ; Details                                                                             ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-; address[7]     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; dataout[7..4]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; testeout[7..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "processador:Processador"                                                                     ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                             ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; address       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; dataout[7..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; readram       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; testeout      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------+
@@ -808,20 +740,28 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 25                          ;
-;     SCLR              ; 24                          ;
-;     plain             ; 1                           ;
-; arriav_lcell_comb     ; 32                          ;
-;     arith             ; 24                          ;
-;         1 data inputs ; 24                          ;
-;     normal            ; 8                           ;
+; arriav_ff             ; 85                          ;
+;     CLR               ; 1                           ;
+;     ENA               ; 24                          ;
+;     SCLR              ; 49                          ;
+;     SLD               ; 8                           ;
+;     plain             ; 3                           ;
+; arriav_lcell_comb     ; 147                         ;
+;     arith             ; 66                          ;
+;         1 data inputs ; 57                          ;
+;         4 data inputs ; 6                           ;
+;         5 data inputs ; 3                           ;
+;     normal            ; 81                          ;
 ;         0 data inputs ; 2                           ;
-;         5 data inputs ; 2                           ;
-;         6 data inputs ; 4                           ;
+;         2 data inputs ; 18                          ;
+;         3 data inputs ; 9                           ;
+;         4 data inputs ; 32                          ;
+;         5 data inputs ; 7                           ;
+;         6 data inputs ; 13                          ;
 ; boundary_port         ; 65                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.30                        ;
-; Average LUT depth     ; 2.44                        ;
+; Max LUT depth         ; 6.70                        ;
+; Average LUT depth     ; 3.41                        ;
 +-----------------------+-----------------------------+
 
 
@@ -840,7 +780,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Tue Oct 20 10:29:33 2020
+    Info: Processing started: Tue Oct 20 16:25:13 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off relogio -c relogio
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -866,7 +806,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file Compone
     Info (12022): Found design unit 1: flipFlop-comportamento File: /home/borg/Documents/relogio/Projeto/Components/flipFlop.vhd Line: 16
     Info (12023): Found entity 1: flipFlop File: /home/borg/Documents/relogio/Projeto/Components/flipFlop.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file Components/divisorGenerico_e_Interface.vhd
-    Info (12022): Found design unit 1: divisorGenerico_e_Interface-interface File: /home/borg/Documents/relogio/Projeto/Components/divisorGenerico_e_Interface.vhd Line: 14
+    Info (12022): Found design unit 1: divisorGenerico_e_Interface-interface File: /home/borg/Documents/relogio/Projeto/Components/divisorGenerico_e_Interface.vhd Line: 13
     Info (12023): Found entity 1: divisorGenerico_e_Interface File: /home/borg/Documents/relogio/Projeto/Components/divisorGenerico_e_Interface.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file Components/divisorGenerico.vhd
     Info (12022): Found design unit 1: divisorGenerico-divInteiro File: /home/borg/Documents/relogio/Projeto/Components/divisorGenerico.vhd Line: 15
@@ -881,7 +821,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file Compone
     Info (12022): Found design unit 1: unidControl-comportamento File: /home/borg/Documents/relogio/Projeto/Components/unidControl.vhd Line: 17
     Info (12023): Found entity 1: unidControl File: /home/borg/Documents/relogio/Projeto/Components/unidControl.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file processador.vhd
-    Info (12022): Found design unit 1: processador-comportamento File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 32
+    Info (12022): Found design unit 1: processador-comportamento File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 31
     Info (12023): Found entity 1: processador File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file Components/somaConstante.vhd
     Info (12022): Found design unit 1: somaConstante-comportamento File: /home/borg/Documents/relogio/Projeto/Components/somaConstante.vhd Line: 16
@@ -890,7 +830,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file relogio
     Info (12022): Found design unit 1: relogio-comportamento File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 24
     Info (12023): Found entity 1: relogio File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file Components/decoder.vhd
-    Info (12022): Found design unit 1: decoder-comportamento File: /home/borg/Documents/relogio/Projeto/Components/decoder.vhd Line: 20
+    Info (12022): Found design unit 1: decoder-comportamento File: /home/borg/Documents/relogio/Projeto/Components/decoder.vhd Line: 19
     Info (12023): Found entity 1: decoder File: /home/borg/Documents/relogio/Projeto/Components/decoder.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file Components/switches.vhd
     Info (12022): Found design unit 1: switches-interface File: /home/borg/Documents/relogio/Projeto/Components/switches.vhd Line: 13
@@ -901,123 +841,59 @@ Info (12021): Found 2 design units, including 1 entities, in source file Compone
 Info (12021): Found 2 design units, including 1 entities, in source file Components/scale_clock.vhd
     Info (12022): Found design unit 1: scale_clock-Behavioral File: /home/borg/Documents/relogio/Projeto/Components/scale_clock.vhd Line: 15
     Info (12023): Found entity 1: scale_clock File: /home/borg/Documents/relogio/Projeto/Components/scale_clock.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file Components/registradorGenericoWR.vhd
+    Info (12022): Found design unit 1: registradorGenericoWR-comportamento File: /home/borg/Documents/relogio/Projeto/Components/registradorGenericoWR.vhd Line: 15
+    Info (12023): Found entity 1: registradorGenericoWR File: /home/borg/Documents/relogio/Projeto/Components/registradorGenericoWR.vhd Line: 4
 Info (12127): Elaborating entity "relogio" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at relogio.vhd(36): used implicit default value for signal "enableSwitches" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 36
-Warning (10541): VHDL Signal Declaration warning at relogio.vhd(37): used implicit default value for signal "enableButtons" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 37
-Warning (10036): Verilog HDL or VHDL warning at relogio.vhd(40): object "displaySignal0" assigned a value but never read File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 40
-Warning (10036): Verilog HDL or VHDL warning at relogio.vhd(40): object "displaySignal1" assigned a value but never read File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 40
+Warning (10036): Verilog HDL or VHDL warning at relogio.vhd(26): object "addressProcRAM" assigned a value but never read File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 26
+Warning (10036): Verilog HDL or VHDL warning at relogio.vhd(28): object "enableReadRAM" assigned a value but never read File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 28
+Warning (10036): Verilog HDL or VHDL warning at relogio.vhd(29): object "enableRAM" assigned a value but never read File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 29
+Warning (10036): Verilog HDL or VHDL warning at relogio.vhd(42): object "testeSignal" assigned a value but never read File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 42
 Info (12128): Elaborating entity "scale_clock" for hierarchy "scale_clock:CLOCK" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 47
 Info (12128): Elaborating entity "processador" for hierarchy "processador:Processador" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 55
 Warning (10541): VHDL Signal Declaration warning at processador.vhd(20): used implicit default value for signal "address" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 20
-Warning (10541): VHDL Signal Declaration warning at processador.vhd(21): used implicit default value for signal "dataOut" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 21
-Warning (10541): VHDL Signal Declaration warning at processador.vhd(22): used implicit default value for signal "writeRam" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 22
-Warning (10541): VHDL Signal Declaration warning at processador.vhd(23): used implicit default value for signal "readRam" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 23
-Warning (10541): VHDL Signal Declaration warning at processador.vhd(40): used implicit default value for signal "barramentoSignal" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 40
-Warning (10036): Verilog HDL or VHDL warning at processador.vhd(46): object "instrucao" assigned a value but never read File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 46
-Warning (10541): VHDL Signal Declaration warning at processador.vhd(47): used implicit default value for signal "pontosDeControleSignal" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 47
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "processador:Processador|registradorGenerico:PC" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 67
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "processador:Processador|muxGenerico2x1:MuxPC" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 79
-Info (12128): Elaborating entity "somaConstante" for hierarchy "processador:Processador|somaConstante:somaUm" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 91
-Info (12128): Elaborating entity "memoriaROM" for hierarchy "processador:Processador|memoriaROM:ROM" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 97
-Info (12128): Elaborating entity "unidControl" for hierarchy "processador:Processador|unidControl:UNIDCONTROLE" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 103
-Info (12128): Elaborating entity "bancoRegistradoresArqRegMem" for hierarchy "processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 122
-Info (12128): Elaborating entity "ULA" for hierarchy "processador:Processador|ULA:ULA" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 136
-Info (12128): Elaborating entity "flipFlop" for hierarchy "processador:Processador|flipFlop:flagZeroFlipFlop" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 148
-Info (12128): Elaborating entity "memoriaRAM" for hierarchy "memoriaRAM:RAM" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 69
-Info (12128): Elaborating entity "decoder" for hierarchy "decoder:Decoder" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 85
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:REG_SECOND_UNIT" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 100
-Info (12128): Elaborating entity "divisorGenerico_e_Interface" for hierarchy "divisorGenerico_e_Interface:BaseTempo" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 168
-Info (12128): Elaborating entity "divisorGenerico" for hierarchy "divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo" File: /home/borg/Documents/relogio/Projeto/Components/divisorGenerico_e_Interface.vhd Line: 19
-Info (12128): Elaborating entity "divisorGenerico" for hierarchy "divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempoRapido" File: /home/borg/Documents/relogio/Projeto/Components/divisorGenerico_e_Interface.vhd Line: 27
-Info (12128): Elaborating entity "switches" for hierarchy "switches:SWITCHES" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 177
-Info (12128): Elaborating entity "buttons" for hierarchy "buttons:BUTTONS" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 183
-Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:DISPLAY0" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 192
-Warning (19016): Clock multiplexers are found and protected
-    Warning (19017): Found clock multiplexer divisorGenerico_e_Interface:BaseTempo|saidaclk_reg1seg File: /home/borg/Documents/relogio/Projeto/Components/divisorGenerico_e_Interface.vhd Line: 16
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "processador:Processador|registradorGenerico:PC" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 63
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "processador:Processador|muxGenerico2x1:MuxPC" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 75
+Info (12128): Elaborating entity "somaConstante" for hierarchy "processador:Processador|somaConstante:somaUm" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 87
+Info (12128): Elaborating entity "memoriaROM" for hierarchy "processador:Processador|memoriaROM:ROM" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 93
+Info (12128): Elaborating entity "unidControl" for hierarchy "processador:Processador|unidControl:UNIDCONTROLE" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 99
+Info (12128): Elaborating entity "bancoRegistradoresArqRegMem" for hierarchy "processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 118
+Info (12128): Elaborating entity "ULA" for hierarchy "processador:Processador|ULA:ULA" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 132
+Info (12128): Elaborating entity "flipFlop" for hierarchy "processador:Processador|flipFlop:flagZeroFlipFlop" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 144
+Info (12128): Elaborating entity "decoder" for hierarchy "decoder:Decoder" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 84
+Info (12128): Elaborating entity "registradorGenericoWR" for hierarchy "registradorGenericoWR:REG_SECOND_UNIT" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 98
+Info (12128): Elaborating entity "divisorGenerico_e_Interface" for hierarchy "divisorGenerico_e_Interface:BaseTempo" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 172
+Info (12128): Elaborating entity "divisorGenerico" for hierarchy "divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo" File: /home/borg/Documents/relogio/Projeto/Components/divisorGenerico_e_Interface.vhd Line: 18
+Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:DISPLAY0" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 195
 Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276007): RAM logic "memoriaRAM:RAM|ram" is uninferred due to asynchronous read logic File: /home/borg/Documents/relogio/Projeto/Components/memoriaRAM.vhd Line: 27
+    Info (276007): RAM logic "processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador" is uninferred due to asynchronous read logic File: /home/borg/Documents/relogio/Projeto/Components/bancoRegistradoresArqRegMem.vhd Line: 29
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13048): Converted tri-state node "dataInProc[3]" into a selector File: /home/borg/Documents/relogio/Projeto/Components/memoriaRAM.vhd Line: 27
-    Warning (13048): Converted tri-state node "dataInProc[2]" into a selector File: /home/borg/Documents/relogio/Projeto/Components/memoriaRAM.vhd Line: 27
-    Warning (13048): Converted tri-state node "dataInProc[1]" into a selector File: /home/borg/Documents/relogio/Projeto/Components/memoriaRAM.vhd Line: 27
-    Warning (13048): Converted tri-state node "dataInProc[0]" into a selector File: /home/borg/Documents/relogio/Projeto/Components/memoriaRAM.vhd Line: 27
+    Warning (13049): Converted tri-state buffer "divisorGenerico_e_Interface:BaseTempo|leituraUmSegundo[0]" feeding internal logic into a wire File: /home/borg/Documents/relogio/Projeto/Components/divisorGenerico_e_Interface.vhd Line: 9
+    Warning (13049): Converted tri-state buffer "divisorGenerico_e_Interface:BaseTempo|leituraUmSegundo[1]" feeding internal logic into a wire File: /home/borg/Documents/relogio/Projeto/Components/divisorGenerico_e_Interface.vhd Line: 9
+    Warning (13049): Converted tri-state buffer "divisorGenerico_e_Interface:BaseTempo|leituraUmSegundo[2]" feeding internal logic into a wire File: /home/borg/Documents/relogio/Projeto/Components/divisorGenerico_e_Interface.vhd Line: 9
+    Warning (13049): Converted tri-state buffer "divisorGenerico_e_Interface:BaseTempo|leituraUmSegundo[3]" feeding internal logic into a wire File: /home/borg/Documents/relogio/Projeto/Components/divisorGenerico_e_Interface.vhd Line: 9
+    Warning (13049): Converted tri-state buffer "divisorGenerico_e_Interface:BaseTempo|leituraUmSegundo[4]" feeding internal logic into a wire File: /home/borg/Documents/relogio/Projeto/Components/divisorGenerico_e_Interface.vhd Line: 9
+    Warning (13049): Converted tri-state buffer "divisorGenerico_e_Interface:BaseTempo|leituraUmSegundo[5]" feeding internal logic into a wire File: /home/borg/Documents/relogio/Projeto/Components/divisorGenerico_e_Interface.vhd Line: 9
+    Warning (13049): Converted tri-state buffer "divisorGenerico_e_Interface:BaseTempo|leituraUmSegundo[6]" feeding internal logic into a wire File: /home/borg/Documents/relogio/Projeto/Components/divisorGenerico_e_Interface.vhd Line: 9
+    Warning (13049): Converted tri-state buffer "divisorGenerico_e_Interface:BaseTempo|leituraUmSegundo[7]" feeding internal logic into a wire File: /home/borg/Documents/relogio/Projeto/Components/divisorGenerico_e_Interface.vhd Line: 9
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "HEX0[0]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX0[1]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX0[2]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX0[3]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX0[4]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX0[5]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX0[6]" is stuck at VCC File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX1[0]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX1[1]" is stuck at VCC File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX1[2]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX1[3]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX1[4]" is stuck at VCC File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX1[5]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX1[6]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX2[0]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX2[1]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX2[2]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX2[3]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX2[4]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX2[5]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX2[6]" is stuck at VCC File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX3[0]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX3[1]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX3[2]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX3[3]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX3[4]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX3[5]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX3[6]" is stuck at VCC File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX4[0]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX4[1]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX4[2]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX4[3]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX4[4]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX4[5]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX4[6]" is stuck at VCC File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX5[0]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX5[1]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX5[2]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX5[3]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX5[4]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX5[5]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "HEX5[6]" is stuck at VCC File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 18
-    Warning (13410): Pin "PCOut[0]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 19
-    Warning (13410): Pin "PCOut[1]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 19
-    Warning (13410): Pin "PCOut[2]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 19
-    Warning (13410): Pin "PCOut[3]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 19
-    Warning (13410): Pin "PCOut[4]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 19
-    Warning (13410): Pin "PCOut[5]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 19
-    Warning (13410): Pin "PCOut[6]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 19
-    Warning (13410): Pin "PCOut[7]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 19
-    Warning (13410): Pin "LEDR[0]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 20
-    Warning (13410): Pin "LEDR[1]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 20
-    Warning (13410): Pin "LEDR[2]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 20
-    Warning (13410): Pin "LEDR[3]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 20
-    Warning (13410): Pin "LEDR[4]" is stuck at VCC File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 20
-    Warning (13410): Pin "LEDR[5]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 20
-    Warning (13410): Pin "LEDR[6]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 20
-    Warning (13410): Pin "LEDR[7]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 20
     Warning (13410): Pin "LEDR[9]" is stuck at VCC File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 20
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 43 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 4 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SW[1]" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 14
     Warning (15610): No output dependent on input pin "SW[0]" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 14
+    Warning (15610): No output dependent on input pin "SW[1]" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 14
     Warning (15610): No output dependent on input pin "KEY[0]" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 15
     Warning (15610): No output dependent on input pin "KEY[1]" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 15
-Info (21057): Implemented 95 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 236 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 60 output pins
-    Info (21061): Implemented 30 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 84 warnings
-    Info: Peak virtual memory: 509 megabytes
-    Info: Processing ended: Tue Oct 20 10:29:45 2020
-    Info: Elapsed time: 00:00:12
+    Info (21061): Implemented 171 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 22 warnings
+    Info: Peak virtual memory: 508 megabytes
+    Info: Processing ended: Tue Oct 20 16:25:24 2020
+    Info: Elapsed time: 00:00:11
     Info: Total CPU time (on all processors): 00:00:23
 
 
