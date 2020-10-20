@@ -38,8 +38,8 @@ architecture comportamento of unidControl is
        selMuxPc       <= '1' when opCode = JMP or (opCode = JE AND flagZero = '1') else '0';
 		 selMuxImeRam   <= '1' when opCode = CMP or opCode = INC or opCode = MOV  else '0';
 		 enableRegs     <= '1' when opCode = MOV or opCode = INC or opCode = LOAD else '0';
-		 enableReadRam  <= '1' when (opCode = LOAD  AND  firstBitImediato = '1') else '0';
-		 enableWriteRam <= '1' when (opCode = STORE AND  firstBitImediato = '1') else '0';
+		 enableReadRam  <= '1' when opCode = LOAD else '0';
+		 enableWriteRam <= '1' when opCode = STORE else '0';
 		 enableFlagZero <= '1' when opCode = CMP else '0';
 		 
 		 operacoes <= "001" when opCode = CMP else

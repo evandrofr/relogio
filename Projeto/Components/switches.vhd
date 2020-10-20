@@ -4,17 +4,17 @@ USE ieee.numeric_std.ALL;
 
 ENTITY switches IS
    PORT (
-      input  : IN STD_LOGIC_VECTOR(1 downto 0);
-		switches  : IN STD_LOGIC_VECTOR(1 downto 0);
-      output : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
+      enable    : IN STD_LOGIC;
+		switches  : IN STD_LOGIC_VECTOR(7 downto 0);
+		rd        : IN STD_LOGIC;
+      output    : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
    );
 END ENTITY;
 
 ARCHITECTURE interface OF switches IS
   
 BEGIN
-	 output <= "0000000" & switches(0) WHEN input(0) = '1' ELSE
-				  "0000000" & switches(1) WHEN input(1) = '1' ELSE
+	 output <=  switches WHEN enable = '1' AND rd = '1' ELSE
               (OTHERS => 'Z');
 
 END ARCHITECTURE interface;

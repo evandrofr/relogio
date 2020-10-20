@@ -6,7 +6,7 @@ entity divisorGenerico_e_Interface is
    port(clk      :   in std_logic;
       habilitaLeitura : in std_logic;
       limpaLeitura : in std_logic;
-		seletor      : in std_logic;
+		SW             : in STD_LOGIC;
       leituraUmSegundo :   out std_logic_vector(7 downto 0)
    );
 end entity;
@@ -38,13 +38,13 @@ begin
 					 ENABLE => '1',
 					 CLK => saidaclk_reg1seg,
 					 RST => limpaLeitura);
-					 
-	saidaclk_reg1seg <= saidaRap WHEN seletor = '1' ELSE
+--					 
+	saidaclk_reg1seg <= saidaRap WHEN SW = '1' ELSE
       saida1seg;
 			
 
 
 -- Faz o tristate de saida:
-leituraUmSegundo <= ("0000000" & sinalUmSegundo) when habilitaLeitura = '1' else (OTHERS => 'Z');
+leituraUmSegundo <= ("0000000" & sinalUmSegundo) when habilitaLeitura = '1' else "ZZZZZZZZ";
 
 end architecture interface;

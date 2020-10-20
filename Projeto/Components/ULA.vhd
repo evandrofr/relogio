@@ -36,7 +36,7 @@ architecture comportamento of ULA is
       op_xor    <= entradaA xor entradaB;
       op_not    <= not entradaA;
 
-      saidaSignal <= soma when (seletor = "000") else
+      saida <= soma when (seletor = "000") else
           subtracao when (seletor = "001") else
           entradaA when  (seletor = "010") else
           entradaB when  (seletor = "011") else
@@ -46,8 +46,7 @@ architecture comportamento of ULA is
           op_or when     (seletor = "111") else
           entradaA;      -- outra opcao: saida = entradaA
 
-      flagZero <= '1' when unsigned(saidaSignal) = unsigned(zero) else '0';
-		
-		saida <= saidaSignal;
+      flagZero <= '1' when unsigned(saida) = unsigned(zero) else '0';
+	
 
 end architecture;
