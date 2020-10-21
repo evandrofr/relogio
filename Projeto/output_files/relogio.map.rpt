@@ -1,6 +1,6 @@
 Analysis & Synthesis report for relogio
-Tue Oct 20 20:25:56 2020
-Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Wed Oct 21 02:51:47 2020
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
 ---------------------
@@ -61,9 +61,9 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2017  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and any partner logic 
+and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -73,16 +73,15 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
+refer to the applicable agreement for further details.
 
 
 
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Oct 20 20:25:56 2020       ;
-; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Analysis & Synthesis Status     ; Successful - Wed Oct 21 02:51:47 2020       ;
+; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; relogio                                     ;
 ; Top-level Entity Name           ; relogio                                     ;
 ; Family                          ; Cyclone V                                   ;
@@ -112,7 +111,7 @@ https://fpgasoftware.intel.com/eula.
 ; VHDL Show LMF Mapping Messages                                                  ; Off                ;                    ;
 ; VHDL Version                                                                    ; VHDL_2008          ; VHDL_1993          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
-; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
 ; Enable compact report table                                                     ; Off                ; Off                ;
 ; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
 ; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
@@ -206,30 +205,30 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                     ;
-+--------------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path           ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                    ; Library ;
-+--------------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------+---------+
-; Components/ULA.vhd                         ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/ULA.vhd                         ;         ;
-; Components/registradorGenerico.vhd         ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/registradorGenerico.vhd         ;         ;
-; Components/muxGenerico2x1.vhd              ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/muxGenerico2x1.vhd              ;         ;
-; Components/memoriaROM.vhd                  ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/memoriaROM.vhd                  ;         ;
-; Components/flipFlop.vhd                    ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/flipFlop.vhd                    ;         ;
-; Components/divisorGenerico_e_Interface.vhd ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/divisorGenerico_e_Interface.vhd ;         ;
-; Components/divisorGenerico.vhd             ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/divisorGenerico.vhd             ;         ;
-; Components/conversorHex7Seg.vhd            ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/conversorHex7Seg.vhd            ;         ;
-; Components/bancoRegistradoresArqRegMem.vhd ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/bancoRegistradoresArqRegMem.vhd ;         ;
-; Components/unidControl.vhd                 ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/unidControl.vhd                 ;         ;
-; processador.vhd                            ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/processador.vhd                            ;         ;
-; Components/somaConstante.vhd               ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/somaConstante.vhd               ;         ;
-; relogio.vhd                                ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/relogio.vhd                                ;         ;
-; Components/decoder.vhd                     ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/decoder.vhd                     ;         ;
-; Components/switches.vhd                    ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/switches.vhd                    ;         ;
-; Components/buttons.vhd                     ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/buttons.vhd                     ;         ;
-; Components/scale_clock.vhd                 ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/scale_clock.vhd                 ;         ;
-; Components/registradorGenericoWR.vhd       ; yes             ; User VHDL File  ; /home/borg/Documents/relogio/Projeto/Components/registradorGenericoWR.vhd       ;         ;
-+--------------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                               ;
++--------------------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path           ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                              ; Library ;
++--------------------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+---------+
+; Components/ULA.vhd                         ; yes             ; User VHDL File  ; C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/ULA.vhd                         ;         ;
+; Components/registradorGenerico.vhd         ; yes             ; User VHDL File  ; C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/registradorGenerico.vhd         ;         ;
+; Components/muxGenerico2x1.vhd              ; yes             ; User VHDL File  ; C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/muxGenerico2x1.vhd              ;         ;
+; Components/memoriaROM.vhd                  ; yes             ; User VHDL File  ; C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/memoriaROM.vhd                  ;         ;
+; Components/flipFlop.vhd                    ; yes             ; User VHDL File  ; C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/flipFlop.vhd                    ;         ;
+; Components/divisorGenerico_e_Interface.vhd ; yes             ; User VHDL File  ; C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/divisorGenerico_e_Interface.vhd ;         ;
+; Components/divisorGenerico.vhd             ; yes             ; User VHDL File  ; C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/divisorGenerico.vhd             ;         ;
+; Components/conversorHex7Seg.vhd            ; yes             ; User VHDL File  ; C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/conversorHex7Seg.vhd            ;         ;
+; Components/bancoRegistradoresArqRegMem.vhd ; yes             ; User VHDL File  ; C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/bancoRegistradoresArqRegMem.vhd ;         ;
+; Components/unidControl.vhd                 ; yes             ; User VHDL File  ; C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/unidControl.vhd                 ;         ;
+; processador.vhd                            ; yes             ; User VHDL File  ; C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/processador.vhd                            ;         ;
+; Components/somaConstante.vhd               ; yes             ; User VHDL File  ; C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/somaConstante.vhd               ;         ;
+; relogio.vhd                                ; yes             ; User VHDL File  ; C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/relogio.vhd                                ;         ;
+; Components/decoder.vhd                     ; yes             ; User VHDL File  ; C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/decoder.vhd                     ;         ;
+; Components/switches.vhd                    ; yes             ; User VHDL File  ; C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/switches.vhd                    ;         ;
+; Components/buttons.vhd                     ; yes             ; User VHDL File  ; C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/buttons.vhd                     ;         ;
+; Components/scale_clock.vhd                 ; yes             ; User VHDL File  ; C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/scale_clock.vhd                 ;         ;
+; Components/registradorGenericoWR.vhd       ; yes             ; User VHDL File  ; C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/registradorGenericoWR.vhd       ;         ;
++--------------------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -237,14 +236,14 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 213            ;
+; Estimate of Logic utilization (ALMs needed) ; 219            ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 239            ;
-;     -- 7 input functions                    ; 3              ;
-;     -- 6 input functions                    ; 61             ;
-;     -- 5 input functions                    ; 22             ;
-;     -- 4 input functions                    ; 55             ;
-;     -- <=3 input functions                  ; 98             ;
+; Combinational ALUT usage for logic          ; 246            ;
+;     -- 7 input functions                    ; 4              ;
+;     -- 6 input functions                    ; 64             ;
+;     -- 5 input functions                    ; 21             ;
+;     -- 4 input functions                    ; 82             ;
+;     -- <=3 input functions                  ; 75             ;
 ;                                             ;                ;
 ; Dedicated logic registers                   ; 204            ;
 ;                                             ;                ;
@@ -254,8 +253,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 203            ;
-; Total fan-out                               ; 1926           ;
-; Average fan-out                             ; 3.34           ;
+; Total fan-out                               ; 1989           ;
+; Average fan-out                             ; 3.41           ;
 +---------------------------------------------+----------------+
 
 
@@ -264,24 +263,24 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------+-----------------------------+--------------+
 ; Compilation Hierarchy Node                             ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                             ; Entity Name                 ; Library Name ;
 +--------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------+-----------------------------+--------------+
-; |relogio                                               ; 239 (1)             ; 204 (0)                   ; 0                 ; 0          ; 67   ; 0            ; |relogio                                                                        ; relogio                     ; work         ;
+; |relogio                                               ; 246 (7)             ; 204 (0)                   ; 0                 ; 0          ; 67   ; 0            ; |relogio                                                                        ; relogio                     ; work         ;
 ;    |conversorHex7Seg:DISPLAY0|                         ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|conversorHex7Seg:DISPLAY0                                              ; conversorHex7Seg            ; work         ;
 ;    |conversorHex7Seg:DISPLAY1|                         ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|conversorHex7Seg:DISPLAY1                                              ; conversorHex7Seg            ; work         ;
 ;    |conversorHex7Seg:DISPLAY2|                         ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|conversorHex7Seg:DISPLAY2                                              ; conversorHex7Seg            ; work         ;
 ;    |conversorHex7Seg:DISPLAY3|                         ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|conversorHex7Seg:DISPLAY3                                              ; conversorHex7Seg            ; work         ;
 ;    |conversorHex7Seg:DISPLAY4|                         ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|conversorHex7Seg:DISPLAY4                                              ; conversorHex7Seg            ; work         ;
 ;    |conversorHex7Seg:DISPLAY5|                         ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|conversorHex7Seg:DISPLAY5                                              ; conversorHex7Seg            ; work         ;
-;    |decoder:Decoder|                                   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|decoder:Decoder                                                        ; decoder                     ; work         ;
+;    |decoder:Decoder|                                   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|decoder:Decoder                                                        ; decoder                     ; work         ;
 ;    |divisorGenerico_e_Interface:BaseTempo|             ; 52 (1)              ; 43 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |relogio|divisorGenerico_e_Interface:BaseTempo                                  ; divisorGenerico_e_Interface ; work         ;
 ;       |divisorGenerico:baseTempoRapido|                ; 20 (20)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |relogio|divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempoRapido  ; divisorGenerico             ; work         ;
 ;       |divisorGenerico:baseTempo|                      ; 31 (31)             ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |relogio|divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo        ; divisorGenerico             ; work         ;
 ;       |flipFlop:registraUmSegundo|                     ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|divisorGenerico_e_Interface:BaseTempo|flipFlop:registraUmSegundo       ; flipFlop                    ; work         ;
-;    |processador:Processador|                           ; 135 (0)             ; 137 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador                                                ; processador                 ; work         ;
-;       |ULA:ULA|                                        ; 18 (18)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador|ULA:ULA                                        ; ULA                         ; work         ;
-;       |bancoRegistradoresArqRegMem:BancoRegistradores| ; 57 (57)             ; 128 (128)                 ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores ; bancoRegistradoresArqRegMem ; work         ;
-;       |flipFlop:flagZeroFlipFlop|                      ; 4 (4)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador|flipFlop:flagZeroFlipFlop                      ; flipFlop                    ; work         ;
-;       |memoriaROM:ROM|                                 ; 36 (36)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador|memoriaROM:ROM                                 ; memoriaROM                  ; work         ;
-;       |muxGenerico2x1:muxRAM_Imediato|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador|muxGenerico2x1:muxRAM_Imediato                 ; muxGenerico2x1              ; work         ;
+;    |processador:Processador|                           ; 131 (0)             ; 137 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador                                                ; processador                 ; work         ;
+;       |ULA:ULA|                                        ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador|ULA:ULA                                        ; ULA                         ; work         ;
+;       |bancoRegistradoresArqRegMem:BancoRegistradores| ; 55 (55)             ; 128 (128)                 ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores ; bancoRegistradoresArqRegMem ; work         ;
+;       |flipFlop:flagZeroFlipFlop|                      ; 5 (5)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador|flipFlop:flagZeroFlipFlop                      ; flipFlop                    ; work         ;
+;       |memoriaROM:ROM|                                 ; 34 (34)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador|memoriaROM:ROM                                 ; memoriaROM                  ; work         ;
+;       |muxGenerico2x1:muxRAM_Imediato|                 ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador|muxGenerico2x1:muxRAM_Imediato                 ; muxGenerico2x1              ; work         ;
 ;       |registradorGenerico:PC|                         ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador|registradorGenerico:PC                         ; registradorGenerico         ; work         ;
 ;       |somaConstante:somaUm|                           ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador|somaConstante:somaUm                           ; somaConstante               ; work         ;
 ;       |unidControl:UNIDCONTROLE|                       ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador|unidControl:UNIDCONTROLE                       ; unidControl                 ; work         ;
@@ -290,7 +289,8 @@ https://fpgasoftware.intel.com/eula.
 ;    |registradorGenericoWR:REG_MINUTE_TEN|              ; 1 (1)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|registradorGenericoWR:REG_MINUTE_TEN                                   ; registradorGenericoWR       ; work         ;
 ;    |registradorGenericoWR:REG_MINUTE_UNIT|             ; 1 (1)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|registradorGenericoWR:REG_MINUTE_UNIT                                  ; registradorGenericoWR       ; work         ;
 ;    |registradorGenericoWR:REG_SECOND_TEN|              ; 1 (1)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|registradorGenericoWR:REG_SECOND_TEN                                   ; registradorGenericoWR       ; work         ;
-;    |registradorGenericoWR:REG_SECOND_UNIT|             ; 3 (3)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|registradorGenericoWR:REG_SECOND_UNIT                                  ; registradorGenericoWR       ; work         ;
+;    |registradorGenericoWR:REG_SECOND_UNIT|             ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|registradorGenericoWR:REG_SECOND_UNIT                                  ; registradorGenericoWR       ; work         ;
+;    |switches:SWITCHES|                                 ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|switches:SWITCHES                                                      ; switches                    ; work         ;
 +--------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------+-----------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -315,7 +315,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |relogio|processador:Processador|ULA:ULA|saida[6] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |relogio|processador:Processador|ULA:ULA|saida[4] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
 
 
@@ -709,24 +709,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     SCLR              ; 40                          ;
 ;     SLD               ; 8                           ;
 ;     plain             ; 3                           ;
-; arriav_lcell_comb     ; 239                         ;
+; arriav_lcell_comb     ; 246                         ;
 ;     arith             ; 57                          ;
-;         1 data inputs ; 49                          ;
-;         2 data inputs ; 1                           ;
-;         4 data inputs ; 7                           ;
-;     extend            ; 3                           ;
-;         7 data inputs ; 3                           ;
-;     normal            ; 179                         ;
+;         1 data inputs ; 48                          ;
+;         4 data inputs ; 2                           ;
+;         5 data inputs ; 7                           ;
+;     extend            ; 4                           ;
+;         7 data inputs ; 4                           ;
+;     normal            ; 185                         ;
 ;         0 data inputs ; 1                           ;
-;         2 data inputs ; 17                          ;
-;         3 data inputs ; 30                          ;
-;         4 data inputs ; 48                          ;
-;         5 data inputs ; 22                          ;
-;         6 data inputs ; 61                          ;
+;         2 data inputs ; 16                          ;
+;         3 data inputs ; 10                          ;
+;         4 data inputs ; 80                          ;
+;         5 data inputs ; 14                          ;
+;         6 data inputs ; 64                          ;
 ; boundary_port         ; 67                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 8.60                        ;
-; Average LUT depth     ; 4.44                        ;
+; Average LUT depth     ; 4.46                        ;
 +-----------------------+-----------------------------+
 
 
@@ -744,146 +744,135 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Tue Oct 20 20:25:45 2020
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Processing started: Wed Oct 21 02:51:28 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off relogio -c relogio
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file Components/ULA.vhd
-    Info (12022): Found design unit 1: ULA-comportamento File: /home/borg/Documents/relogio/Projeto/Components/ULA.vhd Line: 19
-    Info (12023): Found entity 1: ULA File: /home/borg/Documents/relogio/Projeto/Components/ULA.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file Components/somadorGenerico.vhd
-    Info (12022): Found design unit 1: somadorGenerico-comportamento File: /home/borg/Documents/relogio/Projeto/Components/somadorGenerico.vhd Line: 17
-    Info (12023): Found entity 1: somadorGenerico File: /home/borg/Documents/relogio/Projeto/Components/somadorGenerico.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file Components/registradorGenerico.vhd
-    Info (12022): Found design unit 1: registradorGenerico-comportamento File: /home/borg/Documents/relogio/Projeto/Components/registradorGenerico.vhd Line: 15
-    Info (12023): Found entity 1: registradorGenerico File: /home/borg/Documents/relogio/Projeto/Components/registradorGenerico.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file Components/muxGenerico2x1.vhd
-    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: /home/borg/Documents/relogio/Projeto/Components/muxGenerico2x1.vhd Line: 14
-    Info (12023): Found entity 1: muxGenerico2x1 File: /home/borg/Documents/relogio/Projeto/Components/muxGenerico2x1.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file Components/memoriaROM.vhd
-    Info (12022): Found design unit 1: memoriaROM-assincrona File: /home/borg/Documents/relogio/Projeto/Components/memoriaROM.vhd Line: 16
-    Info (12023): Found entity 1: memoriaROM File: /home/borg/Documents/relogio/Projeto/Components/memoriaROM.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file Components/memoriaRAM.vhd
-    Info (12022): Found design unit 1: memoriaRAM-rtl File: /home/borg/Documents/relogio/Projeto/Components/memoriaRAM.vhd Line: 21
-    Info (12023): Found entity 1: memoriaRAM File: /home/borg/Documents/relogio/Projeto/Components/memoriaRAM.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file Components/flipFlop.vhd
-    Info (12022): Found design unit 1: flipFlop-comportamento File: /home/borg/Documents/relogio/Projeto/Components/flipFlop.vhd Line: 16
-    Info (12023): Found entity 1: flipFlop File: /home/borg/Documents/relogio/Projeto/Components/flipFlop.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file Components/divisorGenerico_e_Interface.vhd
-    Info (12022): Found design unit 1: divisorGenerico_e_Interface-interface File: /home/borg/Documents/relogio/Projeto/Components/divisorGenerico_e_Interface.vhd Line: 14
-    Info (12023): Found entity 1: divisorGenerico_e_Interface File: /home/borg/Documents/relogio/Projeto/Components/divisorGenerico_e_Interface.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file Components/divisorGenerico.vhd
-    Info (12022): Found design unit 1: divisorGenerico-divInteiro File: /home/borg/Documents/relogio/Projeto/Components/divisorGenerico.vhd Line: 15
-    Info (12023): Found entity 1: divisorGenerico File: /home/borg/Documents/relogio/Projeto/Components/divisorGenerico.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file Components/conversorHex7Seg.vhd
-    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: /home/borg/Documents/relogio/Projeto/Components/conversorHex7Seg.vhd Line: 17
-    Info (12023): Found entity 1: conversorHex7Seg File: /home/borg/Documents/relogio/Projeto/Components/conversorHex7Seg.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file Components/bancoRegistradoresArqRegMem.vhd
-    Info (12022): Found design unit 1: bancoRegistradoresArqRegMem-comportamento File: /home/borg/Documents/relogio/Projeto/Components/bancoRegistradoresArqRegMem.vhd Line: 23
-    Info (12023): Found entity 1: bancoRegistradoresArqRegMem File: /home/borg/Documents/relogio/Projeto/Components/bancoRegistradoresArqRegMem.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file Components/unidControl.vhd
-    Info (12022): Found design unit 1: unidControl-comportamento File: /home/borg/Documents/relogio/Projeto/Components/unidControl.vhd Line: 17
-    Info (12023): Found entity 1: unidControl File: /home/borg/Documents/relogio/Projeto/Components/unidControl.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file components/ula.vhd
+    Info (12022): Found design unit 1: ULA-comportamento File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/ULA.vhd Line: 19
+    Info (12023): Found entity 1: ULA File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/ULA.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file components/somadorgenerico.vhd
+    Info (12022): Found design unit 1: somadorGenerico-comportamento File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/somadorGenerico.vhd Line: 17
+    Info (12023): Found entity 1: somadorGenerico File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/somadorGenerico.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file components/registradorgenerico.vhd
+    Info (12022): Found design unit 1: registradorGenerico-comportamento File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/registradorGenerico.vhd Line: 15
+    Info (12023): Found entity 1: registradorGenerico File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/registradorGenerico.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file components/muxgenerico2x1.vhd
+    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/muxGenerico2x1.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico2x1 File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/muxGenerico2x1.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file components/memoriarom.vhd
+    Info (12022): Found design unit 1: memoriaROM-assincrona File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/memoriaROM.vhd Line: 16
+    Info (12023): Found entity 1: memoriaROM File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/memoriaROM.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file components/memoriaram.vhd
+    Info (12022): Found design unit 1: memoriaRAM-rtl File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/memoriaRAM.vhd Line: 21
+    Info (12023): Found entity 1: memoriaRAM File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/memoriaRAM.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file components/flipflop.vhd
+    Info (12022): Found design unit 1: flipFlop-comportamento File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/flipFlop.vhd Line: 16
+    Info (12023): Found entity 1: flipFlop File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/flipFlop.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file components/divisorgenerico_e_interface.vhd
+    Info (12022): Found design unit 1: divisorGenerico_e_Interface-interface File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/divisorGenerico_e_Interface.vhd Line: 14
+    Info (12023): Found entity 1: divisorGenerico_e_Interface File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/divisorGenerico_e_Interface.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file components/divisorgenerico.vhd
+    Info (12022): Found design unit 1: divisorGenerico-divInteiro File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/divisorGenerico.vhd Line: 15
+    Info (12023): Found entity 1: divisorGenerico File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/divisorGenerico.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file components/conversorhex7seg.vhd
+    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/conversorHex7Seg.vhd Line: 17
+    Info (12023): Found entity 1: conversorHex7Seg File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/conversorHex7Seg.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file components/bancoregistradoresarqregmem.vhd
+    Info (12022): Found design unit 1: bancoRegistradoresArqRegMem-comportamento File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/bancoRegistradoresArqRegMem.vhd Line: 23
+    Info (12023): Found entity 1: bancoRegistradoresArqRegMem File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/bancoRegistradoresArqRegMem.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file components/unidcontrol.vhd
+    Info (12022): Found design unit 1: unidControl-comportamento File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/unidControl.vhd Line: 17
+    Info (12023): Found entity 1: unidControl File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/unidControl.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file processador.vhd
-    Info (12022): Found design unit 1: processador-comportamento File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 29
-    Info (12023): Found entity 1: processador File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file Components/somaConstante.vhd
-    Info (12022): Found design unit 1: somaConstante-comportamento File: /home/borg/Documents/relogio/Projeto/Components/somaConstante.vhd Line: 16
-    Info (12023): Found entity 1: somaConstante File: /home/borg/Documents/relogio/Projeto/Components/somaConstante.vhd Line: 5
+    Info (12022): Found design unit 1: processador-comportamento File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/processador.vhd Line: 29
+    Info (12023): Found entity 1: processador File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/processador.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file components/somaconstante.vhd
+    Info (12022): Found design unit 1: somaConstante-comportamento File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/somaConstante.vhd Line: 16
+    Info (12023): Found entity 1: somaConstante File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/somaConstante.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file relogio.vhd
-    Info (12022): Found design unit 1: relogio-comportamento File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 23
-    Info (12023): Found entity 1: relogio File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file Components/decoder.vhd
-    Info (12022): Found design unit 1: decoder-comportamento File: /home/borg/Documents/relogio/Projeto/Components/decoder.vhd Line: 19
-    Info (12023): Found entity 1: decoder File: /home/borg/Documents/relogio/Projeto/Components/decoder.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file Components/switches.vhd
-    Info (12022): Found design unit 1: switches-interface File: /home/borg/Documents/relogio/Projeto/Components/switches.vhd Line: 14
-    Info (12023): Found entity 1: switches File: /home/borg/Documents/relogio/Projeto/Components/switches.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file Components/buttons.vhd
-    Info (12022): Found design unit 1: buttons-interface File: /home/borg/Documents/relogio/Projeto/Components/buttons.vhd Line: 14
-    Info (12023): Found entity 1: buttons File: /home/borg/Documents/relogio/Projeto/Components/buttons.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file Components/scale_clock.vhd
-    Info (12022): Found design unit 1: scale_clock-Behavioral File: /home/borg/Documents/relogio/Projeto/Components/scale_clock.vhd Line: 15
-    Info (12023): Found entity 1: scale_clock File: /home/borg/Documents/relogio/Projeto/Components/scale_clock.vhd Line: 8
-Info (12021): Found 2 design units, including 1 entities, in source file Components/registradorGenericoWR.vhd
-    Info (12022): Found design unit 1: registradorGenericoWR-comportamento File: /home/borg/Documents/relogio/Projeto/Components/registradorGenericoWR.vhd Line: 15
-    Info (12023): Found entity 1: registradorGenericoWR File: /home/borg/Documents/relogio/Projeto/Components/registradorGenericoWR.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file Components/edgeDetector.vhd
-    Info (12022): Found design unit 1: edgeDetector-rtl File: /home/borg/Documents/relogio/Projeto/Components/edgeDetector.vhd Line: 10
-    Info (12023): Found entity 1: edgeDetector File: /home/borg/Documents/relogio/Projeto/Components/edgeDetector.vhd Line: 4
+    Info (12022): Found design unit 1: relogio-comportamento File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/relogio.vhd Line: 23
+    Info (12023): Found entity 1: relogio File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/relogio.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file components/decoder.vhd
+    Info (12022): Found design unit 1: decoder-comportamento File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/decoder.vhd Line: 19
+    Info (12023): Found entity 1: decoder File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/decoder.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file components/switches.vhd
+    Info (12022): Found design unit 1: switches-interface File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/switches.vhd Line: 14
+    Info (12023): Found entity 1: switches File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/switches.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file components/buttons.vhd
+    Info (12022): Found design unit 1: buttons-interface File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/buttons.vhd Line: 14
+    Info (12023): Found entity 1: buttons File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/buttons.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file components/scale_clock.vhd
+    Info (12022): Found design unit 1: scale_clock-Behavioral File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/scale_clock.vhd Line: 15
+    Info (12023): Found entity 1: scale_clock File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/scale_clock.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file components/registradorgenericowr.vhd
+    Info (12022): Found design unit 1: registradorGenericoWR-comportamento File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/registradorGenericoWR.vhd Line: 15
+    Info (12023): Found entity 1: registradorGenericoWR File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/registradorGenericoWR.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file components/edgedetector.vhd
+    Info (12022): Found design unit 1: edgeDetector-rtl File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/edgeDetector.vhd Line: 10
+    Info (12023): Found entity 1: edgeDetector File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/edgeDetector.vhd Line: 4
 Info (12127): Elaborating entity "relogio" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at relogio.vhd(19): used implicit default value for signal "LEDR" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 19
-Warning (10036): Verilog HDL or VHDL warning at relogio.vhd(25): object "addressProcRAM" assigned a value but never read File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 25
-Warning (10036): Verilog HDL or VHDL warning at relogio.vhd(28): object "enableRAM" assigned a value but never read File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 28
-Warning (10036): Verilog HDL or VHDL warning at relogio.vhd(42): object "clkSignal" assigned a value but never read File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 42
-Info (12128): Elaborating entity "scale_clock" for hierarchy "scale_clock:CLOCK" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 45
-Info (12128): Elaborating entity "processador" for hierarchy "processador:Processador" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 53
-Warning (10541): VHDL Signal Declaration warning at processador.vhd(20): used implicit default value for signal "address" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 20
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "processador:Processador|registradorGenerico:PC" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 61
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "processador:Processador|muxGenerico2x1:MuxPC" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 73
-Info (12128): Elaborating entity "somaConstante" for hierarchy "processador:Processador|somaConstante:somaUm" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 85
-Info (12128): Elaborating entity "memoriaROM" for hierarchy "processador:Processador|memoriaROM:ROM" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 91
-Info (12128): Elaborating entity "unidControl" for hierarchy "processador:Processador|unidControl:UNIDCONTROLE" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 97
-Info (12128): Elaborating entity "bancoRegistradoresArqRegMem" for hierarchy "processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 116
-Info (12128): Elaborating entity "ULA" for hierarchy "processador:Processador|ULA:ULA" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 130
-Info (12128): Elaborating entity "flipFlop" for hierarchy "processador:Processador|flipFlop:flagZeroFlipFlop" File: /home/borg/Documents/relogio/Projeto/processador.vhd Line: 142
-Info (12128): Elaborating entity "decoder" for hierarchy "decoder:Decoder" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 81
-Info (12128): Elaborating entity "registradorGenericoWR" for hierarchy "registradorGenericoWR:REG_SECOND_UNIT" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 97
-Info (12128): Elaborating entity "divisorGenerico_e_Interface" for hierarchy "divisorGenerico_e_Interface:BaseTempo" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 171
-Info (12128): Elaborating entity "divisorGenerico" for hierarchy "divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo" File: /home/borg/Documents/relogio/Projeto/Components/divisorGenerico_e_Interface.vhd Line: 19
-Info (12128): Elaborating entity "divisorGenerico" for hierarchy "divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempoRapido" File: /home/borg/Documents/relogio/Projeto/Components/divisorGenerico_e_Interface.vhd Line: 27
-Info (12128): Elaborating entity "switches" for hierarchy "switches:SWITCHES" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 180
-Info (12128): Elaborating entity "buttons" for hierarchy "buttons:BUTTONS" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 192
-Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:DISPLAY0" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 201
+Warning (10541): VHDL Signal Declaration warning at relogio.vhd(19): used implicit default value for signal "LEDR" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/relogio.vhd Line: 19
+Warning (10036): Verilog HDL or VHDL warning at relogio.vhd(25): object "addressProcRAM" assigned a value but never read File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/relogio.vhd Line: 25
+Warning (10036): Verilog HDL or VHDL warning at relogio.vhd(28): object "enableRAM" assigned a value but never read File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/relogio.vhd Line: 28
+Warning (10036): Verilog HDL or VHDL warning at relogio.vhd(42): object "clkSignal" assigned a value but never read File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/relogio.vhd Line: 42
+Info (12128): Elaborating entity "scale_clock" for hierarchy "scale_clock:CLOCK" File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/relogio.vhd Line: 45
+Info (12128): Elaborating entity "processador" for hierarchy "processador:Processador" File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/relogio.vhd Line: 53
+Warning (10541): VHDL Signal Declaration warning at processador.vhd(20): used implicit default value for signal "address" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/processador.vhd Line: 20
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "processador:Processador|registradorGenerico:PC" File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/processador.vhd Line: 61
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "processador:Processador|muxGenerico2x1:MuxPC" File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/processador.vhd Line: 73
+Info (12128): Elaborating entity "somaConstante" for hierarchy "processador:Processador|somaConstante:somaUm" File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/processador.vhd Line: 85
+Info (12128): Elaborating entity "memoriaROM" for hierarchy "processador:Processador|memoriaROM:ROM" File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/processador.vhd Line: 91
+Info (12128): Elaborating entity "unidControl" for hierarchy "processador:Processador|unidControl:UNIDCONTROLE" File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/processador.vhd Line: 97
+Info (12128): Elaborating entity "bancoRegistradoresArqRegMem" for hierarchy "processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores" File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/processador.vhd Line: 116
+Info (12128): Elaborating entity "ULA" for hierarchy "processador:Processador|ULA:ULA" File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/processador.vhd Line: 130
+Info (12128): Elaborating entity "flipFlop" for hierarchy "processador:Processador|flipFlop:flagZeroFlipFlop" File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/processador.vhd Line: 142
+Info (12128): Elaborating entity "decoder" for hierarchy "decoder:Decoder" File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/relogio.vhd Line: 81
+Info (12128): Elaborating entity "registradorGenericoWR" for hierarchy "registradorGenericoWR:REG_SECOND_UNIT" File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/relogio.vhd Line: 97
+Info (12128): Elaborating entity "divisorGenerico_e_Interface" for hierarchy "divisorGenerico_e_Interface:BaseTempo" File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/relogio.vhd Line: 171
+Info (12128): Elaborating entity "divisorGenerico" for hierarchy "divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo" File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/divisorGenerico_e_Interface.vhd Line: 19
+Info (12128): Elaborating entity "divisorGenerico" for hierarchy "divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempoRapido" File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/divisorGenerico_e_Interface.vhd Line: 27
+Info (12128): Elaborating entity "switches" for hierarchy "switches:SWITCHES" File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/relogio.vhd Line: 180
+Info (12128): Elaborating entity "buttons" for hierarchy "buttons:BUTTONS" File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/relogio.vhd Line: 192
+Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:DISPLAY0" File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/relogio.vhd Line: 201
 Warning (19016): Clock multiplexers are found and protected
-    Warning (19017): Found clock multiplexer divisorGenerico_e_Interface:BaseTempo|saidaclk_reg1seg File: /home/borg/Documents/relogio/Projeto/Components/divisorGenerico_e_Interface.vhd Line: 16
+    Warning (19017): Found clock multiplexer divisorGenerico_e_Interface:BaseTempo|saidaclk_reg1seg File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/divisorGenerico_e_Interface.vhd Line: 16
 Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276007): RAM logic "processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador" is uninferred due to asynchronous read logic File: /home/borg/Documents/relogio/Projeto/Components/bancoRegistradoresArqRegMem.vhd Line: 29
+    Info (276007): RAM logic "processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador" is uninferred due to asynchronous read logic File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/bancoRegistradoresArqRegMem.vhd Line: 29
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13048): Converted tri-state node "dataInProc[7]" into a selector File: /home/borg/Documents/relogio/Projeto/Components/muxGenerico2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "dataInProc[6]" into a selector File: /home/borg/Documents/relogio/Projeto/Components/muxGenerico2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "dataInProc[5]" into a selector File: /home/borg/Documents/relogio/Projeto/Components/muxGenerico2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "dataInProc[4]" into a selector File: /home/borg/Documents/relogio/Projeto/Components/muxGenerico2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "dataInProc[3]" into a selector File: /home/borg/Documents/relogio/Projeto/Components/muxGenerico2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "dataInProc[2]" into a selector File: /home/borg/Documents/relogio/Projeto/Components/muxGenerico2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "dataInProc[1]" into a selector File: /home/borg/Documents/relogio/Projeto/Components/muxGenerico2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "dataInProc[0]" into a selector File: /home/borg/Documents/relogio/Projeto/Components/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "dataInProc[7]" into a selector File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "dataInProc[6]" into a selector File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "dataInProc[5]" into a selector File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "dataInProc[4]" into a selector File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "dataInProc[3]" into a selector File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "dataInProc[2]" into a selector File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "dataInProc[1]" into a selector File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "dataInProc[0]" into a selector File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/Components/muxGenerico2x1.vhd Line: 10
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[0]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 19
-    Warning (13410): Pin "LEDR[1]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 19
-    Warning (13410): Pin "LEDR[2]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 19
-    Warning (13410): Pin "LEDR[3]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 19
-    Warning (13410): Pin "LEDR[4]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 19
-    Warning (13410): Pin "LEDR[5]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 19
-    Warning (13410): Pin "LEDR[6]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 19
-    Warning (13410): Pin "LEDR[7]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 19
-    Warning (13410): Pin "LEDR[8]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 19
-    Warning (13410): Pin "LEDR[9]" is stuck at GND File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 19
+    Warning (13410): Pin "LEDR[0]" is stuck at GND File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/relogio.vhd Line: 19
+    Warning (13410): Pin "LEDR[1]" is stuck at GND File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/relogio.vhd Line: 19
+    Warning (13410): Pin "LEDR[2]" is stuck at GND File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/relogio.vhd Line: 19
+    Warning (13410): Pin "LEDR[3]" is stuck at GND File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/relogio.vhd Line: 19
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/relogio.vhd Line: 19
+    Warning (13410): Pin "LEDR[5]" is stuck at GND File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/relogio.vhd Line: 19
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/relogio.vhd Line: 19
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/relogio.vhd Line: 19
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/relogio.vhd Line: 19
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/relogio.vhd Line: 19
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 12 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SW[8]" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 14
-    Warning (15610): No output dependent on input pin "SW[0]" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 14
-    Warning (15610): No output dependent on input pin "SW[3]" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 14
-    Warning (15610): No output dependent on input pin "KEY[3]" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 15
-    Warning (15610): No output dependent on input pin "SW[1]" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 14
-    Warning (15610): No output dependent on input pin "KEY[1]" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 15
-    Warning (15610): No output dependent on input pin "SW[2]" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 14
-    Warning (15610): No output dependent on input pin "KEY[2]" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 15
-    Warning (15610): No output dependent on input pin "SW[4]" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 14
-    Warning (15610): No output dependent on input pin "SW[5]" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 14
-    Warning (15610): No output dependent on input pin "SW[6]" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 14
-    Warning (15610): No output dependent on input pin "SW[7]" File: /home/borg/Documents/relogio/Projeto/relogio.vhd Line: 14
-Info (21057): Implemented 459 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/rodri/OneDrive/햞ea de Trabalho/final/relogio/Projeto/relogio.vhd Line: 14
+Info (21057): Implemented 466 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 52 output pins
-    Info (21061): Implemented 392 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 41 warnings
-    Info: Peak virtual memory: 507 megabytes
-    Info: Processing ended: Tue Oct 20 20:25:56 2020
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:25
+    Info (21061): Implemented 399 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 30 warnings
+    Info: Peak virtual memory: 4856 megabytes
+    Info: Processing ended: Wed Oct 21 02:51:47 2020
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:37
 
 
