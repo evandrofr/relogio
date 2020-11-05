@@ -1,6 +1,6 @@
 Flow report for relogio
-Wed Oct 21 02:52:52 2020
-Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Thu Nov  5 17:15:52 2020
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
 ---------------------
@@ -21,9 +21,9 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2017  Intel Corporation. All rights reserved.
+Copyright (C) 2020  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -33,22 +33,23 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Wed Oct 21 02:52:52 2020       ;
-; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
+; Flow Status                     ; Successful - Thu Nov  5 17:15:52 2020       ;
+; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; relogio                                     ;
 ; Top-level Entity Name           ; relogio                                     ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CEBA4F23C7                                 ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 222 / 18,480 ( 1 % )                        ;
-; Total registers                 ; 226                                         ;
+; Logic utilization (in ALMs)     ; 244 / 18,480 ( 1 % )                        ;
+; Total registers                 ; 223                                         ;
 ; Total pins                      ; 67 / 224 ( 30 % )                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 3,153,920 ( 0 % )                       ;
@@ -67,7 +68,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/21/2020 02:51:29 ;
+; Start date & time ; 11/05/2020 17:14:34 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; relogio             ;
 +-------------------+---------------------+
@@ -78,7 +79,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 110073159321185.160325948906912        ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 66659636640631.160460727306719         ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -99,31 +100,31 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                             ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:19     ; 1.0                     ; 4856 MB             ; 00:00:37                           ;
-; Fitter                    ; 00:00:44     ; 1.0                     ; 5982 MB             ; 00:01:19                           ;
-; Assembler                 ; 00:00:05     ; 1.0                     ; 4826 MB             ; 00:00:05                           ;
-; TimeQuest Timing Analyzer ; 00:00:08     ; 1.1                     ; 5047 MB             ; 00:00:09                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4745 MB             ; 00:00:02                           ;
-; Total                     ; 00:01:18     ; --                      ; --                  ; 00:02:12                           ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:16     ; 1.0                     ; 509 MB              ; 00:00:33                           ;
+; Fitter               ; 00:00:45     ; 1.0                     ; 1308 MB             ; 00:01:08                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 507 MB              ; 00:00:04                           ;
+; Timing Analyzer      ; 00:00:08     ; 1.2                     ; 742 MB              ; 00:00:09                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 698 MB              ; 00:00:02                           ;
+; Total                ; 00:01:13     ; --                      ; --                  ; 00:01:56                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                         ;
-+---------------------------+------------------+------------+------------+----------------+
-; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+---------------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis      ; DESKTOP-GI9FJJO  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter                    ; DESKTOP-GI9FJJO  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler                 ; DESKTOP-GI9FJJO  ; Windows 10 ; 10.0       ; x86_64         ;
-; TimeQuest Timing Analyzer ; DESKTOP-GI9FJJO  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-GI9FJJO  ; Windows 10 ; 10.0       ; x86_64         ;
-+---------------------------+------------------+------------+------------+----------------+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++----------------------+------------------+----------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name        ; OS Version ; Processor type ;
++----------------------+------------------+----------------+------------+----------------+
+; Analysis & Synthesis ; evandro-romeiro  ; Ubuntu 18.04.5 ; 18         ; x86_64         ;
+; Fitter               ; evandro-romeiro  ; Ubuntu 18.04.5 ; 18         ; x86_64         ;
+; Assembler            ; evandro-romeiro  ; Ubuntu 18.04.5 ; 18         ; x86_64         ;
+; Timing Analyzer      ; evandro-romeiro  ; Ubuntu 18.04.5 ; 18         ; x86_64         ;
+; EDA Netlist Writer   ; evandro-romeiro  ; Ubuntu 18.04.5 ; 18         ; x86_64         ;
++----------------------+------------------+----------------+------------+----------------+
 
 
 ------------
