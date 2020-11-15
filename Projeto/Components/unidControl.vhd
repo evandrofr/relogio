@@ -32,18 +32,22 @@ architecture comportamento of unidControl is
 	constant LOAD  : std_logic_vector := "0011";
 	constant STORE : std_logic_vector := "0100";
 	constant JE    : std_logic_vector := "0101";
-	constant JMP   : std_logic_vector := "0110"; 
+	constant JMP   : std_logic_vector := "0110";
+	constant SUBi  : std_logic_vector := "0111";
+	constant ADDi  : std_logic_vector := "1000";
 
     begin
        selMuxPc       <= '1' when opCode = JMP or (opCode = JE AND flagZero = '1') else '0';
-		 selMuxImeRam   <= '1' when opCode = CMP or opCode = INC or opCode = MOV  else '0';
-		 enableRegs     <= '1' when opCode = MOV or opCode = INC or opCode = LOAD else '0';
+		 selMuxImeRam   <= '1' when opCode = CMP or opCode = INC or opCode = MOV or opCode = SUBi or opCode = ADDi else '0';
+		 enableRegs     <= '1' when opCode = MOV or opCode = INC or opCode = LOAD or opCode = SUBi or opCode = ADDi else '0';
 		 enableReadRam  <= '1' when opCode = LOAD else '0';
 		 enableWriteRam <= '1' when opCode = STORE else '0';
 		 enableFlagZero <= '1' when opCode = CMP else '0';
 		 
 		 operacoes <= "001" when opCode = CMP else
 			           "010" when opCode = LOAD or OpCode = MOV else
+						  "001" when opCode = SUBi else
+						  "000" when opCode = ADDi else
 						  "000";
 		 
 		 pontosDeControle <= pontosDeControleSignal;

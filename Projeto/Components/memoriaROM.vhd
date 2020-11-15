@@ -21,6 +21,7 @@ architecture assincrona of memoriaROM is
         return blocoMemoria is variable tmp : blocoMemoria := (others => (others => '0'));
   BEGIN
         -- Inicializa os endereços:
+
 tmp(0) := "0011011000001000";
 tmp(1) := "0100000000000000";
 tmp(2) := "0100000100000001";
