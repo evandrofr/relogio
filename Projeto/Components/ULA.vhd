@@ -29,7 +29,7 @@ architecture comportamento of ULA is
 	signal saidaSignal:STD_LOGIC_VECTOR((larguraDados-1) downto 0);
 
     begin
-      soma      <= STD_LOGIC_VECTOR(unsigned(entradaA) + unsigned(entradaB));
+      soma      <= STD_LOGIC_VECTOR(unsigned(entradaB) + unsigned(entradaA));
       subtracao <= STD_LOGIC_VECTOR(unsigned(entradaB) - unsigned(entradaA));
       op_and    <= entradaA and entradaB;
       op_or     <= entradaA or entradaB;

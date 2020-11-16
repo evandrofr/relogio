@@ -1,5 +1,5 @@
 Analysis & Synthesis report for relogio
-Sun Nov 15 17:59:52 2020
+Sun Nov 15 22:23:56 2020
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -13,50 +13,48 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. Removed Registers Triggering Further Register Optimizations
- 10. General Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Parameter Settings for User Entity Instance: Top-level Entity: |relogio
- 13. Parameter Settings for User Entity Instance: processador:Processador
- 14. Parameter Settings for User Entity Instance: processador:Processador|registradorGenerico:PC
- 15. Parameter Settings for User Entity Instance: processador:Processador|muxGenerico2x1:MuxPC
- 16. Parameter Settings for User Entity Instance: processador:Processador|somaConstante:somaUm
- 17. Parameter Settings for User Entity Instance: processador:Processador|memoriaROM:ROM
- 18. Parameter Settings for User Entity Instance: processador:Processador|muxGenerico2x1:muxRAM_Imediato
- 19. Parameter Settings for User Entity Instance: processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores
- 20. Parameter Settings for User Entity Instance: processador:Processador|ULA:ULA
- 21. Parameter Settings for User Entity Instance: processador:Processador|flipFlop:flagZeroFlipFlop
- 22. Parameter Settings for User Entity Instance: registradorGenericoWR:REG_SECOND_UNIT
- 23. Parameter Settings for User Entity Instance: registradorGenericoWR:REG_SECOND_TEN
- 24. Parameter Settings for User Entity Instance: registradorGenericoWR:REG_MINUTE_UNIT
- 25. Parameter Settings for User Entity Instance: registradorGenericoWR:REG_MINUTE_TEN
- 26. Parameter Settings for User Entity Instance: registradorGenericoWR:REG_HOUR_UNIT
- 27. Parameter Settings for User Entity Instance: registradorGenericoWR:REG_HOUR_TEN
- 28. Parameter Settings for User Entity Instance: divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo
- 29. Parameter Settings for User Entity Instance: divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempoRapido
- 30. Parameter Settings for User Entity Instance: divisorGenerico_e_Interface:BaseTempo|flipFlop:registraUmSegundo
- 31. Port Connectivity Checks: "conversorHex7Seg:DISPLAY5"
- 32. Port Connectivity Checks: "conversorHex7Seg:DISPLAY4"
- 33. Port Connectivity Checks: "conversorHex7Seg:DISPLAY3"
- 34. Port Connectivity Checks: "conversorHex7Seg:DISPLAY2"
- 35. Port Connectivity Checks: "conversorHex7Seg:DISPLAY1"
- 36. Port Connectivity Checks: "conversorHex7Seg:DISPLAY0"
- 37. Port Connectivity Checks: "divisorGenerico_e_Interface:BaseTempo|flipFlop:registraUmSegundo"
- 38. Port Connectivity Checks: "registradorGenericoWR:REG_HOUR_TEN"
- 39. Port Connectivity Checks: "registradorGenericoWR:REG_HOUR_UNIT"
- 40. Port Connectivity Checks: "registradorGenericoWR:REG_MINUTE_TEN"
- 41. Port Connectivity Checks: "registradorGenericoWR:REG_MINUTE_UNIT"
- 42. Port Connectivity Checks: "registradorGenericoWR:REG_SECOND_TEN"
- 43. Port Connectivity Checks: "registradorGenericoWR:REG_SECOND_UNIT"
- 44. Port Connectivity Checks: "decoder:Decoder"
- 45. Port Connectivity Checks: "processador:Processador|flipFlop:flagZeroFlipFlop"
- 46. Port Connectivity Checks: "processador:Processador|registradorGenerico:PC"
- 47. Port Connectivity Checks: "processador:Processador"
- 48. Port Connectivity Checks: "scale_clock:CLOCK"
- 49. Post-Synthesis Netlist Statistics for Top Partition
- 50. Elapsed Time Per Partition
- 51. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: Top-level Entity: |relogio
+ 11. Parameter Settings for User Entity Instance: processador:Processador
+ 12. Parameter Settings for User Entity Instance: processador:Processador|registradorGenerico:PC
+ 13. Parameter Settings for User Entity Instance: processador:Processador|muxGenerico2x1:MuxPC
+ 14. Parameter Settings for User Entity Instance: processador:Processador|somaConstante:somaUm
+ 15. Parameter Settings for User Entity Instance: processador:Processador|memoriaROM:ROM
+ 16. Parameter Settings for User Entity Instance: processador:Processador|muxGenerico2x1:muxRAM_Imediato
+ 17. Parameter Settings for User Entity Instance: processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores
+ 18. Parameter Settings for User Entity Instance: processador:Processador|ULA:ULA
+ 19. Parameter Settings for User Entity Instance: processador:Processador|flipFlop:flagZeroFlipFlop
+ 20. Parameter Settings for User Entity Instance: registradorGenericoWR:REG_SECOND_UNIT
+ 21. Parameter Settings for User Entity Instance: registradorGenericoWR:REG_SECOND_TEN
+ 22. Parameter Settings for User Entity Instance: registradorGenericoWR:REG_MINUTE_UNIT
+ 23. Parameter Settings for User Entity Instance: registradorGenericoWR:REG_MINUTE_TEN
+ 24. Parameter Settings for User Entity Instance: registradorGenericoWR:REG_HOUR_UNIT
+ 25. Parameter Settings for User Entity Instance: registradorGenericoWR:REG_HOUR_TEN
+ 26. Parameter Settings for User Entity Instance: divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo
+ 27. Parameter Settings for User Entity Instance: divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempoRapido
+ 28. Parameter Settings for User Entity Instance: divisorGenerico_e_Interface:BaseTempo|flipFlop:registraUmSegundo
+ 29. Port Connectivity Checks: "conversorHex7Seg:DISPLAY5"
+ 30. Port Connectivity Checks: "conversorHex7Seg:DISPLAY4"
+ 31. Port Connectivity Checks: "conversorHex7Seg:DISPLAY3"
+ 32. Port Connectivity Checks: "conversorHex7Seg:DISPLAY2"
+ 33. Port Connectivity Checks: "conversorHex7Seg:DISPLAY1"
+ 34. Port Connectivity Checks: "conversorHex7Seg:DISPLAY0"
+ 35. Port Connectivity Checks: "divisorGenerico_e_Interface:BaseTempo|flipFlop:registraUmSegundo"
+ 36. Port Connectivity Checks: "registradorGenericoWR:REG_HOUR_TEN"
+ 37. Port Connectivity Checks: "registradorGenericoWR:REG_HOUR_UNIT"
+ 38. Port Connectivity Checks: "registradorGenericoWR:REG_MINUTE_TEN"
+ 39. Port Connectivity Checks: "registradorGenericoWR:REG_MINUTE_UNIT"
+ 40. Port Connectivity Checks: "registradorGenericoWR:REG_SECOND_TEN"
+ 41. Port Connectivity Checks: "registradorGenericoWR:REG_SECOND_UNIT"
+ 42. Port Connectivity Checks: "decoder:Decoder"
+ 43. Port Connectivity Checks: "processador:Processador|flipFlop:flagZeroFlipFlop"
+ 44. Port Connectivity Checks: "processador:Processador|registradorGenerico:PC"
+ 45. Port Connectivity Checks: "processador:Processador"
+ 46. Port Connectivity Checks: "scale_clock:CLOCK"
+ 47. Post-Synthesis Netlist Statistics for Top Partition
+ 48. Elapsed Time Per Partition
+ 49. Analysis & Synthesis Messages
 
 
 
@@ -82,13 +80,13 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Nov 15 17:59:52 2020       ;
+; Analysis & Synthesis Status     ; Successful - Sun Nov 15 22:23:56 2020       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; relogio                                     ;
 ; Top-level Entity Name           ; relogio                                     ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 64                                          ;
+; Total registers                 ; 204                                         ;
 ; Total pins                      ; 67                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -238,25 +236,25 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 76             ;
+; Estimate of Logic utilization (ALMs needed) ; 235            ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 103            ;
-;     -- 7 input functions                    ; 8              ;
-;     -- 6 input functions                    ; 7              ;
-;     -- 5 input functions                    ; 15             ;
-;     -- 4 input functions                    ; 55             ;
-;     -- <=3 input functions                  ; 18             ;
+; Combinational ALUT usage for logic          ; 267            ;
+;     -- 7 input functions                    ; 5              ;
+;     -- 6 input functions                    ; 74             ;
+;     -- 5 input functions                    ; 53             ;
+;     -- 4 input functions                    ; 56             ;
+;     -- <=3 input functions                  ; 79             ;
 ;                                             ;                ;
-; Dedicated logic registers                   ; 64             ;
+; Dedicated logic registers                   ; 204            ;
 ;                                             ;                ;
 ; I/O pins                                    ; 67             ;
 ;                                             ;                ;
 ; Total DSP Blocks                            ; 0              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 64             ;
-; Total fan-out                               ; 792            ;
-; Average fan-out                             ; 2.63           ;
+; Maximum fan-out                             ; 203            ;
+; Total fan-out                               ; 2129           ;
+; Average fan-out                             ; 3.52           ;
 +---------------------------------------------+----------------+
 
 
@@ -265,84 +263,36 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------+-----------------------------+--------------+
 ; Compilation Hierarchy Node                             ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                             ; Entity Name                 ; Library Name ;
 +--------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------+-----------------------------+--------------+
-; |relogio                                               ; 103 (1)             ; 64 (0)                    ; 0                 ; 0          ; 67   ; 0            ; |relogio                                                                        ; relogio                     ; work         ;
+; |relogio                                               ; 267 (2)             ; 204 (0)                   ; 0                 ; 0          ; 67   ; 0            ; |relogio                                                                        ; relogio                     ; work         ;
 ;    |conversorHex7Seg:DISPLAY0|                         ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|conversorHex7Seg:DISPLAY0                                              ; conversorHex7Seg            ; work         ;
 ;    |conversorHex7Seg:DISPLAY1|                         ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|conversorHex7Seg:DISPLAY1                                              ; conversorHex7Seg            ; work         ;
 ;    |conversorHex7Seg:DISPLAY2|                         ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|conversorHex7Seg:DISPLAY2                                              ; conversorHex7Seg            ; work         ;
 ;    |conversorHex7Seg:DISPLAY3|                         ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|conversorHex7Seg:DISPLAY3                                              ; conversorHex7Seg            ; work         ;
 ;    |conversorHex7Seg:DISPLAY4|                         ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|conversorHex7Seg:DISPLAY4                                              ; conversorHex7Seg            ; work         ;
 ;    |conversorHex7Seg:DISPLAY5|                         ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|conversorHex7Seg:DISPLAY5                                              ; conversorHex7Seg            ; work         ;
-;    |processador:Processador|                           ; 54 (0)              ; 40 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador                                                ; processador                 ; work         ;
-;       |ULA:ULA|                                        ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador|ULA:ULA                                        ; ULA                         ; work         ;
-;       |bancoRegistradoresArqRegMem:BancoRegistradores| ; 16 (16)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores ; bancoRegistradoresArqRegMem ; work         ;
-;       |memoriaROM:ROM|                                 ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador|memoriaROM:ROM                                 ; memoriaROM                  ; work         ;
-;       |muxGenerico2x1:muxRAM_Imediato|                 ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador|muxGenerico2x1:muxRAM_Imediato                 ; muxGenerico2x1              ; work         ;
+;    |decoder:Decoder|                                   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|decoder:Decoder                                                        ; decoder                     ; work         ;
+;    |divisorGenerico_e_Interface:BaseTempo|             ; 52 (1)              ; 43 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |relogio|divisorGenerico_e_Interface:BaseTempo                                  ; divisorGenerico_e_Interface ; work         ;
+;       |divisorGenerico:baseTempoRapido|                ; 20 (20)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |relogio|divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempoRapido  ; divisorGenerico             ; work         ;
+;       |divisorGenerico:baseTempo|                      ; 31 (31)             ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |relogio|divisorGenerico_e_Interface:BaseTempo|divisorGenerico:baseTempo        ; divisorGenerico             ; work         ;
+;       |flipFlop:registraUmSegundo|                     ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|divisorGenerico_e_Interface:BaseTempo|flipFlop:registraUmSegundo       ; flipFlop                    ; work         ;
+;    |processador:Processador|                           ; 161 (0)             ; 137 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador                                                ; processador                 ; work         ;
+;       |ULA:ULA|                                        ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador|ULA:ULA                                        ; ULA                         ; work         ;
+;       |bancoRegistradoresArqRegMem:BancoRegistradores| ; 60 (60)             ; 128 (128)                 ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores ; bancoRegistradoresArqRegMem ; work         ;
+;       |flipFlop:flagZeroFlipFlop|                      ; 5 (5)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador|flipFlop:flagZeroFlipFlop                      ; flipFlop                    ; work         ;
+;       |memoriaROM:ROM|                                 ; 59 (59)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador|memoriaROM:ROM                                 ; memoriaROM                  ; work         ;
+;       |muxGenerico2x1:muxRAM_Imediato|                 ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador|muxGenerico2x1:muxRAM_Imediato                 ; muxGenerico2x1              ; work         ;
 ;       |registradorGenerico:PC|                         ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador|registradorGenerico:PC                         ; registradorGenerico         ; work         ;
 ;       |somaConstante:somaUm|                           ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador|somaConstante:somaUm                           ; somaConstante               ; work         ;
-;       |unidControl:UNIDCONTROLE|                       ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador|unidControl:UNIDCONTROLE                       ; unidControl                 ; work         ;
+;       |unidControl:UNIDCONTROLE|                       ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|processador:Processador|unidControl:UNIDCONTROLE                       ; unidControl                 ; work         ;
 ;    |registradorGenericoWR:REG_HOUR_TEN|                ; 1 (1)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|registradorGenericoWR:REG_HOUR_TEN                                     ; registradorGenericoWR       ; work         ;
 ;    |registradorGenericoWR:REG_HOUR_UNIT|               ; 1 (1)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|registradorGenericoWR:REG_HOUR_UNIT                                    ; registradorGenericoWR       ; work         ;
 ;    |registradorGenericoWR:REG_MINUTE_TEN|              ; 1 (1)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|registradorGenericoWR:REG_MINUTE_TEN                                   ; registradorGenericoWR       ; work         ;
 ;    |registradorGenericoWR:REG_MINUTE_UNIT|             ; 1 (1)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|registradorGenericoWR:REG_MINUTE_UNIT                                  ; registradorGenericoWR       ; work         ;
 ;    |registradorGenericoWR:REG_SECOND_TEN|              ; 1 (1)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|registradorGenericoWR:REG_SECOND_TEN                                   ; registradorGenericoWR       ; work         ;
 ;    |registradorGenericoWR:REG_SECOND_UNIT|             ; 1 (1)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|registradorGenericoWR:REG_SECOND_UNIT                                  ; registradorGenericoWR       ; work         ;
+;    |switches:SWITCHES|                                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogio|switches:SWITCHES                                                      ; switches                    ; work         ;
 +--------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------+-----------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                  ;
-+---------------------------------------------------------------------------------------+---------------------------------------------+
-; Register name                                                                         ; Reason for Removal                          ;
-+---------------------------------------------------------------------------------------+---------------------------------------------+
-; processador:Processador|flipFlop:flagZeroFlipFlop|DOUT                                ; Stuck at GND due to stuck port clock_enable ;
-; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~17 ; Lost fanout                                 ;
-; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~25 ; Lost fanout                                 ;
-; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~33 ; Lost fanout                                 ;
-; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~41 ; Lost fanout                                 ;
-; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~49 ; Lost fanout                                 ;
-; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~57 ; Lost fanout                                 ;
-; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~65 ; Lost fanout                                 ;
-; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~73 ; Lost fanout                                 ;
-; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~18 ; Lost fanout                                 ;
-; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~26 ; Lost fanout                                 ;
-; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~34 ; Lost fanout                                 ;
-; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~42 ; Lost fanout                                 ;
-; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~50 ; Lost fanout                                 ;
-; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~58 ; Lost fanout                                 ;
-; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~66 ; Lost fanout                                 ;
-; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~74 ; Lost fanout                                 ;
-; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~19 ; Lost fanout                                 ;
-; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~27 ; Lost fanout                                 ;
-; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~35 ; Lost fanout                                 ;
-; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~43 ; Lost fanout                                 ;
-; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~51 ; Lost fanout                                 ;
-; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~59 ; Lost fanout                                 ;
-; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~67 ; Lost fanout                                 ;
-; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~75 ; Lost fanout                                 ;
-; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~20 ; Lost fanout                                 ;
-; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~28 ; Lost fanout                                 ;
-; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~36 ; Lost fanout                                 ;
-; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~44 ; Lost fanout                                 ;
-; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~52 ; Lost fanout                                 ;
-; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~60 ; Lost fanout                                 ;
-; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~68 ; Lost fanout                                 ;
-; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~76 ; Lost fanout                                 ;
-; divisorGenerico_e_Interface:BaseTempo|flipFlop:registraUmSegundo|DOUT                 ; Stuck at VCC due to stuck port data_in      ;
-; Total Number of Removed Registers = 34                                                ;                                             ;
-+---------------------------------------------------------------------------------------+---------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                                                                        ;
-+---------------------------------------------------------------------------------------+--------------------+---------------------------------------------------------------------------------------+
-; Register name                                                                         ; Reason for Removal ; Registers Removed due to This Register                                                ;
-+---------------------------------------------------------------------------------------+--------------------+---------------------------------------------------------------------------------------+
-; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~17 ; Lost Fanouts       ; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~57 ;
-; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~18 ; Lost Fanouts       ; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~58 ;
-; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~19 ; Lost Fanouts       ; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~59 ;
-; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~20 ; Lost Fanouts       ; processador:Processador|bancoRegistradoresArqRegMem:BancoRegistradores|registrador~60 ;
-+---------------------------------------------------------------------------------------+--------------------+---------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -350,12 +300,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 64    ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 32    ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Total registers                              ; 204   ;
+; Number of registers using Synchronous Clear  ; 40    ;
+; Number of registers using Synchronous Load   ; 136   ;
+; Number of registers using Asynchronous Clear ; 1     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 56    ;
+; Number of registers using Clock Enable       ; 152   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -365,8 +315,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
-; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |relogio|processador:Processador|ULA:ULA|saida[5] ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |relogio|processador:Processador|ULA:ULA|saida[2] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |relogio|processador:Processador|ULA:ULA|saida[7] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
 
 
@@ -753,28 +702,31 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 64                          ;
+; arriav_ff             ; 204                         ;
+;     CLR               ; 1                           ;
 ;     ENA               ; 24                          ;
-;     ENA SLD           ; 32                          ;
-;     plain             ; 8                           ;
-; arriav_lcell_comb     ; 103                         ;
-;     arith             ; 13                          ;
-;         1 data inputs ; 8                           ;
+;     ENA SLD           ; 128                         ;
+;     SCLR              ; 40                          ;
+;     SLD               ; 8                           ;
+;     plain             ; 3                           ;
+; arriav_lcell_comb     ; 267                         ;
+;     arith             ; 57                          ;
+;         1 data inputs ; 48                          ;
 ;         4 data inputs ; 1                           ;
-;         5 data inputs ; 4                           ;
-;     extend            ; 8                           ;
-;         7 data inputs ; 8                           ;
-;     normal            ; 82                          ;
+;         5 data inputs ; 8                           ;
+;     extend            ; 5                           ;
+;         7 data inputs ; 5                           ;
+;     normal            ; 205                         ;
 ;         0 data inputs ; 1                           ;
-;         2 data inputs ; 4                           ;
-;         3 data inputs ; 5                           ;
-;         4 data inputs ; 54                          ;
-;         5 data inputs ; 11                          ;
-;         6 data inputs ; 7                           ;
+;         2 data inputs ; 11                          ;
+;         3 data inputs ; 19                          ;
+;         4 data inputs ; 55                          ;
+;         5 data inputs ; 45                          ;
+;         6 data inputs ; 74                          ;
 ; boundary_port         ; 67                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.30                        ;
-; Average LUT depth     ; 2.45                        ;
+; Max LUT depth         ; 9.00                        ;
+; Average LUT depth     ; 4.58                        ;
 +-----------------------+-----------------------------+
 
 
@@ -793,7 +745,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Sun Nov 15 17:59:34 2020
+    Info: Processing started: Sun Nov 15 22:23:37 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off relogio -c relogio
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -909,32 +861,18 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/evand/OneDrive/Documents/relogio/Projeto/relogio.vhd Line: 19
     Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Users/evand/OneDrive/Documents/relogio/Projeto/relogio.vhd Line: 19
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 32 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 14 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SW[0]" File: C:/Users/evand/OneDrive/Documents/relogio/Projeto/relogio.vhd Line: 14
-    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/evand/OneDrive/Documents/relogio/Projeto/relogio.vhd Line: 14
-    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/evand/OneDrive/Documents/relogio/Projeto/relogio.vhd Line: 14
-    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/evand/OneDrive/Documents/relogio/Projeto/relogio.vhd Line: 14
-    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/evand/OneDrive/Documents/relogio/Projeto/relogio.vhd Line: 14
-    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/evand/OneDrive/Documents/relogio/Projeto/relogio.vhd Line: 14
-    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/evand/OneDrive/Documents/relogio/Projeto/relogio.vhd Line: 14
-    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/evand/OneDrive/Documents/relogio/Projeto/relogio.vhd Line: 14
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/evand/OneDrive/Documents/relogio/Projeto/relogio.vhd Line: 14
-    Warning (15610): No output dependent on input pin "KEY[0]" File: C:/Users/evand/OneDrive/Documents/relogio/Projeto/relogio.vhd Line: 15
-    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/evand/OneDrive/Documents/relogio/Projeto/relogio.vhd Line: 15
-    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/evand/OneDrive/Documents/relogio/Projeto/relogio.vhd Line: 15
-    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/evand/OneDrive/Documents/relogio/Projeto/relogio.vhd Line: 15
-    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/evand/OneDrive/Documents/relogio/Projeto/relogio.vhd Line: 14
-Info (21057): Implemented 226 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 487 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 52 output pins
-    Info (21061): Implemented 159 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 43 warnings
-    Info: Peak virtual memory: 4897 megabytes
-    Info: Processing ended: Sun Nov 15 17:59:52 2020
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:36
+    Info (21061): Implemented 420 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 30 warnings
+    Info: Peak virtual memory: 4894 megabytes
+    Info: Processing ended: Sun Nov 15 22:23:56 2020
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:40
 
 
