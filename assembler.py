@@ -7,8 +7,11 @@ dic_instrucoes={
     "LOAD":"0011",
     "STORE":"0100",
     "JE":"01010000",
-    "JMP":"01100000"
+    "JMP":"01100000",
+    "SUB":"0111",
+    "ADD":"1000"
 }
+
 dic_registradores={
     "R0":"0000",
     "R1":"0001",
@@ -19,10 +22,13 @@ dic_registradores={
     "RA":"0110",
     "RB1":"0111",
     "RB2":"1000",
-    "RC":"1001"
+    "RC":"1001",
+    "RO":"1010",
+    "RO2":"1011",
+    "RO3":"1100"
 }
 
-with open("assembly.txt","r") as content:
+with open("T2.txt","r") as content:
     lista=content.readlines()
 
 lista_f=[]
